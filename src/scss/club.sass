@@ -1,0 +1,315 @@
+@import "fonts"
+@import "vars"
+@import "base"
+@import "helpers"
+@import "buttons"
+
+@import "~@fortawesome/fontawesome-free/css/all.css"
+
+// Модальное окно Забронировать квоты
+.modal-logo    
+    width: 150px
+    height: auto
+.modal-footer
+    text-align: center !important
+.modal-header, .modal-footer
+    border: none
+
+/* Стили */
+.blog-header
+    line-height: 1
+
+.bg-club
+    background-color: #EDEDED
+
+.navbar-default
+    background-color: transparent
+    /*border-top: 1px solid #1422aa !important*/
+    /*border-bottom: 1px solid #1422aa !important*/
+    border-radius: 0
+    border-left: none 
+    border-right: none
+    margin-bottom: 0
+
+.navbar-right>li>span
+    padding-top: 15px
+    padding-bottom: 15px    
+    padding-right: 25px
+    font-weight: 700    
+    display: inline-block    
+.navbar-right
+    margin-right: 0 !important
+
+.navbar-nav>li>a
+    line-height: inherit !important
+    &:hover
+        text-decoration: underline
+
+.club-bb
+    border-bottom: 1px solid #1422aa
+
+.club-header
+    display: flex
+    justify-content: space-between
+    align-items: center    
+    h1
+        letter-spacing: 5px
+        font-family: 'Arial', sans-serif
+        margin: 0
+    a:hover
+        text-decoration: none
+    .nav>li>span
+        padding-right: 25px
+        font-weight: 700    
+        display: inline-block
+        word-spacing: nowrap
+.box-header
+    /*border-bottom: 1px solid #1422aa*/
+    /*border-top: 1px solid #1422aa*/
+    padding: 1em
+    p
+        font-size: 1.2em
+        font-style: italic
+
+.blog-header-logo
+    font-family: "Arial", sans-serif    
+    img
+        width: 300px
+        height: auto
+    p 
+        color: #1422aa
+        font-size: 2em
+        display: block
+        margin-top: 1em 
+        font-weight: 700
+        letter-spacing: 5px       
+    &:hover
+        text-decoration: none
+
+.club-search
+    .form-group
+        position: relative
+        width: 100%
+        .input-search
+            width: 100% !important
+            background-color: transparent
+            border: 1px solid #ddd
+            padding: 10px 50px 10px 10px
+    .btn-search
+        position: absolute
+        border: none
+        background-color: transparent
+        top: 50%
+        right: 5px
+        transform: translateY(-50%)
+        font-size: 1.5em
+        color: #1422aa
+
+.box-meta
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    font-size: 0.9em
+    &_stars
+        i
+            color: #1422aa 
+
+.box-img
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    width: 100%
+    img
+        max-width: 100%
+        width: 100%
+        height: auto
+
+.box-banner
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    padding: 1.5em
+    &-head
+        line-height: 1.2em
+    &-number
+        float: left
+        font-size: 4em
+        display: block
+        font-weight: 700
+        margin-right: 0.2em
+    &-text
+        line-height: 1.2em
+
+.social-wrap
+    position: relative
+    display: block
+    .icon
+        display: inline-block
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        background-color: #f2f2f2 
+        color: #000000 
+        margin: 5px  
+        line-height: 50px
+        text-align: center
+        font-size: 1.5em
+        transition: all 0.3s ease
+        &:hover
+            background-color: #cccccc
+
+.box-programm
+    border: 2px dashed #999999
+    padding: 1.2em
+    font-size: 0.9em
+    overflow: hidden
+    position: relative
+    .sale
+        display: block
+        position: absolute
+        bottom: 15px
+        right: -15%
+        background-color: #FF0000
+        width: 50%
+        height: auto        
+        text-align: center
+        transform: rotate(-45deg) 
+        color: #ffffff
+        font-size: 1.2em 
+.box-solution-options
+    img
+        width: 160px
+        height: 160px
+    &_desc
+        padding: 1.5em
+        background-color: #f2f2f2
+
+.img-circle
+    border: 15px solid #f2f2f2
+
+.box-invitation
+    padding: 1.5em
+    background-color: #FFFAF6
+    border: 1px solid #dddddd
+
+.well
+    background-color: #fff
+    margin-bottom: 0
+    border-radius: 0
+    box-shadow: none
+
+.form-control
+    background-color: transparent !important
+    border: 1px solid #dddddd !important
+
+.carousel-indicators
+    li
+        border-color: #1E33FF
+        -webkit-box-shadow: 0 0 3px 0 rgba(255,255,255,0.5)
+        box-shadow: 0 0 3px 0 rgba(255,255,255,0.5)
+        &.active
+            background-color: #1E33FF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px)
+    .display-4
+        font-size: 3rem
+
+.nav-scroller
+    position: relative
+    z-index: 2
+    height: 2.75rem
+    overflow-y: hidden
+    .nav
+        display: -ms-flexbox
+        display: flex
+        -ms-flex-wrap: nowrap
+        flex-wrap: nowrap
+        padding-bottom: 1rem
+        margin-top: -1px
+        overflow-x: auto
+        text-align: center
+        white-space: nowrap
+        -webkit-overflow-scrolling: touch
+    .nav-link
+        padding-top: .75rem
+        padding-bottom: .75rem
+        font-size: .875rem
+
+.card-img-right
+    height: 100%
+    border-radius: 0 3px 3px 0
+
+.flex-auto
+    -ms-flex: 0 0 auto
+    flex: 0 0 auto
+
+.h-250
+    height: 250px
+
+@media (min-width: 768px)
+    .h-md-250
+        height: 250px
+
+/*
+ * Blog name and description
+ */
+.blog-title
+    margin-bottom: 0
+    font-size: 2rem
+    font-weight: 400
+
+.blog-description
+    font-size: 1.1rem
+    color: #999
+
+@media (min-width: 40em)
+    .blog-title
+        font-size: 3.5rem
+
+/* Pagination */
+
+.blog-pagination
+    margin-bottom: 4rem
+    > .btn
+        border-radius: 2rem
+
+/*
+ * Blog posts
+ */
+.blog-post
+    margin-bottom: 4rem
+
+.blog-post-title
+    margin-bottom: .25rem
+    font-size: 2.5rem
+
+.blog-post-meta
+    margin-bottom: 1.25rem
+    color: #999
+
+/*
+ * Footer
+ */
+.blog-footer
+    padding: 2.5rem 0
+    color: #999
+    text-align: center
+    background-color: #f9f9f9
+    border-top: .05rem solid #e5e5e5
+    p:last-child
+        margin-bottom: 0

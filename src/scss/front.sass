@@ -1,0 +1,481 @@
+@import "main"
+
+.contacts-content 
+    margin-top: 80px   
+    .nav-tabs
+        border-bottom: none
+        margin-bottom: 40px
+        li
+            margin-right: 35px
+            a
+                font-size: 20px
+                font-weight: 700
+                color: #999999
+                border-radius: 0
+                border: none
+                padding: 5px 0                
+                &:hover
+                    background-color: transparent                    
+                    border: none
+        li.active
+            a  
+                border: none              
+                color: $accent
+                border-bottom: 2px solid $accent  
+    .box-border
+        border-bottom: 1px solid #999
+        margin-right: 50px
+        padding-top: 30px
+        padding-bottom: 20px
+    .box-maps
+        padding-top: 30px
+    .box-requisites
+        p
+            padding-bottom: 20px
+    .box-documents
+        ul
+            li
+                margin-bottom: 15px
+                padding-left: 15px
+
+
+.contacts-footer
+    margin-top: 150px
+    p
+        padding-bottom: 20px
+        line-height: 30px
+        margin: 0
+
+.filter-tab
+	margin-top: 80px
+	position: relative
+	.btn-search
+		display: block
+		position: absolute
+		top: 0
+		right: 0
+		border-radius: 50%
+		background-color: $accent
+		width: 36px
+		height: 36px		
+		text-align: center
+		color: #ffffff
+
+	.nav-tabs
+		border-bottom: none
+		margin-bottom: 40px		
+		li
+			margin-right: 35px
+			a
+				font-size: 20px
+				font-weight: 700
+				color: #999999
+				border-radius: 0
+				border: none
+				padding: 5px 0                
+				&:hover
+					background-color: transparent                    
+					border: none
+		li.active
+			a
+				border: none              
+				color: $accent
+				border-bottom: 2px solid $accent 
+		.head-filter
+			padding-top: 0.6em 
+	.box-border
+		border-bottom: 1px solid #999
+		margin-right: 50px
+		padding-top: 30px
+		padding-bottom: 20px
+	.box-maps
+		padding-top: 30px
+	.box-requisites
+		p
+			padding-bottom: 20px
+	.box-documents
+		ul
+			li
+				margin-bottom: 15px
+				padding-left: 15px
+
+
+.contacts-footer
+    margin-top: 150px
+    p
+        padding-bottom: 20px
+        line-height: 30px
+        margin: 0
+
+.box-programm	
+	box-shadow: 0 3px 5px rgba(#000000, 0.1)
+	border: 1px solid transparent
+	margin-bottom: 5em
+	position: relative			
+	&_header
+		position: relative
+		padding: 1.5em 2em 1em 2em
+		overflow: hidden
+		z-index: 2
+		p
+			margin: 0
+			padding: 0
+		.blur
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center center			
+			background-blend-mode: overlay
+			position: absolute			
+			top: 0
+			right: 0
+			left: 0
+			bottom: 0
+			filter: blur(3px)
+			z-index: 9
+			width: 100%
+			height: 100%
+			transform: scale(1.05)
+		.blur-blue
+			background-color: $accent
+		.blur-black
+			background-color: rgba(#000000, 0.6)
+		.content
+			z-index: 100
+			color: #ffffff
+			position: relative
+			h4
+				margin-top: 2em				
+		.star
+			position: absolute
+			top: 15px
+			right: 15px
+			z-index: 10
+			i
+				color: #FED073
+			span
+				position: absolute
+				top: 55%
+				left: 50%
+				transform: translate(-50%, -50%)
+				color: #ffffff
+	.mark
+		position: absolute
+		top: -15px
+		left: 30px
+		z-index: 10
+		color: #ffffff
+		padding: 0 1.5em
+		height: 30px
+		text-align: center
+		font-weight: 700
+		line-height: 30px		
+	.color-mark
+		&_blue
+			background-color: $accent
+		&_red
+			background-color: red
+		&_orange
+			background-color: #FED073
+		&_lightblue
+			background-color: #AED3E5
+	&_main
+		padding: 0.5em 1em 0.5em 2em
+		color: $accent
+		background-color: #ffffff
+		z-index: 2	
+	&_footer
+		display: flex
+		justify-content: space-between		
+		padding: 1.8em 1em 1em 1em
+		z-index: 2		
+		.left-content			
+			.fa-ul
+				color: #5A5A5A
+				li
+					margin-bottom: 5px
+				.fa-li
+					i
+						color: #fed07f
+		.right-content
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			.img-wrap
+				display: flex
+				justify-content: center
+				align-items: flex-start				
+				flex-wrap: wrap				
+				overflow: hidden
+				width: 100px				
+				.img-circle
+					flex: 1 40px !important								
+					overflow: hidden
+					margin: 4px
+					border-radius: 0			
+					img
+						border-radius: 50%
+						width: 100%
+						height: 100%
+						object-fit: cover
+					span
+						overflow: hidden						
+						display: block
+						width: 40px
+						height: 40px
+						text-align: center
+						line-height: 38px					
+						border: 2px solid #999999
+						border-radius: 50%						
+				.img-circle:nth-child(odd)
+					flex: 0 40px
+				.img-circle:nth-child(even)
+					flex: 0 40px
+			.rating
+				margin-top: 5px
+				color: #fed07f
+				font-size: 12px
+	&_button            		
+		position: absolute
+		bottom: -60px
+		left: -1px
+		right: 0        
+		width: calc(100% + 2px)
+		opacity: 0
+		background-color: #ffffff        				
+		.wrap-button					
+			padding: 0.8em 1.5em
+			display: flex
+			justify-content: space-between
+			align-items: center
+			.button-primary
+				display: block
+				border-radius: 100px
+				padding: 0.8em 1.5em
+				font-size: 14px                
+				color: #fff    
+				padding: 1em 2em
+				background-color: $accent
+				+mt(0.25s)
+				&:hover
+					background: $light-blue
+			.button-default
+				display: block
+				padding: 0.8em 1.5em
+				font-size: 14px
+				background-color: #F6F6F6
+				border: 1px solid #BCBCBC
+				border-radius: 100px
+				color: #000000    
+				&:hover
+					text-decoration: none        
+	&:hover
+		border: 1px solid $accent
+		.box-programm_button		           
+            z-index: 11            				
+            opacity: 1           
+            box-shadow: 0 3px 5px rgba(#000000, 0.1)
+            border-left: 1px solid $accent
+            border-right: 1px solid $accent	
+            border-bottom: 1px solid $accent            	
+
+.box-privileges
+	position: relative
+	background-color: #E8E8E8
+	border-radius: 20px
+	padding: 40px 100px
+	overflow: hidden
+	margin: 4em 0 7em 0
+	h2
+		color: $accent
+		font-size: 40px
+	ul 		
+		padding-left: 15px
+		margin-bottom: 2em
+		li
+			font-size: 18px
+			list-style: none
+			&::before							 
+				content: "\2022"
+				font-size: 20px				
+				padding-right: 10px
+				color: $accent		
+	.percent
+		position: absolute
+		bottom: -80px
+		right: 40px
+		font-size: 200px
+		color: #ffffff		
+
+.box-privileges_gray
+	background-color: #E8E8E8
+.box-privileges_blue
+	background-color: #AED3E5
+
+.button-group
+	display: flex
+	flex-wrap: wrap
+	margin-top: 10em
+	.btn
+		margin-right: 25px
+		margin-bottom: 25px 
+		
+//
+.s-header-program
+	background-color: rgba(#000, 0.5)
+	background-blend-mode: overlay
+	background-repeat: no-repeat
+	background-size: cover
+	color: #ffffff
+	padding: 3em 0
+	.fa-ul
+		display: flex
+		justify-content: space-between
+		padding-left: 25px
+		margin: 0
+
+
+
+.number-box
+	&_item
+		text-align: center
+		span
+			font-size: 60px
+
+.s-training
+	background-color: rgba(#000, 0.7)
+	background-blend-mode: overlay
+	background-repeat: no-repeat
+	background-size: cover
+	margin: 8em 0 3em 0
+	padding: 4em 0 10em 0
+	.training-box
+		text-align: center
+		margin-top: 4em
+		span
+			display: block
+			width: 40px
+			height: 40px
+			line-height: 40px
+			text-align: center
+			background-color: #ffffff
+			border-radius: 50%
+			color: $accent
+			font-size: 18px
+			font-weight: 700
+			margin: 0 auto
+		&_img
+			width: 150px
+			height: 150px
+			margin: 0.5em auto			
+			img
+				width: 100%
+				height: 100%
+				object-fit: contain
+		p
+			color: #ffffff
+
+.brochure-box
+	background-color: #FECF73
+	border-radius: 20px
+	padding: 2em 4em 3em 4em
+	margin: 5em 0
+	display: flex
+	align-items: center
+	justify-content: space-between
+	flex-wrap: wrap
+	&_text
+		p
+			margin: 1.2em 0
+	&_img
+		img
+			width: 120px
+			height: auto
+
+.s-time-costs
+	padding: 2em 5em
+	margin-bottom: 5em
+	box-shadow: 0 0 10px rgba(#000000, 0.2)
+	ol
+		padding-left: 15px
+
+.s-learning-outcome
+	background-color: rgba(#000, 0.7)
+	background-blend-mode: overlay
+	background-repeat: no-repeat
+	background-size: cover
+	margin: 5em 0
+	padding: 4em 0 7em 0
+	.learning-outcome
+		margin-top: 3em
+		display: flex
+		align-items: center
+		&_img
+			width: 50%
+		&_desc
+			padding: 2em
+			width: 50%
+			color: #ffffff			
+
+.s-portfolio-training
+	box-shadow: 0 0 10px rgba(#000000, 0.3)
+	padding: 3em 5em
+	margin-top: 2em
+	ol
+		column-count: 2
+		column-gap: 40px
+		margin: 0
+		padding-left: 15px
+
+.carousel-author-program
+	.item-author
+		padding: 2em 8em
+		display: flex
+		align-items: center		
+		&_img
+			width: 120px
+			min-width: 120px
+			height: 120px
+			border-radius: 50%
+			overflow: hidden		
+			box-shadow: 0 0 0 20px #f2f2f2
+			margin-right: 2.5em
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+
+.s-free-consultation
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 4em 0 18em 0
+	margin-top: 10em
+	h2
+		font-size: 70px
+		font-weight: 900
+		padding-top: 1.5em
+
+.stars
+	color: $highlight
+
+.payment_methods
+	.nav-pills
+		li
+			border-radius: 0
+
+			/*&.active
+				a*/
+
+			a
+				overflow: hidden
+				height: 100%
+				padding: 2em 0 0 0
+	.tab-pane
+		border-radius: 0
+		&.active
+			.panel
+
+				border-radius: 0
+
+// Всегда в конце
+@import "media"

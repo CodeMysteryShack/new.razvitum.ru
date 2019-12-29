@@ -1,0 +1,144 @@
+@import "main"
+
+// Стили для Шапки ВЗ
+.vz-header
+    padding: 40px 0
+    background-color: #ffffff
+    .logo-wrap
+        white-space: nowrap
+        .logo
+            img
+                width: 70px
+                height: auto
+                float: left
+                margin-right: 10px
+        .logo-title
+            font-size: 16px
+            font-family: $headline-font
+            display: inline-block
+            span
+                font-weight: 400
+                font-size: 10px
+                font-family: $default-font
+                text-transform: uppercase
+                letter-spacing: 0.60em
+    .header-label
+        color: #999999
+        font-size: 0.85em
+    .header-content
+        margin-top: 0.3em
+        font-size: 1.4em
+        a
+            color: #5A5A5A
+    .header-phone-icon
+        width: 60px
+        height: 60px
+        border-radius: 50%
+        font-size: 2em
+        border: 2px solid $accent
+        color: $accent
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 0 auto
+
+// Стили для ВСЕРОСИЙСКОГО ЗАЧЕТА
+.zachet-flip-card
+    .item
+        position: relative
+        display: block
+        width: 100%
+        height: 100%
+        perspective: 800px
+        cursor: pointer
+        overflow: hidden
+        padding: 10px
+        .flipper-card
+            width: 100%
+            height: 100%
+            transform-style: preserve-3d
+            transition: all 1.1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+            .flipper-front,
+            .flipper-back
+                padding: 25px 15px
+                text-align: center
+                border: 1px solid transparent
+                +mt(0.3s)
+                .icon
+                    position: relative
+                    width: 70px
+                    height: 70px
+                    border-radius: 50%
+                    line-height: 70px
+                    text-align: center
+                    box-shadow: 0 3px 10px rgba(#000, 0.3)
+                    font-size: 2em
+                    color: $accent
+                    display: inline-block
+                    background-color: #fff
+                p.num
+                    font-size: 1.5em
+                    color: #999999
+                    margin-top: 1.5em
+                    margin-bottom: 0
+                h3
+                    color: $accent
+                    font-family: $bold-font
+                    margin-bottom: 1em
+                    margin-top: 0
+                .flip-btn
+                    border: none
+                    background: transparent
+                    color: $orange
+                    font-weight: 700
+                    outline: none
+                    i
+                        margin-right: 7px
+                        font-size: 26px
+            .flipper-front
+                &:hover
+                    border: 1px solid #dddddd
+            .flipper-back
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 630px
+                display: block
+                transform: rotateY(180deg)
+                background-color: #f2f2f2
+            .flipper-front,
+            .flipper-back
+                backface-visibility: hidden
+
+.s-rezult
+    img
+        width: 150px
+        height: auto
+
+.media.discount
+    .media-left
+        padding: 0
+    .media-body
+        padding-top: 10px
+        padding-bottom: 10px
+        p
+            border-top: 2px dashed red
+            border-right: 2px dashed red
+            border-bottom: 2px dashed red
+            border-left: none
+
+            margin: 0
+
+            padding: 0.5em 1em 0.5em 2em
+
+            display: inline-block
+            width: 100%
+            height: 100%
+
+            font-size: 14px
+    .media-object
+        margin-right: -10px
+
+// Всегда в конце
+@import "media"

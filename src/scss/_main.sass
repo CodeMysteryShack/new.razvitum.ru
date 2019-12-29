@@ -1,0 +1,3655 @@
+@import "fonts"
+@import "vars"
+@import "base"
+@import "helpers"
+@import "buttons"
+
+header
+  .s-header
+    padding: 40px 0
+    background-color: #ffffff
+
+    .logo
+      img
+        width: 70px
+        height: auto
+        float: left
+        margin-right: 10px
+
+    .logo-title
+      font-size: 16px
+      font-family: $headline-font
+      display: inline-block
+
+      span
+        font-weight: 400
+        font-size: 10px
+        font-family: $default-font
+        text-transform: uppercase
+        letter-spacing: 0.60em
+
+    .header-date, .header-phone
+      font-size: 0.85em
+
+      &-label
+        color: #999999
+        font-size: 0.85em
+
+    .header-phone
+      &-number
+        margin-top: 0.3em
+
+        a
+          font-size: 1.5em
+          color: #5A5A5A
+
+    .work-hours
+      font-size: 1.5em
+      margin-top: 0.3em
+      color: #5A5A5A
+
+    .btn-wrap
+      .header-cart
+        position: absolute
+        bottom: -65%
+        left: 0
+        right: 0
+
+        a
+          color: $accent
+
+      .header-btn
+        position: relative
+
+        .btn-group.open button
+          z-index: 1001
+
+        .btn-login
+          i
+            color: $accent
+            margin-right: 10px
+            transition: all 0.3s
+
+          &:hover
+            i
+              color: #ffffff
+
+        .btn-user
+          position: relative
+          text-overflow: ellipsis
+          overflow: hidden
+          z-index: 1001
+          padding: 1em 1.7em 1em 0.8em
+          font-size: 0.9em
+
+          span.caret
+            position: absolute
+            right: 18px
+            top: 50%
+            transform: translateY(-50%)
+        // Стили подменю зарегистрированного профиля
+        .dropdown-menu
+          position: absolute
+          top: 50%
+          width: 100%
+
+          li:first-child
+            padding-top: 25px
+
+          li
+            padding: 5px 0
+
+            i
+              margin-left: 7px
+              color: $accent
+
+          li.divider
+            padding: 0
+            margin: 5px 0
+
+// Логотип для главной
+.head-logo
+  font-family: $headline-font
+  font-weight: 400
+  letter-spacing: 0.10em
+
+  a
+    max-width: 3em
+    display: inline-block
+
+  > span > span
+    font-weight: 400
+    font-size: 10px
+    font-family: $default-font
+    text-transform: uppercase
+    letter-spacing: 0.63em
+    padding-left: 0.5em
+
+// Стили главного меню
+.menu-wrap
+  .navbar
+    border: none
+
+  .navbar-default .navbar-nav > .active > a
+    background-color: transparent
+    background-image: none
+    color: #ffffff
+    position: relative
+
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 3px
+      background-color: $active-color
+
+  .navbar.navbar-default
+    background-color: #ffffff
+    border-bottom: 1px solid $accent
+
+  .navbar
+    border-radius: 0
+    margin: 0
+
+    .container-fluid
+      margin: 0
+      padding: 0
+      border: none
+
+      .navbar-collapse
+        margin: 0
+        padding: 0
+
+  .top-menu
+    background-color: $accent
+
+    .navbar-nav > li > a
+      padding: 20px 15px
+      color: #ffffff
+      text-transform: uppercase
+      position: relative
+
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 0
+        background-color: $highlight
+        transition: all 0.2s
+
+      &:hover
+        &::before
+          height: 3px
+
+  .dropdown-menu > li > a
+    padding: 10px 25px
+    transition: all 0.2s
+
+  .dropdown-menu
+    padding: 0
+
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a
+    background-image: none !important
+
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover
+    background-color: transparent !important
+    color: #ffffff
+
+  .nav .open > a, .nav .open > a:focus, .nav .open > a:hover
+    background-color: transparent !important
+
+  .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover
+    background-color: $active-color !important
+    background-image: none !important
+
+  .navbar-collapse
+    height: 100vh
+
+  .navbar-toggle .icon-bar
+    width: 100% !important
+
+  .buttom-menu
+    .nav > li > a:focus, .nav > li > a:hover, .nav > li > a:active
+      background-color: $active-color !important
+      color: #ffffff !important
+
+// Стили для слайдера на Главной странице
+.s-carousel
+  padding: 0
+  margin: 0
+
+  .col-lg-12
+    padding: 0
+
+  .carousel
+    width: 100%
+
+    .carousel-control
+      background-image: none
+      width: 10%
+      text-shadow: none
+
+    .carousel-inner
+      .item
+        img
+          width: 100%
+          background-size: cover
+          display: block
+          background-position: center center
+
+    .glyphicon-menu-left
+      position: absolute !important
+      top: 50%
+      right: 20%
+      transform: translateY(-50%)
+      font-size: 40px
+      color: $accent
+
+      &::after
+        position: absolute
+        content: ''
+        width: 25px
+        height: 5px
+        background-color: $accent
+        top: 50%
+        left: 10px
+        transform: translateY(-50%)
+
+    .glyphicon-menu-right
+      position: absolute !important
+      top: 50%
+      left: 20%
+      transform: translateY(-50%)
+      font-size: 40px
+      color: $accent
+
+      &::after
+        position: absolute
+        content: ''
+        width: 25px
+        height: 5px
+        background-color: $accent
+        top: 50%
+        right: 10px
+        transform: translateY(-50%)
+
+// Стили секции О ЦЕНТРЕ
+.s-about-center
+  padding-bottom: 50px
+
+// Стили секции с голубым фоном и тесктом
+.s-blue
+  width: 100%
+  background-color: $accent
+  color: #ffffff
+  padding: 40px 0
+  text-align: center
+
+.s-blue-seminar
+  background-color: $accent
+  position: relative
+  overflow: hidden
+  height: 100%
+  padding-bottom: 40px
+
+  .free-seminars
+    color: $orange
+    font-size: 2em
+    font-family: $bold-font
+    margin-top: 1em
+    display: block
+
+// Стили секции УСТАВ ЛИЦЕНЗИИ СВИДЕТЕЛЬСТВА
+.s-licenses
+  background-color: #F3F3F3
+  padding-bottom: 50px
+
+  .licenses-wrapper
+    display: flex
+    flex-wrap: wrap
+
+    .item-licenses
+      border-radius: 0
+      border: 2px solid #FFD57A
+      box-sizing: border-box
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)
+      transition: all 0.3s
+      width: 45%
+      margin: 5px
+      background-color: #CCCCCC
+
+      &:hover
+        border: 2px solid #FFD57A
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2)
+
+      a
+        img
+          width: 100%
+          height: auto
+          background-size: cover
+
+// Стили секции НАША ИСТОРИЯ
+.s-story
+  padding-bottom: 50px
+
+  .text
+    padding-bottom: 30px
+    font-size: 18px
+
+  .item-story
+    padding: 25px
+    margin: 0
+    min-height: 400px
+    height: 400px
+    border: 12px solid #fff
+    box-sizing: border-box
+    position: relative
+
+    &::before
+      content: ''
+      position: absolute
+      background-color: rgba(255, 255, 255, 0.1)
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+
+    .year
+      color: $accent
+      font-weight: 700
+
+    h5
+      font-weight: 700
+      font-size: 24px
+      color: #333333
+      padding: 15px 0
+
+    p
+      font-size: 14px
+      color: #333333
+      line-height: 1.65em
+
+  .bg-wrap
+    background-image: url('/img/logo.svg')
+    background-size: cover
+    background-position: center left
+    width: 100%
+    height: auto
+    position: relative
+
+    &::before
+      content: ''
+      position: absolute
+      display: block
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(255, 255, 255, 0.97)
+
+    .col-lg-3
+      padding: 0
+
+// Стили для секции Цифры и факты
+.s-facts
+  .container-fluid
+    padding: 0
+    margin: 0
+
+  .facts-wrap
+    background-image: url('/img/bg-foto.jpg')
+    background-size: cover
+    background-position: center center
+
+  .facts-grid
+    display: grid
+    width: 100%
+    grid-gap: 1px
+    height: auto
+    grid-template-areas: "item-1 item-2 item-3 item-4" "item-5 item-2 item-6 item-7" "item-8 item-9 item-11 item-7" "item-8 item-10 item-11 item-12"
+
+    .item-1
+      grid-area: item-1
+
+      .flipper-back
+        background-color: $highlight
+
+    .item-2
+      grid-area: item-2
+
+      .flipper-back
+        background-color: $accent
+        color: #ffffff
+
+    .item-3
+      grid-area: item-3
+
+      .flipper-back
+        background-color: $active-color
+
+    .item-4
+      grid-area: item-4
+
+      .flipper-back
+        background-color: $highlight
+
+    .item-5
+      grid-area: item-5
+
+      .flipper-back
+        background-color: $active-color
+
+    .item-6
+      grid-area: item-6
+
+      .flipper-back
+        background-color: $highlight
+
+    .item-7
+      grid-area: item-7
+
+      .flipper-back
+        background-color: $accent
+        color: #ffffff
+
+    .item-8
+      grid-area: item-8
+
+      .flipper-back
+        background-color: $accent
+        color: #ffffff
+
+    .item-9
+      grid-area: item-9
+
+      .flipper-back
+        background-color: $active-color
+
+    .item-10
+      grid-area: item-10
+
+      .flipper-back
+        background-color: $highlight
+
+    .item-11
+      grid-area: item-11
+
+      .flipper-back
+        background-color: $accent
+        color: #ffffff
+
+    .item-12
+      grid-area: item-12
+
+      .flipper-back
+        background-color: $active-color
+
+    span
+      font-size: 40px
+      display: block
+      color: #ffffff
+      font-weight: 500
+
+    .item
+      position: relative
+      display: block
+      width: 100%
+      height: 100%
+      perspective: 800px
+      cursor: pointer
+
+      &::after
+        position: absolute
+        top: 0
+        left: 0
+        content: ''
+        display: block
+        width: 100%
+        height: 100%
+
+      .flipper-card
+        width: 100%
+        height: 100%
+        transform-style: preserve-3d
+        transition: all 1.1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+        border: 2px solid #ffffff
+
+        .flipper-back
+          position: relative
+          padding: 30px 50px
+          width: 100%
+          height: 100%
+          display: block
+          transform: rotateY(180deg)
+
+        .flipper-front,
+        .flipper-back
+          backface-visibility: hidden
+
+.flipper-card.flipper-is-flipped
+  transform: rotateY(180deg)
+
+// Стили для FOOTER
+footer
+  background-color: #1422aa
+  border-top: 1px solid #999
+  padding-top: 40px
+  position: relative
+  font-size: 14px
+
+  .footer_up
+    border-bottom: 1px solid #ccc
+    padding-bottom: 20px
+    position: relative
+    min-height: 60px
+
+  .footer_nav
+    padding-bottom: 20px
+    position: relative
+    min-height: 60px
+
+  .footer_nav-header
+    a
+      text-transform: uppercase
+      color: #ffffff
+      text-decoration: none
+
+    p
+      color: #ffffff
+
+  .footer_nav
+    i
+      position: absolute
+      left: -15px
+
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+
+      li
+        padding: 6px 0
+        line-height: 1.2em
+
+        a
+          color: #cccccc
+          text-decoration: none
+          &:hover
+            color: #ffffff
+
+  .up-arrow
+    display: block
+    position: absolute
+    top: 0
+    right: 0
+
+  .footer_nav .up-arrow a
+    transition: opacity 0.3s
+
+  .footer-title
+    color: #ffffff
+
+  .footer-bottom
+    padding-top: 50px
+    color: #ffffff
+
+    .footer-title
+      font-weight: 700
+      color: #ffffff
+
+    .phone
+      font-size: 34px
+      font-family: "RobotoLight", sans-serif
+      line-height: 100%
+      vertical-align: top
+      padding-bottom: 10px
+
+      a
+        text-decoration: none
+        color: #ffffff
+
+    .call a
+      color: #ffffff
+
+    /*line-height: 30%;
+
+    .footer-links
+      padding-bottom: 0px
+
+      ul
+        list-style: none
+
+        /*padding-bottom: 50px;
+        /*padding: 0;
+        padding-left: 0px
+        padding-top: 0px
+
+        li
+          display: inline-block
+          margin-right: 20px
+
+    .footer-social-links ul
+      padding-left: 0px
+
+      li
+        display: table-cell
+        vertical-align: middle
+
+        span
+          margin-right: 0.7em
+
+    .footer-links ul li a
+      color: #ffffff
+
+    .usage
+      font-size: 11px
+
+    .copy
+      text-align: right
+
+// Вкладки фильтров поиска
+ul.nav-tabs-razvitum
+  list-style: none
+  padding: 0
+  margin: 0
+  font-size: 0
+
+  li
+    a
+      height: 40px
+      display: block
+      line-height: 40px
+      color: #999999 !important
+      font-size: 16px
+      border-bottom: 2px solid #999999
+      padding: 0
+
+      &:hover
+        background-color: transparent
+        border-bottom-style: solid
+        border-bottom-color: $highlight
+
+      &:focus
+        background-color: transparent
+
+    &.active a
+      color: $accent !important
+      border-bottom: 3px solid $accent
+
+.nav-tabs-razvitum
+  margin-bottom: 45px
+
+ul.nav-tabs-razvitum li
+  display: inline-block
+  vertical-align: top
+  margin-right: 29px
+  margin-bottom: 20px
+
+// Строка поиска
+.input-group-razvitum
+  .form-control
+    display: block
+    width: 100%
+    height: 46px
+    padding-top: 10px
+    padding-right: 1.5em
+    padding-left: 1.5em
+    padding-bottom: 10px
+    font-size: 18px
+    line-height: 1.3333333
+    color: #555
+    background-color: #fff
+    background-image: none
+    border: 1px solid #ccc
+    border-radius: 25px
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075)
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075)
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+    box-shadow: inset 0px 3px 9px 0px rgba(16, 17, 21, 0.14) !important
+    z-index: 10
+
+    &:first-child
+      border-top-right-radius: 0
+      border-bottom-right-radius: 0
+
+  .input-group-btn .btn
+    padding-left: 2em
+    padding-right: 2em
+    border-radius: 25px
+
+    &:first-child
+      margin-left: -1.5em
+      z-index: 11
+
+// Блок сортировок
+ul.sorting-pills li
+  a
+    color: #003399
+
+    &:hover
+      color: #000000
+      background-color: transparent
+      text-decoration: underline
+
+  &.active a
+    color: #000000
+    background-color: transparent
+
+    &:hover, &:focus
+      color: #000000
+      background-color: transparent
+      text-decoration: underline
+
+.sorting-header
+  padding: 10px 15px
+  display: inline-block
+  font-size: 1em
+  float: left
+  margin: 0
+  line-height: 1.42857143
+  color: #999999
+
+// Фон фильтров
+.positions-bg
+  background-color: $info
+
+// Стилизованный checkbox
+// TODO как здесь https://getbootstrap.com/docs/4.1/components/forms/#checkboxes-and-radios-1
+
+// Колонки
+.text-columns-2
+  column-count: 2
+  column-gap: 2em
+
+.text-columns-5
+  column-count: 5
+  column-gap: 3em
+
+.column-block
+  break-inside: avoid-column
+  page-break-inside: avoid
+
+// Карточки программ
+.programs__card
+  margin-bottom: 30px
+
+  .programs__card-block
+    position: relative
+
+    &:hover .programs__card-main
+      background-size: 105%
+
+      &::before
+        background: rgba(0, 0, 0, 0.6) !important
+        z-index: 0
+
+    .programs__card-main
+      position: relative
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: 100%
+      color: #fff
+      height: auto
+      padding: 25px 65px 65px 30px
+      position: relative
+      transition: background-size 0.3s linear
+
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        display: block
+        background: rgba(0, 0, 0, 0.1)
+        z-index: 0
+        transition: all 0.3s ease
+
+      .programs__item-type
+        position: absolute
+        left: 30px
+        margin: 0
+        bottom: 24px
+        z-index: 5
+        color: #fff
+
+        a
+          color: #fff !important
+
+          &:hover
+            color: #a3d3e5 !important
+
+      &.v1::before
+        background: rgba(0, 0, 0, 0.5)
+
+      &.v2::before
+        background: rgba(20, 0, 0, 0.5)
+
+      &.v3::before
+        background: rgba(0, 20, 0, 0.5)
+
+      &.v4::before
+        background: rgba(0, 0, 20, 0.5)
+
+      &.v5::before
+        background: rgba(0, 20, 20, 0.5)
+
+      &.v6::before
+        background: rgba(20, 0, 20, 0.5)
+
+      &.v7::before
+        background: rgba(20, 20, 0, 0.5)
+
+      &.v8::before
+        background: rgba(20, 20, 20, 0.5)
+
+      .programs__card-content
+        position: relative
+
+        .programs__item-topic
+          font-size: 14px
+          margin-bottom: 25px
+
+          a
+            color: #fff
+            transition: all 0.25s
+
+            &:hover
+              color: $active-color
+
+        .programs__item-title
+          font-size: 18px
+          text-transform: uppercase
+
+          a
+            color: #fff
+            transition: all 0.25s
+
+            &:hover
+              color: $active-color
+
+      .programs__card-star
+        width: 40px
+        height: 40px
+        position: absolute
+        display: block
+        color: #ffffff
+        top: 15px
+        right: 15px
+        font-size: 12px
+        text-align: center
+        line-height: 40px
+        z-index: 5
+        font-weight: 700
+
+        &::before
+          content: '\f005'
+          font-family: $font-awesome
+          font-weight: 900
+          position: absolute
+          top: -3px
+          left: -2px
+          width: 100%
+          height: 100%
+          font-size: 40px
+          color: $highlight
+          z-index: -1
+    // Нижняя часть карточки с кнопками и ценами
+    .programs__card-bottom
+      padding: 30px
+      background: #fff
+
+      .programs__card-info
+        margin-bottom: 18px
+        font-size: 0
+
+        &-item
+          display: inline-block
+          vertical-align: top
+          margin-right: 16px
+          margin-bottom: 12px
+          white-space: nowrap
+          color: #5a5a5a
+          font-size: 14px
+
+          &:last-child
+            margin-right: 0 !important
+
+          i
+            color: $highlight
+            font-size: 12px
+
+// Страница с одной программой
+.panel.panel-outline
+  background-color: rgba(0, 0, 0, 0.3)
+  border-width: 4px
+  border-radius: 15px
+
+.program-calculate
+  .panel-body
+    background-color: $orange
+    border: none
+
+  a.btn-calculate
+    padding: 0.8em 1.5em
+    background-color: $orange
+    color: #000000
+    border-top-left-radius: 0px
+    border-top-right-radius: 0px
+    border-bottom-left-radius: 30px
+    border-bottom-right-radius: 30px
+    font-size: 1em
+
+    i
+      margin-right: 7px
+
+.program
+  .media
+    margin-top: 2em
+
+// Шапка одной программы
+.jumbotron
+  &.program-cover
+    position: relative
+    color: #FFFFFF
+    margin-bottom: 0
+    overflow: hidden
+
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: rgba(0, 0, 0, 0.7)
+      z-index: 9
+
+    div.program-cover
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-position: center
+      background-repeat: no-repeat
+      background-size: cover
+      -webkit-filter: blur(5px)
+      -moz-filter: blur(5px)
+      -o-filter: blur(5px)
+      -ms-filter: blur(5px)
+      filter: blur(5px)
+      z-index: 8
+
+    .container
+      position: relative
+      z-index: 10
+
+    h1
+      font-size: 2.5em
+      font-family: $bold-font
+
+    p.small
+      font-size: 85%
+
+// Нумерованный список с буквицей
+.razvitum-ordered-list
+  ol, ul
+    list-style-type: none
+    margin-left: 2em
+    padding-left: 0
+
+  ol > li, ul > li
+    counter-increment: customlistcounter
+    margin-bottom: 1em
+
+  ol > li:before, ul > li:before
+    content: counter(customlistcounter) " "
+    font-weight: bold
+    font-size: 150%
+    color: $highlight
+    float: left
+    width: 2em
+
+  ol:first-child, ul:first-child
+    counter-reset: customlistcounter
+
+.panel-calc
+  margin-bottom: 0
+  border-radius: 0
+  border-color: $highlight
+  border-width: 3px
+  background-color: $highlight
+
+  input
+    line-height: normal !important
+
+.btn-calc
+  border-width: 0
+  border-radius: 0 0 30px 30px
+  background-color: $highlight
+
+// Блоки с ценой
+.center-columns
+  text-align: center
+
+  > div
+    float: none
+    margin: 0 auto
+    display: inline-block
+    margin-right: -4px
+
+.panel-price
+  border-style: dashed
+  border-radius: 0
+  border-width: 2px
+
+  mark
+    line-height: 150%
+    font-style: normal
+    border-radius: 1em 0 1em 0
+    text-shadow: 1px 1px 1px #fff
+    background: none
+    background-image: linear-gradient(-100deg, rgba(238, 162, 54, 0.15), rgba(238, 162, 54, 0.8) 100%, rgba(238, 162, 54, 0.25))
+    -webkit-box-shadow: inset 0px 0px 15px 5px white
+    box-shadow: inset 0px 0px 15px 5px white
+
+// Авторы
+.author-card
+  min-width: 230px
+
+  a:hover
+    text-decoration: none
+
+  h3
+    color: $accent
+    font-weight: normal
+
+  .thumbnail
+    border-radius: 0
+    padding: 0
+
+    .author-card-title
+      background-color: $graybg
+      padding-top: 15px
+      padding-bottom: 15px
+
+    img
+      image-rendering: optimizeQuality
+
+// Dadata plugin fix
+.suggestions-wrapper
+  display: block !important
+
+// Корзина в модалке
+.cart-modal-item
+  border-top: 1px solid $graybg
+  padding-top: 15px
+  padding-bottom: 15px
+
+  .btn-link
+    color: #999999 !important
+    text-decoration: underline
+
+  .form-control
+    padding: 0.3em
+    text-align: center
+  /*height: 36px*/
+
+
+
+  .input-group
+    .btn
+      border-radius: 50%
+      width: 36px
+      height: 36px
+      margin-left: 3px
+      margin-right: 3px
+      padding: 0
+
+  .input-group-btn
+    width: 36px
+    height: 36px
+
+    button
+      position: relative
+
+      i
+        position: absolute
+        display: block
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+  .input-lg
+    font-size: 18px
+
+  .sub_total
+    font-size: 18px
+    font-weight: 700
+    vertical-align: middle
+    line-height: 36px
+
+  .btn-default
+    margin-bottom: 10px
+
+.cart-promocode
+  label
+    font-weight: normal
+    margin-top: 1em
+
+.modal-footer .btn + .btn
+  margin-bottom: 10px
+
+// Список слушателей в корзине
+.cart-item
+  border-top: 2px solid $graybg
+  margin-top: 2em
+
+  .cart-listeners
+    .counter-listeners
+      li
+        position: relative
+      //&:first-child
+      //  button
+      //    display: none
+      .btn-link
+        color: #999999 !important
+
+  .cart-program
+    > p
+      padding-left: 40px
+
+    .text-primary
+      position: relative
+      padding-left: 40px
+
+      span
+        position: absolute
+        top: 0
+        left: 0
+
+// Стили боковой панели в разделе заявки в личном кабинете
+.request-wrap
+  position: relative
+
+  .request-content
+    &-head
+      position: relative
+
+  .left-aside-bar
+    margin: 0
+
+    h4
+      font-weight: 700
+      font-family: $default-font
+      font-size: 14px
+      padding: 10px 5px 10px 15px
+      margin: 30px 0 0 0
+      position: relative
+
+      &:first-child
+        margin: 10px 0 0 0
+
+    a.list-group-item
+      border: none
+      background-color: transparent
+      position: relative
+      transition: all 0.2s linear
+      color: #666666
+      padding-right: 27px
+
+      &:hover
+        background-color: $active-color
+        color: #ffffff
+
+      span.badge
+        width: 22px
+        height: 22px
+        border-radius: 50%
+        line-height: 22px
+        padding: 0
+        margin: 0
+        position: absolute
+        right: 8px
+        background-color: $accent
+        top: 50%
+        transform: translateY(-50%)
+
+    a.list-group-item.active
+      color: #000000
+      background-color: $active-color
+
+      span.badge
+        color: #ffffff
+
+      &:hover
+        color: #ffffff
+
+// Стили страницы с быстрой регистрацией пользователя
+.quick-registration
+  padding-top: 50px
+  padding-bottom: 50px
+
+  ul
+    margin: 25px 0
+    padding-left: 15px
+
+  a.btn-link
+    padding: 0
+
+  button.btn-primary
+    margin-top: 25px
+    padding: 0px 45px
+
+  label
+    font-style: italic
+
+// Стили модального окна Входа в личный кабинет
+.modal-user-login
+  .modal-header
+    border-bottom: none
+  a
+    font-size: inherit
+
+// Стили для страниц из раздела О Нас
+.vacancies-wrap, .teachers-wrap, .team-wrap
+  .desc
+    font-size: 18px
+
+  ol
+    padding-left: 15px
+
+    li
+      line-height: 1.8
+
+  .item-vacancies
+    width: 100%
+    margin-bottom: 30px
+
+    img
+      width: 40%
+
+    &_h
+      font-weight: 700
+      font-size: 16px
+      color: #000000
+      font-family: $default-font
+      padding: 10px 0
+
+    p
+      line-height: 1.8
+
+  .item-teachers, .item-team
+    width: 100%
+    height: 100%
+    text-align: center
+    margin-bottom: 20px
+
+    &_img
+      width: 170px
+      height: 170px
+      border-radius: 50%
+      border: 2px solid #cccccc
+      position: relative
+      overflow: hidden
+      display: inline-block
+
+      img
+        z-index: 1
+        width: 100%
+        height: auto
+
+      i
+        z-index: -1
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        font-size: 100px
+        color: #cccccc
+
+.concept-wrap
+  .concept-data
+    color: $accent
+
+    span
+      font-size: 6em
+
+    p
+      font-size: 18px
+
+  .item-concept
+    text-align: center
+
+    img
+      width: 35%
+      height: auto
+
+  .column
+    padding-top: 20px
+    padding-bottom: 20px
+    column-width: 100%
+    column-count: 2
+    column-gap: 10%
+
+    ol
+      padding-left: 15px
+      line-height: 1.9
+
+  .init
+    padding: 0px 0 0px 30px
+    margin: 30px 0
+    position: relative
+
+  .blue
+    &::before
+      +line-vertical(8px)
+      background-color: $accent
+
+  .light-blue
+    &::before
+      +line-vertical(8px)
+      background-color: $active-color
+
+  .light-orang
+    &::before
+      +line-vertical(8px)
+      background-color: $orange
+
+// Стили карточки одного сотрудника (пунк меню О нас)
+.teacher-wrap
+  padding: 40px 15px
+
+  h1
+    padding-bottom: 20px
+
+  .right-column
+    font-size: 16px
+
+    .avatar-wrap
+      width: 250px
+      height: 250px
+      overflow: hidden
+      border: 2px solid #cccccc
+      background-position: top center
+      background-size: cover
+      background-repeat: no-repeat
+
+  .left-column
+    .position
+      p
+        font-weight: 700
+        font-size: 15px
+
+    h5
+      color: $accent
+      font-weight: 700
+      padding-top: 20px
+      font-size: 15px
+
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+
+      li
+        line-height: 1.8
+// Стили страницы с Подразделениями (пунк меню О нас)
+.structure-wrap
+  .item-structure
+    width: 100%
+    margin-bottom: 30px
+
+    img
+      width: 40%
+
+    &_h
+      padding: 10px 0
+      font-family: $headline-font
+      font-size: 24px
+
+    ul
+      padding-left: 15px
+
+// Стили страницы Органы управления (пунк меню О нас)
+.tabletree
+  margin: 0 !important
+  padding: 0 !important
+  line-height: normal
+  /*word-wrap: break-word*/
+  /*word-break: break-all*/
+
+
+
+  ul
+    position: relative
+    display: table-cell
+    margin: 0 !important
+    padding: 0 0 0 60px !important
+    vertical-align: middle
+
+  li
+    display: table
+    position: relative
+    margin: 0 !important
+    padding: 0 0 0 58px !important
+
+  div
+    display: table-cell
+    vertical-align: middle
+    position: relative
+    width: auto
+    height: 180px
+
+  ul
+    &:before
+      content: ""
+      position: absolute
+      left: 0
+      top: 0
+      width: 60px
+      height: 50%
+      border-bottom: 2px solid #999
+
+    li
+      &:after, &:not(:last-child):not(:first-child):before
+        content: ""
+        position: absolute
+        left: 0
+        top: 0
+        width: 60px
+        height: 50%
+        border-bottom: 2px solid #999
+
+    &:before
+      left: 0
+
+    li
+      &:not(:only-child)
+        &:after
+          border-left: 2px solid #999
+
+        &:first-child:after
+          top: 54%
+          border-top: 2px solid #999
+          border-bottom-color: transparent
+
+      &:not(:last-child):not(:first-child):before
+        height: 101%
+        border-left: 2px solid #999
+        border-bottom-color: transparent
+
+  span
+    display: inline-block
+    width: 100px
+    height: 100px
+    background-color: #999999
+    border-radius: 50%
+    position: relative
+    margin: 0
+    overflow: hidden
+
+  p
+    text-align: center
+    display: block
+    position: absolute
+    top: 50%
+    padding-top: 55px
+    font-size: 12px
+    width: 200px
+    left: -50%
+
+    strong
+      color: $accent
+
+// Стили для страниц ОБ ОБУЧЕНИИ
+.s-color
+  padding: 20px 0
+
+  .item-color
+    margin-bottom: 10px
+    margin-right: 10px
+
+    .blue, .green, .orang
+      position: relative
+      padding-top: 45px
+
+      &::before
+        +square(30px, 30px)
+
+    .blue
+      color: $blue
+
+      &::before
+        background-color: $blue
+
+    .green
+      color: $green
+
+      &::before
+        background-color: $green
+
+    .orang
+      color: $orang
+
+      &::before
+        background-color: $orang
+
+    &-h
+      font-size: 22px
+      font-family: $headline-font
+      line-height: 1.2
+
+    ul
+      padding-left: 15px
+
+.s-numbers
+  padding: 20px 0
+
+  .item-numb
+    color: $accent
+    margin: 0 10px
+
+    &-h
+      font-size: 4.5em
+      padding: 0
+      margin: 0
+      white-space: nowrap
+
+    &-text
+      font-size: 16px
+
+.s-advant
+  .item-advant
+    display: flex
+    align-items: center
+    margin-bottom: 15px
+
+    &-img
+      min-width: 80px
+      width: 80px
+      min-height: 80px
+      height: 80px
+      margin-right: 15px
+
+      img
+        width: 100%
+        height: auto
+
+.s-feature
+  .item-feature
+    margin-bottom: 15px
+
+    img
+      width: 60px
+      height: auto
+
+  .color
+    text-transform: uppercase
+    color: $active-color
+    padding-top: 0
+
+  i
+    color: $active-color
+    font-size: 40px
+    margin: 0
+    padding: 0
+
+.s-feature-2
+  .item-feature
+    margin-bottom: 15px
+
+    img
+      width: 60px
+      height: auto
+
+    .color
+      text-transform: uppercase
+      color: $active-color
+      padding-top: 0
+
+    &-icon
+      display: flex
+      align-items: center
+
+      i
+        color: $active-color
+        font-size: 40px
+        margin-right: 10px
+        padding: 0
+
+.s-loyalty
+  position: relative
+
+  .item-loyalty
+    margin-bottom: 30px
+    position: relative
+    cursor: pointer
+    width: 100%
+
+    span
+      position: absolute
+      top: 6%
+      left: 8%
+      display: block
+      font-size: 2em
+      font-family: $headline-font
+      color: $accent
+      font-weight: 700
+
+// Стили для контента страницы ОБ ОБУЧЕНИИ
+.сontent-wrap
+  .s-saying
+    padding: 10px
+
+  .img-wrap
+    text-align: center
+    background-color: #cccccc
+    border-radius: 50%
+    width: 200px
+    height: 200px
+    margin: 0 auto
+    position: relative
+
+    img
+      display: inline-block
+      width: 100%
+      height: auto
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+
+  .filter-wrap
+    border: 1px solid #000
+    padding: 15px
+
+  .pay-wrap
+    display: flex
+    justify-content: flex-start
+
+    .item-pay
+      text-align: center
+      width: 25%
+
+      img
+        width: auto
+        height: 100px
+
+        display: inline-block
+
+.s-beruza
+  color: #ffffff
+
+  .p1
+    font-size: 30px
+    font-weight: 700
+    padding: 0
+    margin: 0
+
+  .p2
+    font-size: 36px
+    font-weight: 700
+    padding: 0
+    margin: 0
+
+  .p3
+    font-size: 18px
+    padding-bottom: 30px
+    padding-top: 30px
+
+// Общие стили для страниц личного кабинета
+.profile-wrap, .orders-wrap, .bonus-account-wrap, .study-wrap, .statistics-wrap, .minors-wrap
+  padding-top: 40px
+  padding-bottom: 40px
+// Стили для страницы с профилем в Личном кабинете
+.profile-wrap
+  .points
+    color: $accent
+    font-weight: 700
+    font-size: 26px
+
+  .profile-img
+    height: 250px
+    width: 250px
+    margin: 0 auto
+    overflow: hidden
+    position: relative
+    border: 1px solid #ddd
+
+    &:hover
+      span
+        display: inline-block
+        border-radius: 12px
+        padding: 5px
+        background-color: rgba(255,255,255,0.5)
+        position: absolute
+        bottom: 15px
+        left: 50%
+        font-size: 0.9em
+        transform: translateX(-50%)
+        white-space: nowrap
+        cursor: pointer
+        text-decoration: underline
+        +mt(0.2s)
+        label
+          cursor: pointer
+
+
+  table.data-profile
+    width: 100%
+
+    tr td
+      border: none
+
+  table.document-status
+    tr td
+      border-bottom: 1px solid #ddd
+      padding-left: 0
+
+  .item-document
+    margin-bottom: 40px
+
+    img
+      cursor: pointer
+
+    a
+      padding: 0
+      margin-right: 10px
+      text-decoration: underline
+      color: $lgray
+
+// Стили для страницы со списком заявок
+.orders-wrap
+  .panel-body
+    padding: 15px 0
+    margin: 20px 0 40px 0
+    border-top: 2px solid $lgray
+    overflow: hidden
+
+  span
+    color: $active-color
+
+  span.number-order
+    font-size: 20px
+    font-weight: 700
+    color: $accent
+
+  .row:first-child
+    padding: 0 0 5px 0
+
+  .orders-desc
+    a
+      text-decoration: none
+      position: relative
+      padding-right: 15px
+
+      i
+        position: absolute
+        top: 50%
+        right: 0
+        transform: translateY(-50%) rotate(90deg)
+        transition: all 0.3s linear
+
+    a.collapsed
+      position: relative
+
+      i
+        transform: translateY(-50%) rotate(0deg)
+
+// Стили для страницы Бонусный счет
+.bonus-account-wrap
+  .block-blue
+    border: 2px solid $accent
+    position: relative
+    text-align: center
+    padding: 10px
+    height: 160px
+    display: flex
+    justify-content: center
+    align-items: center
+
+    span
+      position: absolute
+      top: 3%
+      left: 3%
+
+    p
+      padding: 0
+      margin: 0
+
+    a.btn
+      padding: 0
+
+      &:hover
+        text-decoration: underline
+
+    .numb
+      font-size: 36px
+      font-weight: 700
+      color: $accent
+      padding: 0
+      margin: 0
+
+  table.history-bonus
+    thead
+      border-bottom: 1px solid #ddd
+
+    tr td
+      border: none
+
+// Стили для страницы ОБУЧЕНИЕ
+.study-wrap
+  span.number-order
+    font-size: 20px
+    font-weight: 700
+    color: $accent
+
+  .panel-body
+    .row
+      border-bottom: 1px solid $lgray
+      padding-top: 15px
+      padding-bottom: 15px
+
+    .row:first-child
+      padding: 0 0 5px 0
+
+// Стили для страницы КАТОЛОГА МАЙНОРОВ
+.minors-wrap
+  .item-minor
+    box-shadow: 0 5px 15px rgba(#cccccc, 0.5)
+    margin-bottom: 30px
+
+    &:hover
+      .item-minor-top
+        .img
+          transform: scale(1.03)
+
+          &::before
+            background: rgba(#000000, 0.8)
+
+    &-top
+      position: relative
+      padding: 25px
+      overflow: hidden
+      color: #ffffff
+
+      h4
+        text-transform: uppercase
+        line-height: 24px
+        font-family: $default-font
+
+      .star
+        position: absolute
+        top: 10px
+        right: 10px
+        text-align: center
+        line-height: 40px
+        width: 40px
+        height: 40px
+        z-index: 1
+        font-size: 12px
+
+        &::before
+          position: absolute
+          top: -1px
+          right: 0
+          content: '\f005'
+          font-family: $font-awesome
+          font-weight: 900
+          color: $highlight
+          width: 100%
+          height: 100%
+          z-index: -1
+          font-size: 36px
+
+      .time
+        padding-left: 15px
+
+      .img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: -1
+        transition: all 0.3s ease
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center center
+
+        &::before
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          background: rgba(#000000, 0.7)
+          transition: all 0.3s ease
+
+    &-bottom
+      padding: 20px 25px 80px 25px
+      position: relative
+
+      .stars i
+        color: $highlight !important
+        font-size: 10px
+        /*margin-left: 5px*/
+
+      &-flex
+        display: flex
+        width: 100%
+        justify-content: space-between
+
+        .left
+          flex: auto
+
+        .right
+          flex: auto
+
+      .btn-wrap
+        position: absolute
+        bottom: 20px
+        left: 25px
+        right: 25px
+
+
+// Стили для страницы статистики одной программы
+.statistics-wrap
+  span.number-order
+    font-size: 20px
+    font-weight: 700
+    color: $accent
+
+  .row
+    p
+      margin: 0
+
+  table.exam-wrap
+    tr td
+      border: none
+
+  i.far.fa-question-circle
+    color: $lgray
+    margin-left: 5px
+
+  i.fas.fa-question-circle
+    color: $accent
+
+  .progress
+    height: 40px
+    background-color: #ffffff
+    border: 1px solid $border
+
+    .progress-bar
+      background-color: $orange
+      color: $accent
+      text-align: right
+      padding-right: 15px
+      line-height: 40px
+      font-size: 20px
+      font-weight: 700
+      box-shadow: none
+
+  .exam-wrap
+    .block-exam
+      padding: 15px
+      box-shadow: 0 0 10px rgba($accent, 0.3)
+      overflow: hidden
+
+      &-text
+        font-size: 18px
+        text-align: center
+        padding-top: 10px
+
+      strong
+        font-size: 14px
+
+    .block-icon
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 100px
+
+      i
+        font-size: 20px
+
+  .statistics-data
+    border: 2px solid $accent
+    padding: 10px
+
+    &-numb
+      font-size: 30px
+      font-weight: 700
+      color: $accent
+      text-align: center
+      padding: 10px 0
+
+  .statistics-journal
+    padding: 10px
+    border: 1px solid $gray
+    border-top: none
+
+  .statistics-info
+    font-size: 16px
+    padding: 20px 10px 20px 35px
+    border: 1px solid $gray
+    border-top: none
+    position: relative
+
+    span
+      position: absolute
+      top: 10px
+      left: 10px
+
+      i
+        font-size: 22px
+
+    .phone
+      font-size: 1.2em
+
+    .mail
+      font-size: 1.3em
+
+  .table-accordion
+    .panel-group .panel + .panel
+      margin: 0
+
+    .head-table
+      background-color: $accent
+      color: #ffffff
+      font-weight: 700
+      padding: 10px 15px
+      border: none
+
+      .fa-question-circle
+        color: #ffffff
+
+    .panel-heading
+      background-color: #ffffff
+
+    .panel-title
+      font-size: 14px !important
+      text-decoration: underline
+
+      &:hover
+        color: $accent
+
+    .panel-default
+      border-radius: 0px !important
+      box-shadow: none
+      border-top: none
+
+  .content-exam
+    background-color: $graybg
+
+    &_item
+      padding: 10px 0
+
+    ol
+      padding-left: 15px
+
+  .visitors-wrap
+    .panel-title
+      font-size: 14px !important
+      text-align: right
+      color: $lgray
+
+      a
+        text-decoration: none
+        position: relative
+        padding-right: 15px
+
+        i
+          position: absolute
+          top: 50%
+          right: 0
+          transform: translateY(-50%) rotate(90deg)
+          transition: all 0.3s linear
+
+      a.collapsed
+        position: relative
+
+        i
+          transform: translateY(-50%) rotate(0deg)
+
+    .panel-default
+      border-radius: 0px !important
+      box-shadow: none
+      border: none
+
+      & > .panel-heading
+        background-color: transparent
+        border-bottom: 1px solid $border
+
+    .panel-body
+      border-top: none !important
+
+// Стили для страницы Уведомления в Мастере заявок
+.request-notifications
+  h2
+    position: relative
+    display: inline-block
+
+    span.badge
+      position: absolute
+      top: 50%
+      right: -40px
+      transform: translateY(-50%)
+      width: 26px
+      height: 26px
+      line-height: 21px
+      border-radius: 50%
+      background-color: $accent
+      font-size: 12px
+      text-align: center
+
+  .panel-group
+    .panel-default
+      border-top: 1px solid $border
+      border-bottom: none
+      border-left: none
+      border-right: none
+
+      .panel-heading
+        background-color: transparent
+        padding: 0
+
+        .panel-title
+          font-family: $default-font
+          font-weight: 700
+          padding: 0
+
+          a
+            padding: 1em
+            margin: 0
+            color: $accent
+
+            &:hover, &:active
+              background-color: $info
+
+            &.collapsed
+              color: $gray
+
+      .panel-body
+        border-top: none
+
+  form
+    position: relative
+    overflow: hidden
+
+    .help-block
+      font-size: 16px
+      vertical-align: middle
+      margin: 0
+      display: flex
+      align-items: center
+
+      i
+        margin-right: 5px
+
+  .education-wrap
+    .form-check
+      label
+        margin-right: 10px
+        font-size: 16px
+
+    .input-group-addon
+      background-color: transparent
+      border: none
+
+// Стили для страницы Общая информация в Мастере заявок
+.summary-wrap
+  .item-summary
+    height: 100%
+    width: 100%
+    position: relative
+    margin-bottom: 50px
+    padding: 0px 10px 50px 10px
+
+    h3
+      margin: 0 !important
+      font-size: 22px
+      padding-bottom: 20px
+      font-family: $headline-font
+      font-weight: bold
+      color: $blue
+
+      i
+        margin-right: 10px
+
+    p
+      margin: 0
+
+    ol
+      margin: 0
+      padding-left: 15px
+
+    .block-summa
+      font-size: 16px
+
+      table
+        tr
+          td
+            padding-right: 10px
+
+    a.btn-link
+      font-size: 18px
+      position: absolute
+      bottom: 15px
+      left: 10px
+      color: $gray !important
+
+      i
+        margin-left: 8px
+
+    .envelope-icon
+      display: flex
+      align-items: center
+
+      a
+        margin-right: 15px
+
+        i
+          font-size: 70px
+          color: $accent
+          position: relative
+
+      span
+        position: absolute
+        top: -15px
+        right: -15px
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 40px
+        height: 40px
+        color: #ffffff
+        font-size: 22px
+        font-family: $default-font
+        font-weight: 600
+        border-radius: 50%
+        background-color: green
+
+      span.bg-red
+        background-color: red !important
+
+    .situations-wrap
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+      .item-situations
+        text-decoration: none
+        color: #000000
+        width: 100%
+        margin: 10px 0
+        display: flex
+        align-items: center
+
+        img
+          width: 60px
+          height: 60px
+
+        p
+          font-size: 14px
+          margin: 0
+          padding: 0 0 0 15px
+
+    .carousel
+      position: relative
+
+      .item-poll
+        padding: 0
+
+        label
+          display: block
+
+      .controls-wrap
+        position: absolute
+        top: -2px
+        left: 120px
+
+        a
+          text-decoration: none
+          font-size: 18px
+          margin: 0 10px
+
+// Стили для страницы Список слушателей в Мастере заявок
+.listeners-wrap
+  .listener-item
+    .documents-item
+      padding: 15px 0
+
+      .user, .program
+        color: #000000
+        text-decoration: none
+        +mt(0.25s)
+
+        i
+          margin-left: 10px
+
+        &:hover
+          color: $accent
+
+  ul.list-inline
+    padding-left: 20px
+
+    li
+      margin-right: 30px
+      font-size: 14px
+      color: #666666
+
+      i
+        color: $accent
+        margin-right: 5px
+
+  .listener-item-programs
+    .edit-program-wrap, .add-program-wrap
+      padding-left: 20px
+
+      h5
+        margin: 0 0 10px 0
+
+    .program-text
+      position: relative
+      padding-left: 20px
+      padding-top: 5px
+
+      a
+        color: #666666
+        text-decoration: none
+
+      i
+        position: absolute
+        top: 10px
+        left: 0
+
+    .status
+      font-style: italic
+
+      i
+        color: $green
+        margin-right: 5px
+
+// Стили для страницы Договор в Мастере заявок
+.contract-notification
+  &_head
+    border-top: 1px solid #dddddd
+    padding: 0.8em 1em
+
+    .panel-title
+      font-family: $default-font
+      font-weight: 700
+      font-size: 1em
+      color: #777
+
+  &_content
+    .increase
+      position: relative
+
+    &::after
+      content: '\f00e'
+      font-family: $font-awesome
+      font-weight: 900
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%) scale(0)
+      font-size: 4em
+      color: #777777
+      opacity: 0
+      +mt(0.5s)
+
+    &:hover::after
+      opacity: 1
+      transform: translate(-50%, -50%) scale(1)
+
+    .contract-edit_head
+      .panel-title
+        font-family: $default-font
+        font-size: 0.9em
+        font-weight: 700
+        color: #999999
+        padding: 0.7em 1em
+
+    .panel-body
+      .contract-edit_content
+        background-color: #f2f2f2
+        padding: 1.5em 3em
+
+
+// Стили для страницы История в Мастере заявок
+.history-wrap
+  table
+    tr
+      td
+        padding: 5px 15px
+        position: relative
+
+  .new
+    position: relative
+
+    &::before
+      position: absolute
+      content: "\f06a"
+      font-family: $font-awesome
+      font-weight: 900
+      color: $accent
+      left: -5px
+
+// Стили для страницы Расписание в Мастере заявок
+.timetable-wrap
+  .timetable-item
+    padding: 15px 0
+
+    .timetable-programm
+      margin-top: 20px
+
+// Стили для страницы Приказы и справки в Мастере заявок
+.documents-wrap
+  .documents-item
+    padding: 15px 0
+
+  .list-unstyled
+    padding-left: 20px
+
+    li
+      padding: 5px 0
+
+// Стили для страницы Трек-номер в Мастере заявок
+.tracking-wrap
+  .tracking-item
+    padding: 15px 0
+
+    .tracking-programm
+      margin-top: 20px
+
+      i
+        margin-right: 5px
+
+      .status
+        font-style: italic
+
+
+// СЕМИНАР -------------------------------------------------------------------
+
+// Стили для страницы с программой в СЕМИНАРЕ
+.seminar-wrap
+  z-index: 10
+
+  .seminar-header
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    color: #ffffff
+    padding: 40px
+    width: 100%
+    margin: 0 auto
+
+    p
+      font-size: 18px
+
+    h2
+      font-size: 42px
+      font-weight: 700
+
+    ul
+      font-size: 16px
+
+      li
+        display: inline-block
+        margin-right: 15px
+
+        i
+          margin-right: 5px
+
+  .seminar-form-wrap
+    border: 4px solid $orange
+    border-radius: 20px
+    padding: 30px
+    text-align: center
+
+    h3
+      font-size: 30px
+      margin: 0
+      padding-bottom: 10px
+      color: $orange
+
+    p
+      font-size: 14px
+
+    button.btn-warning
+      width: 100%
+
+    .summa
+      color: #ffffff
+      display: block
+      margin-top: 10px
+      font-size: 30px
+      padding: 10px
+      border-bottom: 1px solid #ffffff
+
+  .seminar-options
+    border-bottom: 1px solid $border
+    padding: 25px 0
+
+    p
+      i
+        margin-right: 5px
+
+  .seminar-accordion
+    &-item
+      a
+        display: block
+        padding: 10px 15px
+        border-bottom: 1px solid $border
+
+    .content
+      padding-left: 15px
+
+      table
+        width: 100%
+
+        tr td
+          padding: 10px
+
+  .dl-horizontal
+    display: flex
+
+    img
+      width: 70px
+      display: inline-block
+      margin-right: 15px
+
+  .seminar-carousel
+    .carousel-inner
+      width: 90%
+      margin: 20px auto
+
+      .item-wrap
+        border: 2px solid $graybg
+        display: flex
+
+        &-img
+          background-color: $graybg
+          display: flex
+          flex-direction: column
+          align-items: center
+          justify-content: center
+
+          img
+            border-radius: 50%
+            margin: 20px 30px
+            width: 150px
+            height: 150px
+            min-width: 150px
+            min-height: 150px
+
+          p
+            color: $accent
+            font-size: 1em
+            padding: 10px
+            text-align: center
+
+        &-text
+          padding: 15px
+
+    .carousel-control
+      background: none
+      color: $border
+      width: 5%
+
+.progress.study-progress
+  display: inline-block
+  margin-bottom: 0
+  width: 100%
+
+.table-noborder
+  & > tbody > tr > td,
+  & > tbody > tr > th,
+  & > tfoot > tr > td,
+  & > tfoot > tr > th,
+  & > thead > tr > td,
+  & > thead > tr > th
+    border: none
+
+.panel-question
+  border-radius: 16px
+  border-color: $gray
+  margin-bottom: 2em
+  border-collapse: collapse
+  overflow: hidden
+
+  .panel-footer
+    border-bottom-left-radius: inherit
+    border-bottom-right-radius: inherit
+    padding-bottom: 15px
+
+  .file-wrap
+    label
+      background-color: #ffffff
+
+  textarea
+    padding: 15px 20px
+    max-width: 100%
+    min-width: 100%
+    min-height: 200px
+    max-height: 400px
+    background-color: #ffffff
+    border-radius: 20px
+    border: 2px solid $border
+
+  input[type="text"]
+    background-color: #ffffff
+
+// Стили для страниц СЕМИНАРА
+.menu-block
+  display: inline-flex
+  width: auto
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+  color: #ffffff
+  line-height: 16px
+  margin-top: 8px
+  margin-bottom: 8px
+
+  .group-menu-block
+    display: flex
+    justify-content: space-between
+
+    .menu-block-users
+      display: flex
+      align-items: center
+
+    .menu-block-geo
+      a
+        display: flex
+        align-items: center
+        color: #ffffff
+
+        &:hover
+          text-decoration: none
+          color: $orange
+
+  i
+    font-size: 30px
+    margin-right: 10px
+    margin-left: 30px
+
+  span
+    font-size: 20px
+
+    small
+      font-size: 13px
+
+.seminar-header
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: top center
+  position: relative
+
+  &::before
+    content: ''
+    position: absolute
+    display: block
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    background: rgba(#000, 0.4)
+
+  h3
+    color: #ffffff
+    font-weight: 900
+    font-size: 32px
+    font-family: $black-font
+
+  .text
+    line-height: 22px
+
+    span
+      text-transform: uppercase
+      color: $active-color
+      font-weight: 700
+      font-size: 14px
+
+    p
+      color: $orange
+      font-size: 26px
+
+.seminar-wrap
+  position: relative
+
+  h1
+    font-size: 2.8em
+    text-transform: uppercase
+    letter-spacing: 2px
+    font-family: $bold-font
+    color: #ffffff
+
+    span
+      font-weight: 900
+      font-family: $black-font
+      font-size: 1.3em
+      color: $orange
+
+  a.btn-warning
+    font-weight: 700
+    color: $accent
+
+    &:hover
+      color: #FFFFFF
+
+  .map-wrap
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+    img
+      width: 100%
+      opacity: 0.3
+
+  .seminar-bottom-text
+    color: #ffffff
+
+    li
+      font-size: 1.3em
+
+    a
+      color: #ffffff
+      text-decoration: none
+      +mt(0.3s)
+
+      &:hover
+        color: $orange
+
+    p
+      margin: 0
+      font-size: 0.6em
+      line-height: 1.5em
+
+.catalog-seminar-wrap
+  .minors-wrap
+    .btn-wrap
+      display: flex
+      justify-content: space-between
+
+  .min-img
+    display: block
+    position: absolute
+    bottom: 10px
+    right: 10px
+    width: 80px
+    height: 80px
+    overflow: hidden
+    border-radius: 50%
+
+    img
+      width: 100%
+
+.reviews-seminar-wrap
+  .reviews-item
+    .city
+      color: $gray
+
+      i
+        margin-right: 5px
+
+    .stars
+      color: $gray
+
+      i
+        color: transparent
+        padding: 0
+        margin-right: -4px
+
+      i.active
+        color: $orange
+
+      a.gray
+        margin-left: 25px
+
+    div.colaps
+      height: 50px
+      overflow: hidden
+      text-overflow: ellipsis
+      white-space: pre-wrap
+      +mt(0.3s)
+
+    div.colaps.in
+      height: auto
+      white-space: normal
+
+.seminar-block-text
+  font-size: 1em
+
+  h3
+    font-family: $black-font
+    font-weight: 700
+    font-size: 34px
+    padding-bottom: 15px
+
+  p.orange
+    line-height: 36px
+    padding-bottom: 15px
+
+  p
+    font-size: 1.5em
+
+    span
+      text-transform: uppercase
+      font-size: 1.1em
+      font-weight: 700
+
+.semitar-interactive-maps
+  .map-region
+    fill: $accent
+    fill-opacity: 0.2
+    transition: fill-opacity .4s ease-out
+
+    &:hover
+      fill: $orange
+      fill-opacity: 1
+      cursor: pointer
+
+  .static-text-map
+    margin-top: 100px
+    font-size: 1em
+    line-height: 1.65em
+
+    p.oblast
+      font-size: 1em
+      position: relative
+      padding-left: 1.2em
+
+      i
+        position: absolute
+        top: 3px
+        left: 0
+        margin-right: 5px
+        color: $orange
+        font-size: 1em
+
+    p.count
+      font-size: 1em
+
+      span
+        font-weight: 900
+        color: $accent
+        font-size: 1.4em
+
+// Учебные ситуации
+.study-cases
+  h2
+    margin-right: -15px
+    margin-left: -15px
+    padding-left: 1em
+
+  .cases-list
+    margin-right: -15px
+    margin-left: -15px
+    column-count: 2
+    column-gap: 4em
+    padding: 2em
+    /*.column-block
+      margin-bottom: 0*/
+
+
+
+    & > .column-block
+      margin-bottom: 3em
+
+    h3
+      margin-top: 0
+      color: $blue
+
+    .list-group
+      .list-group-item
+        border-radius: 0
+        border: none
+        padding-left: 0
+        padding-right: 0
+
+        h4
+          font-family: $default-font
+
+        p
+          margin-bottom: 0
+          line-height: 1.3
+          font-size: 0.9em
+
+        &:hover, &:focus, &:active
+          background-color: transparent
+
+          h4
+            text-decoration: underline
+            color: $blue
+
+// Стили для модального окна с Акцией и Опросником
+#modal-stock
+  .modal-content
+    background: #8ec6ff
+    background: -moz-radial-gradient(center at 30% 50%, ellipse farthest-corner, #8ec6ff 0%, #60abf8 42%, #4096ee 100%)
+    background: -webkit-radial-gradient(center at 30% 50%, ellipse farthest-corner, #8ec6ff 0%, #60abf8 42%, #4096ee 100%)
+    background: radial-gradient(ellipse at 30% 50%, #8ec6ff 0%, #60abf8 42%, #4096ee 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8ec6ff', endColorstr='#4096ee', GradientType=1)
+
+  .modal-body
+    padding: 0
+
+    .close
+      position: absolute
+      top: 10px
+      right: 15px
+      z-index: 2
+      font-size: 30px
+
+    .item
+      position: relative
+
+      &::before
+        content: ''
+        display: none
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: rgba(#8ec6ff, 0.9)
+
+      .red-ribbon-line
+        width: 25px
+        background-color: #FF141F
+        height: 100%
+        min-height: 100px
+        position: absolute
+        top: 0
+        left: 105px
+        z-index: -1
+
+      .red-ribbon-img
+        position: absolute
+        top: 60px
+        left: 0
+        z-index: -1
+
+      .star-ribbon-img
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+
+      .modal-custom-form
+        input
+          border: none !important
+          padding: 10px 15px !important
+          background-color: #f2f2f2 !important
+          height: 40px
+          outline: none
+
+        textarea
+          background-color: #f2f2f2 !important
+          outline: none
+          border: none !important
+
+        .datepicker
+          .input-date
+            width: 175px
+            height: 40px
+            background: #f2f2f2 !important
+            vertical-align: middle
+            line-height: 40px
+            position: relative
+
+          .input-time
+            line-height: 40px
+            height: 40px
+            vertical-align: middle
+
+          .input-group-addon
+            position: absolute
+            display: block
+            top: 0px !important
+            right: 0px !important
+            width: 40px
+            height: 40px
+            background-color: #f2f2f2
+            text-align: center
+            border: none
+            z-index: 5
+
+            i
+              position: absolute
+              top: 50%
+              left: 50%
+              transform: translate(-50%, -50%)
+
+  form.modal-form-stock
+    table
+      tr
+        border-bottom: 1px solid #dddddd
+
+        td
+          padding: 0.7em 0.5em
+          position: relative
+          font-size: 1em
+
+        td.small
+          font-size: 12px
+          line-height: 11px
+
+    .form-check
+      position: relative
+      width: 20px
+      height: 20px
+      margin: 0 auto
+
+      label
+        position: relative
+        margin: 0
+        display: block !important
+        width: 100%
+        height: 100%
+
+        input[type="radio"]
+          position: relative
+
+          & + .label-text:before
+            color: #ffffff
+            display: block
+
+        .label-text:before
+          position: absolute
+          top: 20%
+
+        .label-text
+          color: #000000
+
+  form.form-horizontal
+    textarea
+      max-width: 100%
+      min-width: 100%
+      max-height: 300px
+      min-height: 50px
+      padding-top: 15px
+
+    .glyphicon
+      top: 0
+
+    .input-group-addon
+      background-color: #f2f2f2
+
+// Стили для модального окна ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ в семинаре
+#modal-consultation
+  .modal-content
+    position: relative
+
+    button.close
+      position: absolute
+      z-index: 2
+      font-size: 30px
+      top: 10px
+      right: 15px
+
+    .modal-body
+      padding: 20px 30px
+
+      .form-group
+        select
+          padding: 5px
+          border-radius: 5px
+          border: 1px solid $border
+
+#modal-sentence
+  .modal-content
+    position: relative
+
+    button.close
+      position: absolute
+      z-index: 2
+      font-size: 30px
+      top: 10px
+      right: 15px
+
+    .modal-body
+      padding: 20px 30px
+
+// Стили для страницы ОБУЧЕНИЕ для Семинара
+.seminar-head_banner
+  width: 100%
+  overflow: hidden
+  position: relative
+
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: block
+    background: rgba(#000, 0.5)
+    z-index: -1
+
+  img.img-blur
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: auto
+    filter: blur(5px)
+    transform: scale(1.02)
+    z-index: -1
+    display: block
+
+  &-desc
+    z-index: 2
+    padding: 30px 0
+    color: #ffffff
+    position: relative
+
+    .star
+      font-size: 1.4em
+      position: absolute
+      top: 0
+      right: 0
+      width: 2em
+      height: 2em
+      margin: 2em
+      display: inline-block
+      text-align: center
+      vertical-align: middle
+      text-shadow: 0 0 4px #666666
+
+      &:before
+        position: absolute
+        top: 50%
+        left: 50%
+        content: "\F005"
+        font-family: $font-awesome
+        font-weight: 900
+        color: #f9b233
+        width: 2em
+        height: 2em
+        z-index: -1
+        font-size: 2.5em
+        display: inline-block
+        margin-left: -1em
+        margin-top: -1em
+        text-shadow: 0 0 2px #FFFFFF
+
+    .teacher
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      font-size: 18px
+
+      img
+        width: 80px
+        height: 80px
+        overflow: hidden
+        border-radius: 50%
+        margin-right: 10px
+
+      .stars i
+        color: $highlight
+        text-shadow: 0 0 1px #505050
+
+    .list
+      font-weight: 700
+      font-size: 18px
+      white-space: nowrap
+
+      i
+        margin-right: 10px
+
+  &-title
+    text-transform: uppercase
+    font-family: $default-font
+    font-weight: 500
+    padding: 1.2em 0
+    margin: 0
+    font-size: 2.2em
+    line-height: 1.3em
+
+.nav-study
+  border-bottom: 1px solid $accent
+
+  .buttom-menu
+    ul
+      li a
+        +mt(0.3s)
+
+        &:hover
+          background-color: $active-color !important
+          color: #ffffff
+
+.seminar-modules
+  padding-top: 40px
+  padding-bottom: 40px
+
+  .module-item
+    margin-bottom: 4em
+
+  i
+    margin-right: 10px
+
+.tv
+  background: #b5bdc8
+  background: -moz-radial-gradient(center, ellipse farthest-corner, #b5bdc8 0%, #828c95 36%, #28343b 100%)
+  background: -webkit-radial-gradient(center, ellipse farthest-corner, #b5bdc8 0%, #828c95 36%, #28343b 100%)
+  background: radial-gradient(ellipse at center, #b5bdc8 0%, #828c95 36%, #28343b 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b5bdc8', endColorstr='#28343b', GradientType=1)
+
+.bg-logo
+  background-image: url(/img/logo.svg)
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center center
+
+a.iframe-video-play-btn
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  text-align: center
+  color: #fff
+  text-decoration: none
+
+  &:hover
+    transform: scale(1.2)
+    color: $orange
+
+#scrollspy
+  font-size: 90%
+
+  li.active
+    & > a
+      font-weight: bold
+
+textarea.custom-textarea
+  padding: 15px 20px
+  max-width: 100%
+  min-width: 100%
+  min-height: 100px
+  max-height: 400px
+  background-color: transparent
+  border-radius: 20px
+  border: 2px solid $border
+
+.seminar-feedback
+  padding-top: 40px
+  padding-bottom: 40px
+
+  .img-wrap
+    border-radius: 50%
+    width: 240px
+    min-width: 240px
+    height: 240px
+    overflow: hidden
+    margin-bottom: 15px
+    border-radius: 50%
+    border: 30px solid #f6f6f6
+
+    img
+      width: 100%
+      height: auto
+
+  .signature-seminar
+    width: 150px
+    height: auto
+
+// Стили для рейтинка со звездочками
+.star-rating
+  font-size: 0
+
+.star-rating_wrap
+  display: inline-block
+  font-size: 3rem
+    position: relative
+
+.star-rating_ico
+  float: right
+  cursor: pointer
+  color: #FFB300
+    position: relative
+
+.star-rating_ico:before
+  content: "\f005"
+  font-family: $font-awesome
+  font-weight: 400
+
+.star-rating_ico:last-child
+  padding-left: 0
+
+.star-rating_input
+  position: absolute
+  clip: rect(0, 0, 0, 0)
+  pointer-events: none
+
+.star-rating_ico:hover:before,
+.star-rating_ico:hover ~ .star-rating_ico:before,
+.star-rating_input:checked ~ .star-rating_ico:before
+  font-weight: 900
+
+//-----------------------
+// Страница Солидарности коллеге в Семинаре
+.s-saying
+  .media
+    min-height: 120px
+    height: auto
+    margin-bottom: 20px
+
+    img.media-object
+      width: 100px
+      height: auto
+
+
+// Страница Рекомендовать коллеге в Семинаре
+.recommend-colleague
+  .letter
+    &-edit
+      border: 2px solid $accent
+      border-radius: 1em
+      padding: 15px
+      background-color: rgba(#fecf73, 0.3)
+      color: #555
+      position: relative
+
+      &-bg
+        position: absolute
+        width: 180px
+        height: auto
+        opacity: 0.2
+        bottom: 10%
+        right: 12%
+
+      &-marka
+        text-align: right
+
+        img
+          width: 70px
+          margin: 5px
+          border: 1px solid #999
+
+// Станица О проекте СЕМИНАР
+.bg1-seminar-about
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+  background-blend-mode: multiply
+  background-color: $accent
+  position: relative
+
+  .video-bg-wrap
+    width: 100%
+    height: 100%
+    overflow: hidden
+    background: linear-gradient(90deg, $accent 50%, transparent 50.1%)
+
+    video
+      min-width: 100%
+      min-height: 100%
+      width: auto
+      height: auto
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      mix-blend-mode: multiply
+      z-index: 1
+
+@supports not (mix-blend-mode: multiply)
+  .bg1-seminar-about
+    .video-bg-wrap
+      &::after
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: $accent
+        opacity: 0.7
+        z-index: 2
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+  .bg1-seminar-about
+    .video-bg-wrap
+      &::after
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: $accent
+        opacity: 0.7
+        z-index: 2
+
+.bg2-seminar-about
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+  position: relative
+
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(#000000, 0.8)
+
+  .border-box
+    border: 2px solid #ffffff
+    border-radius: 20px
+    text-align: center
+    padding: 15px
+
+    h1
+      font-family: $black-font
+      text-align: center
+      font-size: 2.7em
+      color: #ffffff
+
+    .btn-transp
+      font-size: 1em
+
+
+.s-workshop-participant
+  .box-workshop-participant
+    text-align: center
+    margin-top: 2em
+    margin-bottom: 0
+    color: #666666
+
+    h4
+      text-transform: uppercase
+      font-family: $default-font
+      font-weight: 700
+      font-size: 1em
+      margin-bottom: 1.2em
+
+    .blue-circle
+      display: block
+      margin: 0 auto
+      width: 140px
+      height: 140px
+      background-color: $accent
+      color: #ffffff
+      font-size: 4em
+      font-weight: 900
+      border-radius: 50%
+      text-align: center
+      line-height: 140px
+      margin-bottom: 0.5em
+
+
+// Древовидный список
+.tree
+  min-height: 20px
+  padding-top: 3px
+  padding-right: 8px
+  padding-left: 0
+  padding-bottom: 3px
+  margin-bottom: 20px
+
+  li
+    list-style-type: none
+    margin: 0
+    padding: 10px 5px 0 5px
+    position: relative
+
+    &::before, &::after
+      content: ''
+      left: -20px
+      position: absolute
+      right: auto
+
+    &::before
+      border-left: 1px solid #999
+      bottom: 50px
+      height: 100%
+      top: 0
+      width: 1px
+
+    &::after
+      border-top: 1px solid #999
+      height: 20px
+      top: 25px
+      width: 25px
+
+    div.span
+      -moz-border-radius: 5px
+      -webkit-border-radius: 5px
+      border: 1px solid #999
+      border-radius: 5px
+      display: inline-block
+      padding: 5px 10px
+      text-decoration: none
+
+    &.parent_li > div.span
+      cursor: pointer
+
+    &:last-child::before
+      height: 26px
+
+    &.parent_li > div.span:hover
+      background: #eee
+      border: 1px solid #94a0b4
+      color: #000
+
+      + ul li div.span
+        background: #eee
+        border: 1px solid #94a0b4
+        color: #000
+
+    h3
+      display: inline-block
+      vertical-align: middle
+
+    a
+      h3
+        margin: 0
+
+    a:hover
+      h3
+        text-decoration: none
+
+  & > ul
+    padding-left: 0
+
+    & > li
+      padding-left: 0
+
+  > ul
+    padding-left: -40px
+
+    > li
+      &::before, &::after
+        border: 0
+
+
+.flipper-card.flipped
+  transform: rotateY(180deg)
+
+.thumbnail
+  &:hover
+    text-decoration: none
+
+  .caption
+    height: 100%
+    display: flex
+    flex-direction: column
+
+    .top-block
+      display: flex
+      align-items: center
+
+      i
+        font-size: 2.5em
+        margin-right: 0.5em
+
+    .head
+      font-size: 1.3em
+      margin-top: 1em
+      margin-bottom: 0.5em
+      color: #000000
+
+    .bottom-block
+      display: flex
+      justify-content: space-between
+      color: $accent
+
+.timer
+  text-align: center
+
+  .img-circle
+    background-color: $orange
+    width: 150px
+    height: 150px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 auto
+    white-space: nowrap
+
+.breadcrumb
+  margin-bottom: 0
+  padding: 0
+  background-color: transparent
+
+
+nav.solidarity
+  a.active
+    font-weight: bold
+
+// Всегда в конце
+@import "media"

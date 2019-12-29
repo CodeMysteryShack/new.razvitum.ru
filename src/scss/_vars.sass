@@ -1,0 +1,42 @@
+$default-font: "Arial", sans-serif
+$headline-font: "RobotoLight", sans-serif
+$bold-font: "RobotoBold", sans-serif
+$black-font: "RobotoBlack", sans-serif
+$font-awesome: "Font Awesome 5 Free", sans-serif
+$accent: #1422aa
+$accent_footer: #ffffff
+$light-blue: #1E33FF
+$highlight: #f9b233
+$blue: #0164a5
+$green: #3fa435
+$light-green: #4cc63f
+$orang: #f18425
+$orange: #fecf73
+$active-color: #a3d3e5
+$info: #f4fdfd
+$graybg: #f2f2f2
+$gray: #999999
+$lgray: rgb(204, 204, 204)
+$danger: #e4201b
+$border: #dddddd
+
+=mt($time)
+    transition: all $time ease
+
+=line-vertical($w)
+    content: ''
+    position: absolute
+    display: block
+    width: $w
+    height: 100%
+    top: 0
+    left: 0
+
+=square($x, $y)
+    content: ''
+    position: absolute
+    display: block
+    width: $x
+    height: $y    
+    left: 0
+    top: 0

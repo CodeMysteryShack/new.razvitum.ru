@@ -1,0 +1,1247 @@
+@import "~@fortawesome/fontawesome-free/css/all.css"
+@import "fonts"
+@import "vars"
+@import "helpers"
+
+body
+    color: #777
+    line-height: 1.65
+    font-size: 16px
+    font-family: "Roboto", sans-serif
+
+h1, h2, h3, h4, h5, h6    
+    font-weight: 300
+    color: $accent
+a
+    color: $accent
+ul 
+    li
+        list-style: none
+        padding: 10px 0
+        position: relative
+        &::before
+            content: '\f00c'
+            font-family: $font-awesome
+            font-weight: 900
+            position: absolute
+            left: -25px
+            color: $orange
+.block-border
+    border: 2px solid #fecf73
+    margin-left: -30px
+    margin-right: -30px
+    padding-left: 15px
+    padding-right: 15px
+    padding-top: 30px
+    ul 
+        li
+            &::before
+                color: #fecf73
+
+.block-border-2
+    border: 2px solid #fecf73    
+    padding: 25px 15px 15px 15px
+    margin-left: -30px
+    margin-right: -30px
+
+.bg-color
+    background: rgba(#fecf73, 0.3)
+a.read-more
+    color: #a3d3e5
+
+.bg-gray
+    background-color: #f6f6f6
+.bg-white
+    background-color: #ffffff     
+.s-header
+    background-image: url('/img/cooperation/bg.png')
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    text-align: center
+    min-height: 600px
+    padding-top: 30px
+    .logo-wrap
+        color: #000000
+        .logo
+            width: 100px
+            height: auto
+        h4
+            color: #000000
+        p
+            text-transform: uppercase
+            font-weight: 700
+            font-size: 14px
+            letter-spacing: 5px
+            padding-bottom: 20px
+
+.main-wrap
+    transform: translateY(-300px)
+    background-color: #ffffff
+    padding: 30px
+
+
+.accordion-advantages
+    .accordion
+        &-card
+            padding: 30px 0
+            &-head
+                a
+                    color: #fecf73
+                    display: block
+                    width: 100%
+                    cursor: pointer
+                    text-transform: uppercase
+                    font-weight: 700
+                    position: relative
+                    padding-right: 140px
+                    padding-left: 40px
+                    i:first-child
+                        margin-right: 10px
+                        font-size: 30px
+                        position: absolute
+                        top: -3px                       
+                        left: 0                       
+                    i:last-child
+                        margin-left: 15px
+                        position: absolute
+                        top: 10%
+                        right: 110px                        
+                        transform: rotate(0deg)
+                        transition: all 0.3s ease
+                a.collapsed
+                    i:last-child                        
+                        position: absolute
+                        top: 10%
+                        right: 110px                       
+                        transform: rotate(180deg)
+            &-body                
+                .table-1
+                    thead
+                        white-space: nowrap
+                        background-color: #fecf73
+                        color: #ffffff
+                        tr th
+                            border: none
+                            padding: 25px 15px
+                    tbody
+                        tr td
+                            border-top: none
+                            border-bottom: 2px solid #fecf73
+                            padding: 25px 15px
+                .table-2
+                    thead                        
+                        background-color: #fecf73
+                        color: #ffffff
+                        tr th
+                            border: none
+                            padding: 25px 15px
+                            vertical-align: top
+                    tbody
+                        tr td
+                            border-top: none
+                            border-bottom: 2px solid #fecf73
+                            padding: 25px 15px
+
+.partners-wrap
+    a
+        text-decoration: none
+        display: block
+        width: 100%
+        padding-right: 40px
+    a[aria-expanded="true"]                     
+        i
+            margin-left: 15px
+            position: absolute           
+            right: 110px 
+            transition: all 0.3s ease
+            transform: rotate(-180deg)
+            
+    a[aria-expanded="false"]
+        i                       
+            transform: rotate(0deg)
+            transition: all 0.3s ease
+            position: absolute           
+            right: 110px
+    .partners-flex-wrap
+        display: flex        
+        flex-wrap: wrap
+        justify-content: space-between
+        .partner
+            width: 195px
+            height: 250px
+            padding: 20px
+            margin-bottom: 45px
+            font-size: 14px
+            position: relative
+            span
+                font-weight: 700
+        .item-1
+            border: 2px solid #1422aa
+            span
+                color: #1422aa
+
+            &::after
+                position: absolute
+                display: block
+                top: 50%
+                right: -35px
+                content: '\f30b'
+                font-family: $font-awesome
+                font-weight: 900
+                transform: translateY(-50%)
+                font-size: 26px
+                color: #1422aa           
+        .item-2
+            border: 2px solid #1422aa
+            span
+                color: #1422aa
+            &::after
+                position: absolute
+                display: block
+                top: 50%
+                right: -35px
+                content: '\f30b'
+                font-family: $font-awesome
+                font-weight: 900
+                transform: translateY(-50%)
+                font-size: 26px
+                color: #1422aa
+        .item-3
+            border: 2px solid #fecf73
+            span
+                color: #fecf73
+            &::after
+                position: absolute
+                display: block
+                bottom: -45px
+                left: 50%                
+                content: '\f30b'
+                font-family: $font-awesome
+                font-weight: 900
+                transform: translateX(-50%) rotate(90deg)
+                font-size: 26px
+                color: #fecf73
+           
+        .item-4
+            border: 2px solid #1422aa
+            span
+                color: #1422aa
+            &::after
+                position: absolute
+                display: block
+                bottom: -45px
+                left: 50%                
+                content: '\f30b'
+                font-family: $font-awesome
+                font-weight: 900
+                transform: translateX(-50%) rotate(90deg)
+                font-size: 26px
+                color: #1422aa            
+        .item-5
+            border: 2px solid #fecf73
+            span
+                color: #fecf73
+            &::after
+                position: absolute
+                display: block
+                top: 50%
+                left: -35px                
+                content: '\f30b'
+                font-family: $font-awesome
+                font-weight: 900
+                transform: translateY(-50%) rotate(180deg)
+                font-size: 26px
+                color: #fecf73
+        .item-6
+            border: 2px solid #fecf73
+            span
+                color: #fecf73
+            &::after
+                position: absolute
+                display: block
+                top: 50%
+                left: -35px                
+                content: '\f30b'
+                font-family: $font-awesome
+                font-weight: 900
+                transform: translateY(-50%) rotate(180deg)
+                font-size: 26px
+                color: #fecf73            
+        .item-7
+            border: 2px solid #1422aa
+            span
+                color: #1422aa
+            &::after
+                position: absolute
+                display: block
+                top: 50%
+                right: -35px
+                content: '\f30b'
+                font-family: $font-awesome
+                font-weight: 900
+                transform: translateY(-50%)
+                font-size: 26px
+                color: #1422aa            
+        .item-8
+            border: 2px solid #1422aa
+            span
+                color: #1422aa
+            &::after
+                position: absolute
+                display: block
+                top: 50%
+                right: -35px
+                content: '\f30b'
+                font-family: $font-awesome
+                font-weight: 900
+                transform: translateY(-50%)
+                font-size: 26px
+                color: #1422aa
+        .item-9
+            border: 2px solid #fecf73
+            span
+                color: #fecf73
+           
+.project-wrap
+    a
+        text-decoration: none
+        display: block
+        width: 100%
+        padding-right: 40px
+    a[aria-expanded="true"]                     
+        i
+            margin-left: 15px
+            position: absolute           
+            right: 110px 
+            transition: all 0.3s ease
+            transform: rotate(-180deg)
+            
+    a[aria-expanded="false"]
+        i                       
+            transform: rotate(0deg)
+            transition: all 0.3s ease
+            position: absolute           
+            right: 110px
+    .project-flex-wrap
+        display: flex        
+        flex-wrap: wrap
+        justify-content: space-between
+        .project
+            width: 195px
+            height: 250px
+            padding: 15px
+            margin-bottom: 45px
+            position: relative            
+            font-size: 14px
+            span
+                font-weight: 700
+        .item-1
+            border: 2px solid #1422aa
+            span
+                color: #1422aa
+
+            &::after
+                position: absolute
+                display: block
+                top: 50%
+                right: -35px
+                content: '\f30b'
+                font-family: $font-awesome
+                font-weight: 900
+                transform: translateY(-50%)
+                font-size: 26px
+                color: #1422aa           
+        .item-2
+            border: 2px solid #1422aa
+            span
+                color: #1422aa
+            &::after
+                position: absolute
+                display: block
+                top: 50%
+                right: -35px
+                content: '\f30b'
+                font-family: $font-awesome
+                font-weight: 900
+                transform: translateY(-50%)
+                font-size: 26px
+                color: #1422aa
+        .item-3
+            border: 2px solid #fecf73
+            span
+                color: #fecf73
+            &::after
+                position: absolute
+                display: block
+                bottom: -45px
+                left: 50%                
+                content: '\f30b'
+                font-family: $font-awesome
+                font-weight: 900
+                transform: translateX(-50%) rotate(90deg)
+                font-size: 26px
+                color: #fecf73
+           
+        .item-4
+            border: 2px solid #fecf73
+            span
+                color: #fecf73                      
+        .item-5
+            border: 2px solid #1422aa
+            span
+                color: #1422aa
+            &::after
+                position: absolute
+                display: block
+                top: 50%
+                left: -35px                
+                content: '\f30b'
+                font-family: $font-awesome
+                font-weight: 900
+                transform: translateY(-50%) rotate(180deg)
+                font-size: 26px
+                color: #1422aa
+        .item-6
+            border: 2px solid #1422aa
+            span
+                color: #1422aa
+            &::after
+                position: absolute
+                display: block
+                top: 50%
+                left: -35px                
+                content: '\f30b'
+                font-family: $font-awesome
+                font-weight: 900
+                transform: translateY(-50%) rotate(180deg)
+                font-size: 26px
+                color: #1422aa
+
+
+.questions-wrap
+    .questions-card        
+        &-header
+            padding-left: 15px
+            padding-right: 40px
+        &-body
+            padding: 0px 20px 20px 30px                  
+    a
+        text-decoration: none
+        display: block
+        width: 100%
+        cursor: pointer
+        padding-bottom: 15px
+        padding-top: 15px
+        +mt(0.3s)
+        &:hover
+            color: #1422aa !important  
+    a[aria-expanded="true"]
+        color: #1422aa                     
+        i
+            margin-left: 15px
+            position: absolute           
+            right: 40px 
+            transition: all 0.3s ease
+            transform: rotate(-180deg)
+            
+    a[aria-expanded="false"]
+        color: #666666
+        i                       
+            transform: rotate(0deg)
+            transition: all 0.3s ease
+            position: absolute           
+            right: 40px
+
+.footer    
+    padding: 0
+    transform: translateY(180px) 
+
+.project-link
+    color: #1422aa
+.partners-link
+    color: #1422aa
+
+.copyright
+    transform: translateY(170px)
+    font-size: 14px
+    color: #999
+
+// Media
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px)
+    .partners-wrap, .project-wrap 
+        a[aria-expanded="true"]                     
+            i
+                right: 10px
+        a[aria-expanded="false"]
+            i        
+                right: 10px
+
+    .accordion-advantages
+        .accordion-card            
+            padding: 30px 0
+            &-head
+                a                    
+                    padding-right: 30px
+                    padding-left: 40px
+                    i:last-child
+                        margin-left: 15px
+                        position: absolute
+                        top: 0%
+                        right: 0px                        
+                        transform: rotate(0deg)
+                        transition: all 0.3s ease
+                a.collapsed
+                    i:last-child                        
+                        position: absolute
+                        top: 0%
+                        right: 0px                       
+                        transform: rotate(180deg)
+
+    .partners-wrap    
+        .partners-flex-wrap
+            display: flex        
+            flex-wrap: wrap
+            justify-content: space-between
+            .partner
+                width: 235px
+            .item-1                
+                order: 0                
+                &::after
+                    position: absolute
+                    display: block
+                    top: 50%
+                    right: -35px
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(-50%)
+                    font-size: 26px
+                    color: #1422aa           
+            .item-2                
+                order: 1                
+                &::after                    
+                    position: absolute
+                    display: block
+                    top: 100%
+                    right: 100px
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: rotate(90deg)
+                    font-size: 26px
+                    color: #1422aa
+            .item-3                
+                order: 4                
+                &::after
+                    position: absolute
+                    display: block
+                    bottom: 42%
+                    left: -15%                
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateX(0) rotate(180deg)
+                    font-size: 26px
+                    color: #fecf73            
+            .item-4                
+                order: 6                
+                &::after
+                    position: absolute
+                    display: block
+                    bottom: -45px
+                    left: 50%                
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateX(-50%) rotate(90deg)
+                    font-size: 26px
+                    color: #1422aa            
+            .item-5                
+                order: 5                
+                &::after
+                    position: absolute
+                    display: block
+                    top: 42%
+                    left: 105%               
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(0) rotate(0deg)
+                    font-size: 26px
+                    color: #fecf73
+            .item-6               
+                order: 3               
+                &::after
+                    position: absolute
+                    display: block
+                    top: 100%
+                    left: 100px                
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(0) rotate(90deg)
+                    font-size: 26px
+                    color: #fecf73            
+            .item-7               
+                order: 8
+                &::after
+                    position: absolute
+                    display: block
+                    top: 50%
+                    right: 105%
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(-50%) rotate(180deg)
+                    font-size: 26px
+                    color: #1422aa            
+            .item-8
+                order: 7               
+                &::after
+                    position: absolute
+                    display: block
+                    top: 100%
+                    right: 45%
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(0%) rotate(90deg)
+                    font-size: 26px
+                    color: #1422aa
+            .item-9
+                order: 9                
+                span
+                    color: #fecf73
+
+    .project-wrap                    
+        .project-flex-wrap
+            display: flex        
+            flex-wrap: wrap
+            justify-content: space-between
+            .project
+                width: 235px                
+                margin-bottom: 52px
+            .item-1
+                border: 2px solid #1422aa
+                order: 0
+                span
+                    color: #1422aa
+                &::after
+                    position: absolute
+                    display: block
+                    top: 50%
+                    right: -15%
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(-50%)
+                    font-size: 26px
+                    color: #1422aa           
+            .item-2
+                border: 2px solid #1422aa
+                order: 0
+                span
+                    color: #1422aa
+                &::after
+                    position: absolute
+                    display: block
+                    top: 100%
+                    right: 42%
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: rotate(90deg)
+                    font-size: 26px
+                    color: #1422aa
+            .item-3
+                border: 2px solid #fecf73
+                order: 2
+                span
+                    color: #fecf73
+                &::after
+                    position: absolute
+                    display: block
+                    bottom: 42%
+                    left: -15%                
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateX(0) rotate(180deg)
+                    font-size: 26px
+                    color: #fecf73
+            
+            .item-4
+                border: 2px solid #fecf73
+                order: 3
+                span
+                    color: #fecf73                      
+            .item-5
+                border: 2px solid #1422aa
+                order: 2
+                span
+                    color: #1422aa
+                &::after
+                    position: absolute
+                    display: block
+                    top: 42%
+                    left: 105%               
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(0) rotate(0deg)
+                    font-size: 26px
+                    color: #1422aa
+            .item-6
+                border: 2px solid #1422aa
+                order: 1
+                span
+                    color: #1422aa
+                &::after
+                    position: absolute
+                    display: block
+                    top: 100%
+                    left: 42%                
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(0) rotate(90deg)
+                    font-size: 26px
+                    color: #1422aa
+
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px)
+    .partners-wrap, .project-wrap 
+        a[aria-expanded="true"]                     
+            i
+                right: 10px
+        a[aria-expanded="false"]
+            i        
+                right: 10px
+
+    .accordion-advantages
+        .accordion-card            
+            padding: 30px 0
+            &-head
+                a                    
+                    padding-right: 30px
+                    padding-left: 40px
+                    i:last-child
+                        margin-left: 15px
+                        position: absolute
+                        top: 0%
+                        right: 0px                        
+                        transform: rotate(0deg)
+                        transition: all 0.3s ease
+                a.collapsed
+                    i:last-child                        
+                        position: absolute
+                        top: 0%
+                        right: 0px                       
+                        transform: rotate(180deg)
+
+    .partners-wrap    
+        .partners-flex-wrap
+            display: flex        
+            flex-wrap: wrap
+            justify-content: space-between
+            .partner
+                width: 205px
+                margin-bottom: 40px
+            .item-1                
+                order: 0                
+                &::after
+                    position: absolute
+                    display: block
+                    top: 50%
+                    right: -35px
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(-50%)
+                    font-size: 26px
+                    color: #1422aa           
+            .item-2                
+                order: 1                
+                &::after                   
+                    position: absolute
+                    display: block
+                    top: 100%
+                    right: 100px
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: rotate(90deg)
+                    font-size: 26px
+                    color: #1422aa
+            .item-3                
+                order: 4                
+                &::after
+                    position: absolute
+                    display: block
+                    bottom: 42%
+                    left: -15%                
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateX(0) rotate(180deg)
+                    font-size: 26px
+                    color: #fecf73            
+            .item-4                
+                order: 6                
+                &::after
+                    position: absolute
+                    display: block
+                    bottom: -45px
+                    left: 50%                
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateX(-50%) rotate(90deg)
+                    font-size: 26px
+                    color: #1422aa            
+            .item-5                
+                order: 5                
+                &::after
+                    position: absolute
+                    display: block
+                    top: 42%
+                    left: 105%               
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(0) rotate(0deg)
+                    font-size: 26px
+                    color: #fecf73
+            .item-6               
+                order: 3               
+                &::after
+                    position: absolute
+                    display: block
+                    top: 100%
+                    left: 100px                
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(0) rotate(90deg)
+                    font-size: 26px
+                    color: #fecf73            
+            .item-7               
+                order: 8
+                &::after
+                    position: absolute
+                    display: block
+                    top: 50%
+                    right: 105%
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(-50%) rotate(180deg)
+                    font-size: 26px
+                    color: #1422aa            
+            .item-8
+                order: 7               
+                &::after
+                    position: absolute
+                    display: block
+                    top: 100%
+                    right: 45%
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(0%) rotate(90deg)
+                    font-size: 26px
+                    color: #1422aa
+            .item-9
+                order: 9                
+                span
+                    color: #fecf73
+
+    .project-wrap                    
+        .project-flex-wrap
+            display: flex        
+            flex-wrap: wrap
+            justify-content: space-between
+            .project
+                width: 205px
+                margin-bottom: 40px              
+                span
+                    font-weight: 700
+            .item-1
+                border: 2px solid #1422aa
+                order: 0
+                span
+                    color: #1422aa
+                &::after
+                    position: absolute
+                    display: block
+                    top: 50%
+                    right: -15%
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(-50%)
+                    font-size: 26px
+                    color: #1422aa           
+            .item-2
+                border: 2px solid #1422aa
+                order: 0
+                span
+                    color: #1422aa
+                &::after
+                    position: absolute
+                    display: block
+                    top: 100%
+                    right: 42%
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: rotate(90deg)
+                    font-size: 26px
+                    color: #1422aa
+            .item-3
+                border: 2px solid #fecf73
+                order: 2
+                span
+                    color: #fecf73
+                &::after
+                    position: absolute
+                    display: block
+                    bottom: 42%
+                    left: -15%                
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateX(0) rotate(180deg)
+                    font-size: 26px
+                    color: #fecf73            
+            .item-4
+                border: 2px solid #fecf73
+                order: 3
+                span
+                    color: #fecf73                      
+            .item-5
+                border: 2px solid #1422aa
+                order: 2
+                span
+                    color: #1422aa
+                &::after
+                    position: absolute
+                    display: block
+                    top: 42%
+                    left: 105%               
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(0) rotate(0deg)
+                    font-size: 26px
+                    color: #1422aa
+            .item-6
+                border: 2px solid #1422aa
+                order: 1
+                span
+                    color: #1422aa
+                &::after
+                    position: absolute
+                    display: block
+                    top: 100%
+                    left: 42%                
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(0) rotate(90deg)
+                    font-size: 26px
+                    color: #1422aa
+
+    .copyright
+        transform: translateY(200px)
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px)
+    .partners-wrap, .project-wrap 
+        a[aria-expanded="true"]                     
+            i
+                right: 10px
+        a[aria-expanded="false"]
+            i        
+                right: 10px
+
+    .accordion-advantages
+        .accordion-card            
+            padding: 30px 0
+            &-head
+                a
+                    padding-right: 30px
+                    padding-left: 40px
+                    i:last-child
+                        margin-left: 15px
+                        position: absolute
+                        top: 0%
+                        right: 0px                        
+                        transform: rotate(0deg)
+                        transition: all 0.3s ease
+                a.collapsed
+                    i:last-child                        
+                        position: absolute
+                        top: 0%
+                        right: 0px                       
+                        transform: rotate(180deg)
+
+    .partners-wrap    
+        .partners-flex-wrap
+            display: flex        
+            flex-wrap: wrap
+            justify-content: center !important
+            .partner
+                width: 320px
+                height: 250px
+                padding: 20px
+                margin-bottom: 52px
+                position: relative
+                span
+                    font-weight: 700
+            .item-1                
+                order: 0                
+                &::after
+                    position: absolute
+                    display: block
+                    top: 100%
+                    right: 45%
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(0%) rotate(90deg)
+                    font-size: 26px
+                    color: #1422aa           
+            .item-2                
+                order: 1                
+                &::after
+                    position: absolute
+                    display: block
+                    top: 100%
+                    right: 45%
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(0%) rotate(90deg)
+                    font-size: 26px
+                    color: #1422aa
+            .item-3                
+                order: 2                
+                &::after
+                    position: absolute
+                    display: block
+                    bottom: -45px
+                    left: 50%                
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateX(-50%) rotate(90deg)
+                    font-size: 26px
+                    color: #fecf73            
+            .item-4                
+                order: 6                
+                &::after
+                    position: absolute
+                    display: block
+                    bottom: -45px
+                    left: 50%                
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateX(-50%) rotate(90deg)
+                    font-size: 26px
+                    color: #1422aa            
+            .item-5                
+                order: 5                
+                &::after
+                    position: absolute
+                    display: block
+                    top: 100%
+                    left: 45%               
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(0%) rotate(90deg)
+                    font-size: 26px
+                    color: #fecf73
+            .item-6               
+                order: 3               
+                &::after
+                    position: absolute
+                    display: block
+                    top: 100%
+                    left: 45%                
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(0%) rotate(90deg)
+                    font-size: 26px
+                    color: #fecf73            
+            .item-7               
+                order: 7
+                &::after
+                    position: absolute
+                    display: block
+                    top: 100%
+                    right: 45%
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(0%) rotate(90deg)
+                    font-size: 26px
+                    color: #1422aa            
+            .item-8
+                order: 8               
+                &::after
+                    position: absolute
+                    display: block
+                    top: 100%
+                    right: 45%
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(0%) rotate(90deg)
+                    font-size: 26px
+                    color: #1422aa
+            .item-9
+                order: 9               
+                
+
+    .project-wrap                    
+        .project-flex-wrap
+            display: flex        
+            flex-wrap: wrap
+            justify-content: center !important
+            .project
+                width: 320px
+                height: 250px
+                padding: 20px
+                margin-bottom: 40px !important
+                position: relative
+                span
+                    font-weight: 700
+            .item-1
+                border: 2px solid #1422aa
+                order: 0
+                span
+                    color: #1422aa
+                &::after
+                    position: absolute
+                    display: block
+                    top: 100%
+                    right: 45%
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(0%) rotate(90deg)
+                    font-size: 26px
+                    color: #1422aa           
+            .item-2
+                border: 2px solid #1422aa
+                order: 0
+                span
+                    color: #1422aa
+                &::after
+                    position: absolute
+                    display: block
+                    top: 100%
+                    right: 45%
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: rotate(90deg)
+                    font-size: 26px
+                    color: #1422aa
+            .item-3
+                border: 2px solid #fecf73
+                order: 1
+                span
+                    color: #fecf73
+                &::after
+                    position: absolute
+                    display: block
+                    bottom: -18%
+                    left: 47%                
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateX(0%) rotate(90deg)
+                    font-size: 26px
+                    color: #fecf73            
+            .item-4
+                border: 2px solid #fecf73
+                order: 3
+                span
+                    color: #fecf73                      
+            .item-5
+                border: 2px solid #1422aa
+                order: 2
+                span
+                    color: #1422aa
+                &::after
+                    position: absolute
+                    display: block
+                    top: 100%
+                    left: 47%               
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(0%) rotate(90deg)
+                    font-size: 26px
+                    color: #1422aa
+            .item-6
+                border: 2px solid #1422aa
+                order: 1
+                span
+                    color: #1422aa
+                &::after
+                    position: absolute
+                    display: block
+                    top: 100%
+                    left: 47%                
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(0) rotate(90deg)
+                    font-size: 26px
+                    color: #1422aa
+
+
+// Extra small devices (portrait phones, less than 414px)
+@media (max-width: 414px)
+    .partners-wrap, .project-wrap 
+        a[aria-expanded="true"]                     
+            i
+                right: 10px
+        a[aria-expanded="false"]
+            i        
+                right: 10px
+
+    .accordion-advantages
+        .accordion-card            
+            padding: 30px 0
+            &-head
+                a                    
+                    padding-right: 30px
+                    padding-left: 40px
+                    i:last-child
+                        margin-left: 15px
+                        position: absolute
+                        top: 0%
+                        right: 0px                        
+                        transform: rotate(0deg)
+                        transition: all 0.3s ease
+                a.collapsed
+                    i:last-child                        
+                        position: absolute
+                        top: 0%
+                        right: 0px                       
+                        transform: rotate(180deg)
+
+    .copyright
+        transform: translateY(250px)
