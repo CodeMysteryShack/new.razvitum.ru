@@ -19,6 +19,10 @@ const concat = require('gulp-concat');
 const pug = require('gulp-pug');
 const prettyHtml = require('gulp-pretty-html');
 const replace = require('gulp-replace');
+const cpy = require('cpy');
+
+const nth = {};
+nth.config = require('./config.js');
 
 function copyHTML() { //копируем html из pages в сборку
   return src(dir.src + 'pages/*.html')
@@ -48,6 +52,16 @@ function compilePug() {
 }
 exports.compilePug = compilePug;
 
+function copyAssets(cb) {
+  for (let item in nth.config.addAssets) {
+    let dest = `${dir.build}${nth.config.addAssets[item]}`;
+    cpy(item, dest);
+  }
+  cb();
+}
+exports.copyAssets = copyAssets;
+
+
 function compileStyles() {
   return src(dir.src + 'scss/**/*.sass')
     .pipe(plumber({
@@ -59,7 +73,7 @@ function compileStyles() {
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer({browsers: ['last 2 version']}),
+      autoprefixer({overrideBrowserslist : ['last 2 version']}),
     ]))
     .pipe(sourcemaps.write('/'))
     .pipe(dest(dir.build + 'css/'))
@@ -136,6 +150,6 @@ function serve() {
 
 exports.default = series(
   clean,
-  parallel(compileStyles, compilePug, processJs, copyJsVendors, copyImages, copyFonts, copyHTML),
+  parallel(copyAssets, compileStyles, compilePug, processJs, copyJsVendors, copyImages, copyFonts, copyHTML),
   serve
 );

@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "bootstrap": "^3.4.1",
+    "cpy": "^8.0.0",
     "eonasdan-bootstrap-datetimepicker": "^4.17.47",
     "jquery": "^3.4.1",
     "select2": "^4.0.12",

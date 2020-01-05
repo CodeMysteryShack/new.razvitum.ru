@@ -1,36 +1,35 @@
 //- Стандартный шаблон страницы
-include mixins.pug
+//- include mixins.pug
 
 doctype html
-html(class='page  no-js', lang='ru')
-
+html(class='no-js', lang='ru')
   head
     meta(charset='utf-8')
-
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(href='/favicon.ico', rel='shortcut icon')
+    link(rel='stylesheet', href='css/vendor.css')
+    base(href='https://new.razvitum.ru')
+    block head
+      link(rel='stylesheet', href='css/front.css')
+      //- script.
+      //-   document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     block meta
       title Home
-
-    block head
-      link(rel='stylesheet', href='css/style.css')
-      script.
-        document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 
   body
     noscript У вас отключен JavaScript. Это пугает.
 
-    .page__inner
-      .page__content
+    include _header.pug
 
-        block header
-          p Шапка
-
-        block content
+    main
+      block content
           p Cодержимое
 
-      .page__footer-wrapper
-        block footer
-          p Подвал
+    include _footer.pug
 
     block page-bottom
+      script(src='js/vendors.min.js')
+      script(src='js/bootstrap.js')
       script(src='js/vendors.min.js')
       script(src='js/script.min.js')

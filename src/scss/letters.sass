@@ -1,7 +1,8 @@
-@import "~@fortawesome/fontawesome-free/css/all.css"
 @import "fonts"
 @import "vars"
 @import "helpers"
+@import "~@fortawesome/fontawesome-free/css/all.css"
+@import "../assets/fontawesome-free-5.12.0-web/scss/fontawesome"
 
 body
     color: #777
@@ -9,12 +10,12 @@ body
     font-size: 16px
     font-family: "Roboto", sans-serif
 
-h1, h2, h3, h4, h5, h6    
+h1, h2, h3, h4, h5, h6
     font-weight: 300
     color: $accent
 a
     color: $accent
-ul 
+ul
     li
         list-style: none
         padding: 10px 0
@@ -33,13 +34,13 @@ ul
     padding-left: 15px
     padding-right: 15px
     padding-top: 30px
-    ul 
+    ul
         li
             &::before
                 color: #fecf73
 
 .block-border-2
-    border: 2px solid #fecf73    
+    border: 2px solid #fecf73
     padding: 25px 15px 15px 15px
     margin-left: -30px
     margin-right: -30px
@@ -52,7 +53,7 @@ a.read-more
 .bg-gray
     background-color: #f6f6f6
 .bg-white
-    background-color: #ffffff     
+    background-color: #ffffff
 .s-header
     background-image: url('/img/cooperation/bg.png')
     background-size: cover
@@ -100,22 +101,22 @@ a.read-more
                         margin-right: 10px
                         font-size: 30px
                         position: absolute
-                        top: -3px                       
-                        left: 0                       
+                        top: -3px
+                        left: 0
                     i:last-child
                         margin-left: 15px
                         position: absolute
                         top: 10%
-                        right: 110px                        
+                        right: 110px
                         transform: rotate(0deg)
                         transition: all 0.3s ease
                 a.collapsed
-                    i:last-child                        
+                    i:last-child
                         position: absolute
                         top: 10%
-                        right: 110px                       
+                        right: 110px
                         transform: rotate(180deg)
-            &-body                
+            &-body
                 .table-1
                     thead
                         white-space: nowrap
@@ -130,7 +131,7 @@ a.read-more
                             border-bottom: 2px solid #fecf73
                             padding: 25px 15px
                 .table-2
-                    thead                        
+                    thead
                         background-color: #fecf73
                         color: #ffffff
                         tr th
@@ -149,22 +150,22 @@ a.read-more
         display: block
         width: 100%
         padding-right: 40px
-    a[aria-expanded="true"]                     
+    a[aria-expanded="true"]
         i
             margin-left: 15px
-            position: absolute           
-            right: 110px 
+            position: absolute
+            right: 110px
             transition: all 0.3s ease
             transform: rotate(-180deg)
-            
+
     a[aria-expanded="false"]
-        i                       
+        i
             transform: rotate(0deg)
             transition: all 0.3s ease
-            position: absolute           
+            position: absolute
             right: 110px
     .partners-flex-wrap
-        display: flex        
+        display: flex
         flex-wrap: wrap
         justify-content: space-between
         .partner
@@ -191,7 +192,7 @@ a.read-more
                 font-weight: 900
                 transform: translateY(-50%)
                 font-size: 26px
-                color: #1422aa           
+                color: #1422aa
         .item-2
             border: 2px solid #1422aa
             span
@@ -215,14 +216,14 @@ a.read-more
                 position: absolute
                 display: block
                 bottom: -45px
-                left: 50%                
+                left: 50%
                 content: '\f30b'
                 font-family: $font-awesome
                 font-weight: 900
                 transform: translateX(-50%) rotate(90deg)
                 font-size: 26px
                 color: #fecf73
-           
+
         .item-4
             border: 2px solid #1422aa
             span
@@ -231,13 +232,13 @@ a.read-more
                 position: absolute
                 display: block
                 bottom: -45px
-                left: 50%                
+                left: 50%
                 content: '\f30b'
                 font-family: $font-awesome
                 font-weight: 900
                 transform: translateX(-50%) rotate(90deg)
                 font-size: 26px
-                color: #1422aa            
+                color: #1422aa
         .item-5
             border: 2px solid #fecf73
             span
@@ -246,7 +247,7 @@ a.read-more
                 position: absolute
                 display: block
                 top: 50%
-                left: -35px                
+                left: -35px
                 content: '\f30b'
                 font-family: $font-awesome
                 font-weight: 900
@@ -261,13 +262,13 @@ a.read-more
                 position: absolute
                 display: block
                 top: 50%
-                left: -35px                
+                left: -35px
                 content: '\f30b'
                 font-family: $font-awesome
                 font-weight: 900
                 transform: translateY(-50%) rotate(180deg)
                 font-size: 26px
-                color: #fecf73            
+                color: #fecf73
         .item-7
             border: 2px solid #1422aa
             span
@@ -282,7 +283,7 @@ a.read-more
                 font-weight: 900
                 transform: translateY(-50%)
                 font-size: 26px
-                color: #1422aa            
+                color: #1422aa
         .item-8
             border: 2px solid #1422aa
             span
@@ -302,29 +303,29 @@ a.read-more
             border: 2px solid #fecf73
             span
                 color: #fecf73
-           
+
 .project-wrap
     a
         text-decoration: none
         display: block
         width: 100%
         padding-right: 40px
-    a[aria-expanded="true"]                     
+    a[aria-expanded="true"]
         i
             margin-left: 15px
-            position: absolute           
-            right: 110px 
+            position: absolute
+            right: 110px
             transition: all 0.3s ease
             transform: rotate(-180deg)
-            
+
     a[aria-expanded="false"]
-        i                       
+        i
             transform: rotate(0deg)
             transition: all 0.3s ease
-            position: absolute           
+            position: absolute
             right: 110px
     .project-flex-wrap
-        display: flex        
+        display: flex
         flex-wrap: wrap
         justify-content: space-between
         .project
@@ -332,7 +333,7 @@ a.read-more
             height: 250px
             padding: 15px
             margin-bottom: 45px
-            position: relative            
+            position: relative
             font-size: 14px
             span
                 font-weight: 700
@@ -351,7 +352,7 @@ a.read-more
                 font-weight: 900
                 transform: translateY(-50%)
                 font-size: 26px
-                color: #1422aa           
+                color: #1422aa
         .item-2
             border: 2px solid #1422aa
             span
@@ -375,18 +376,18 @@ a.read-more
                 position: absolute
                 display: block
                 bottom: -45px
-                left: 50%                
+                left: 50%
                 content: '\f30b'
                 font-family: $font-awesome
                 font-weight: 900
                 transform: translateX(-50%) rotate(90deg)
                 font-size: 26px
                 color: #fecf73
-           
+
         .item-4
             border: 2px solid #fecf73
             span
-                color: #fecf73                      
+                color: #fecf73
         .item-5
             border: 2px solid #1422aa
             span
@@ -395,7 +396,7 @@ a.read-more
                 position: absolute
                 display: block
                 top: 50%
-                left: -35px                
+                left: -35px
                 content: '\f30b'
                 font-family: $font-awesome
                 font-weight: 900
@@ -410,7 +411,7 @@ a.read-more
                 position: absolute
                 display: block
                 top: 50%
-                left: -35px                
+                left: -35px
                 content: '\f30b'
                 font-family: $font-awesome
                 font-weight: 900
@@ -420,12 +421,12 @@ a.read-more
 
 
 .questions-wrap
-    .questions-card        
+    .questions-card
         &-header
             padding-left: 15px
             padding-right: 40px
         &-body
-            padding: 0px 20px 20px 30px                  
+            padding: 0px 20px 20px 30px
     a
         text-decoration: none
         display: block
@@ -435,27 +436,27 @@ a.read-more
         padding-top: 15px
         +mt(0.3s)
         &:hover
-            color: #1422aa !important  
+            color: #1422aa !important
     a[aria-expanded="true"]
-        color: #1422aa                     
+        color: #1422aa
         i
             margin-left: 15px
-            position: absolute           
-            right: 40px 
+            position: absolute
+            right: 40px
             transition: all 0.3s ease
             transform: rotate(-180deg)
-            
+
     a[aria-expanded="false"]
         color: #666666
-        i                       
+        i
             transform: rotate(0deg)
             transition: all 0.3s ease
-            position: absolute           
+            position: absolute
             right: 40px
 
-.footer    
+.footer
     padding: 0
-    transform: translateY(180px) 
+    transform: translateY(180px)
 
 .project-link
     color: #1422aa
@@ -471,44 +472,44 @@ a.read-more
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px)
-    .partners-wrap, .project-wrap 
-        a[aria-expanded="true"]                     
+    .partners-wrap, .project-wrap
+        a[aria-expanded="true"]
             i
                 right: 10px
         a[aria-expanded="false"]
-            i        
+            i
                 right: 10px
 
     .accordion-advantages
-        .accordion-card            
+        .accordion-card
             padding: 30px 0
             &-head
-                a                    
+                a
                     padding-right: 30px
                     padding-left: 40px
                     i:last-child
                         margin-left: 15px
                         position: absolute
                         top: 0%
-                        right: 0px                        
+                        right: 0px
                         transform: rotate(0deg)
                         transition: all 0.3s ease
                 a.collapsed
-                    i:last-child                        
+                    i:last-child
                         position: absolute
                         top: 0%
-                        right: 0px                       
+                        right: 0px
                         transform: rotate(180deg)
 
-    .partners-wrap    
+    .partners-wrap
         .partners-flex-wrap
-            display: flex        
+            display: flex
             flex-wrap: wrap
             justify-content: space-between
             .partner
                 width: 235px
-            .item-1                
-                order: 0                
+            .item-1
+                order: 0
                 &::after
                     position: absolute
                     display: block
@@ -519,10 +520,10 @@ a.read-more
                     font-weight: 900
                     transform: translateY(-50%)
                     font-size: 26px
-                    color: #1422aa           
-            .item-2                
-                order: 1                
-                &::after                    
+                    color: #1422aa
+            .item-2
+                order: 1
+                &::after
                     position: absolute
                     display: block
                     top: 100%
@@ -533,59 +534,59 @@ a.read-more
                     transform: rotate(90deg)
                     font-size: 26px
                     color: #1422aa
-            .item-3                
-                order: 4                
+            .item-3
+                order: 4
                 &::after
                     position: absolute
                     display: block
                     bottom: 42%
-                    left: -15%                
+                    left: -15%
                     content: '\f30b'
                     font-family: $font-awesome
                     font-weight: 900
                     transform: translateX(0) rotate(180deg)
                     font-size: 26px
-                    color: #fecf73            
-            .item-4                
-                order: 6                
+                    color: #fecf73
+            .item-4
+                order: 6
                 &::after
                     position: absolute
                     display: block
                     bottom: -45px
-                    left: 50%                
+                    left: 50%
                     content: '\f30b'
                     font-family: $font-awesome
                     font-weight: 900
                     transform: translateX(-50%) rotate(90deg)
                     font-size: 26px
-                    color: #1422aa            
-            .item-5                
-                order: 5                
+                    color: #1422aa
+            .item-5
+                order: 5
                 &::after
                     position: absolute
                     display: block
                     top: 42%
-                    left: 105%               
+                    left: 105%
                     content: '\f30b'
                     font-family: $font-awesome
                     font-weight: 900
                     transform: translateY(0) rotate(0deg)
                     font-size: 26px
                     color: #fecf73
-            .item-6               
-                order: 3               
+            .item-6
+                order: 3
                 &::after
                     position: absolute
                     display: block
                     top: 100%
-                    left: 100px                
+                    left: 100px
                     content: '\f30b'
                     font-family: $font-awesome
                     font-weight: 900
                     transform: translateY(0) rotate(90deg)
                     font-size: 26px
-                    color: #fecf73            
-            .item-7               
+                    color: #fecf73
+            .item-7
                 order: 8
                 &::after
                     position: absolute
@@ -597,9 +598,9 @@ a.read-more
                     font-weight: 900
                     transform: translateY(-50%) rotate(180deg)
                     font-size: 26px
-                    color: #1422aa            
+                    color: #1422aa
             .item-8
-                order: 7               
+                order: 7
                 &::after
                     position: absolute
                     display: block
@@ -612,17 +613,17 @@ a.read-more
                     font-size: 26px
                     color: #1422aa
             .item-9
-                order: 9                
+                order: 9
                 span
                     color: #fecf73
 
-    .project-wrap                    
+    .project-wrap
         .project-flex-wrap
-            display: flex        
+            display: flex
             flex-wrap: wrap
             justify-content: space-between
             .project
-                width: 235px                
+                width: 235px
                 margin-bottom: 52px
             .item-1
                 border: 2px solid #1422aa
@@ -639,7 +640,7 @@ a.read-more
                     font-weight: 900
                     transform: translateY(-50%)
                     font-size: 26px
-                    color: #1422aa           
+                    color: #1422aa
             .item-2
                 border: 2px solid #1422aa
                 order: 0
@@ -665,19 +666,19 @@ a.read-more
                     position: absolute
                     display: block
                     bottom: 42%
-                    left: -15%                
+                    left: -15%
                     content: '\f30b'
                     font-family: $font-awesome
                     font-weight: 900
                     transform: translateX(0) rotate(180deg)
                     font-size: 26px
                     color: #fecf73
-            
+
             .item-4
                 border: 2px solid #fecf73
                 order: 3
                 span
-                    color: #fecf73                      
+                    color: #fecf73
             .item-5
                 border: 2px solid #1422aa
                 order: 2
@@ -687,7 +688,7 @@ a.read-more
                     position: absolute
                     display: block
                     top: 42%
-                    left: 105%               
+                    left: 105%
                     content: '\f30b'
                     font-family: $font-awesome
                     font-weight: 900
@@ -703,7 +704,7 @@ a.read-more
                     position: absolute
                     display: block
                     top: 100%
-                    left: 42%                
+                    left: 42%
                     content: '\f30b'
                     font-family: $font-awesome
                     font-weight: 900
@@ -714,45 +715,45 @@ a.read-more
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px)
-    .partners-wrap, .project-wrap 
-        a[aria-expanded="true"]                     
+    .partners-wrap, .project-wrap
+        a[aria-expanded="true"]
             i
                 right: 10px
         a[aria-expanded="false"]
-            i        
+            i
                 right: 10px
 
     .accordion-advantages
-        .accordion-card            
+        .accordion-card
             padding: 30px 0
             &-head
-                a                    
+                a
                     padding-right: 30px
                     padding-left: 40px
                     i:last-child
                         margin-left: 15px
                         position: absolute
                         top: 0%
-                        right: 0px                        
+                        right: 0px
                         transform: rotate(0deg)
                         transition: all 0.3s ease
                 a.collapsed
-                    i:last-child                        
+                    i:last-child
                         position: absolute
                         top: 0%
-                        right: 0px                       
+                        right: 0px
                         transform: rotate(180deg)
 
-    .partners-wrap    
+    .partners-wrap
         .partners-flex-wrap
-            display: flex        
+            display: flex
             flex-wrap: wrap
             justify-content: space-between
             .partner
                 width: 205px
                 margin-bottom: 40px
-            .item-1                
-                order: 0                
+            .item-1
+                order: 0
                 &::after
                     position: absolute
                     display: block
@@ -763,10 +764,10 @@ a.read-more
                     font-weight: 900
                     transform: translateY(-50%)
                     font-size: 26px
-                    color: #1422aa           
-            .item-2                
-                order: 1                
-                &::after                   
+                    color: #1422aa
+            .item-2
+                order: 1
+                &::after
                     position: absolute
                     display: block
                     top: 100%
@@ -777,59 +778,59 @@ a.read-more
                     transform: rotate(90deg)
                     font-size: 26px
                     color: #1422aa
-            .item-3                
-                order: 4                
+            .item-3
+                order: 4
                 &::after
                     position: absolute
                     display: block
                     bottom: 42%
-                    left: -15%                
+                    left: -15%
                     content: '\f30b'
                     font-family: $font-awesome
                     font-weight: 900
                     transform: translateX(0) rotate(180deg)
                     font-size: 26px
-                    color: #fecf73            
-            .item-4                
-                order: 6                
+                    color: #fecf73
+            .item-4
+                order: 6
                 &::after
                     position: absolute
                     display: block
                     bottom: -45px
-                    left: 50%                
+                    left: 50%
                     content: '\f30b'
                     font-family: $font-awesome
                     font-weight: 900
                     transform: translateX(-50%) rotate(90deg)
                     font-size: 26px
-                    color: #1422aa            
-            .item-5                
-                order: 5                
+                    color: #1422aa
+            .item-5
+                order: 5
                 &::after
                     position: absolute
                     display: block
                     top: 42%
-                    left: 105%               
+                    left: 105%
                     content: '\f30b'
                     font-family: $font-awesome
                     font-weight: 900
                     transform: translateY(0) rotate(0deg)
                     font-size: 26px
                     color: #fecf73
-            .item-6               
-                order: 3               
+            .item-6
+                order: 3
                 &::after
                     position: absolute
                     display: block
                     top: 100%
-                    left: 100px                
+                    left: 100px
                     content: '\f30b'
                     font-family: $font-awesome
                     font-weight: 900
                     transform: translateY(0) rotate(90deg)
                     font-size: 26px
-                    color: #fecf73            
-            .item-7               
+                    color: #fecf73
+            .item-7
                 order: 8
                 &::after
                     position: absolute
@@ -841,9 +842,9 @@ a.read-more
                     font-weight: 900
                     transform: translateY(-50%) rotate(180deg)
                     font-size: 26px
-                    color: #1422aa            
+                    color: #1422aa
             .item-8
-                order: 7               
+                order: 7
                 &::after
                     position: absolute
                     display: block
@@ -856,18 +857,18 @@ a.read-more
                     font-size: 26px
                     color: #1422aa
             .item-9
-                order: 9                
+                order: 9
                 span
                     color: #fecf73
 
-    .project-wrap                    
+    .project-wrap
         .project-flex-wrap
-            display: flex        
+            display: flex
             flex-wrap: wrap
             justify-content: space-between
             .project
                 width: 205px
-                margin-bottom: 40px              
+                margin-bottom: 40px
                 span
                     font-weight: 700
             .item-1
@@ -885,7 +886,7 @@ a.read-more
                     font-weight: 900
                     transform: translateY(-50%)
                     font-size: 26px
-                    color: #1422aa           
+                    color: #1422aa
             .item-2
                 border: 2px solid #1422aa
                 order: 0
@@ -911,18 +912,18 @@ a.read-more
                     position: absolute
                     display: block
                     bottom: 42%
-                    left: -15%                
+                    left: -15%
                     content: '\f30b'
                     font-family: $font-awesome
                     font-weight: 900
                     transform: translateX(0) rotate(180deg)
                     font-size: 26px
-                    color: #fecf73            
+                    color: #fecf73
             .item-4
                 border: 2px solid #fecf73
                 order: 3
                 span
-                    color: #fecf73                      
+                    color: #fecf73
             .item-5
                 border: 2px solid #1422aa
                 order: 2
@@ -932,7 +933,7 @@ a.read-more
                     position: absolute
                     display: block
                     top: 42%
-                    left: 105%               
+                    left: 105%
                     content: '\f30b'
                     font-family: $font-awesome
                     font-weight: 900
@@ -948,7 +949,7 @@ a.read-more
                     position: absolute
                     display: block
                     top: 100%
-                    left: 42%                
+                    left: 42%
                     content: '\f30b'
                     font-family: $font-awesome
                     font-weight: 900
@@ -962,16 +963,16 @@ a.read-more
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px)
-    .partners-wrap, .project-wrap 
-        a[aria-expanded="true"]                     
+    .partners-wrap, .project-wrap
+        a[aria-expanded="true"]
             i
                 right: 10px
         a[aria-expanded="false"]
-            i        
+            i
                 right: 10px
 
     .accordion-advantages
-        .accordion-card            
+        .accordion-card
             padding: 30px 0
             &-head
                 a
@@ -981,19 +982,19 @@ a.read-more
                         margin-left: 15px
                         position: absolute
                         top: 0%
-                        right: 0px                        
+                        right: 0px
                         transform: rotate(0deg)
                         transition: all 0.3s ease
                 a.collapsed
-                    i:last-child                        
+                    i:last-child
                         position: absolute
                         top: 0%
-                        right: 0px                       
+                        right: 0px
                         transform: rotate(180deg)
 
-    .partners-wrap    
+    .partners-wrap
         .partners-flex-wrap
-            display: flex        
+            display: flex
             flex-wrap: wrap
             justify-content: center !important
             .partner
@@ -1004,21 +1005,8 @@ a.read-more
                 position: relative
                 span
                     font-weight: 700
-            .item-1                
-                order: 0                
-                &::after
-                    position: absolute
-                    display: block
-                    top: 100%
-                    right: 45%
-                    content: '\f30b'
-                    font-family: $font-awesome
-                    font-weight: 900
-                    transform: translateY(0%) rotate(90deg)
-                    font-size: 26px
-                    color: #1422aa           
-            .item-2                
-                order: 1                
+            .item-1
+                order: 0
                 &::after
                     position: absolute
                     display: block
@@ -1030,59 +1018,72 @@ a.read-more
                     transform: translateY(0%) rotate(90deg)
                     font-size: 26px
                     color: #1422aa
-            .item-3                
-                order: 2                
-                &::after
-                    position: absolute
-                    display: block
-                    bottom: -45px
-                    left: 50%                
-                    content: '\f30b'
-                    font-family: $font-awesome
-                    font-weight: 900
-                    transform: translateX(-50%) rotate(90deg)
-                    font-size: 26px
-                    color: #fecf73            
-            .item-4                
-                order: 6                
-                &::after
-                    position: absolute
-                    display: block
-                    bottom: -45px
-                    left: 50%                
-                    content: '\f30b'
-                    font-family: $font-awesome
-                    font-weight: 900
-                    transform: translateX(-50%) rotate(90deg)
-                    font-size: 26px
-                    color: #1422aa            
-            .item-5                
-                order: 5                
+            .item-2
+                order: 1
                 &::after
                     position: absolute
                     display: block
                     top: 100%
-                    left: 45%               
+                    right: 45%
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateY(0%) rotate(90deg)
+                    font-size: 26px
+                    color: #1422aa
+            .item-3
+                order: 2
+                &::after
+                    position: absolute
+                    display: block
+                    bottom: -45px
+                    left: 50%
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateX(-50%) rotate(90deg)
+                    font-size: 26px
+                    color: #fecf73
+            .item-4
+                order: 6
+                &::after
+                    position: absolute
+                    display: block
+                    bottom: -45px
+                    left: 50%
+                    content: '\f30b'
+                    font-family: $font-awesome
+                    font-weight: 900
+                    transform: translateX(-50%) rotate(90deg)
+                    font-size: 26px
+                    color: #1422aa
+            .item-5
+                order: 5
+                &::after
+                    position: absolute
+                    display: block
+                    top: 100%
+                    left: 45%
                     content: '\f30b'
                     font-family: $font-awesome
                     font-weight: 900
                     transform: translateY(0%) rotate(90deg)
                     font-size: 26px
                     color: #fecf73
-            .item-6               
-                order: 3               
+            .item-6
+                order: 3
                 &::after
                     position: absolute
                     display: block
                     top: 100%
-                    left: 45%                
+                    left: 45%
                     content: '\f30b'
                     font-family: $font-awesome
                     font-weight: 900
                     transform: translateY(0%) rotate(90deg)
                     font-size: 26px
-                    color: #fecf73            
-            .item-7               
+                    color: #fecf73
+            .item-7
                 order: 7
                 &::after
                     position: absolute
@@ -1094,9 +1095,9 @@ a.read-more
                     font-weight: 900
                     transform: translateY(0%) rotate(90deg)
                     font-size: 26px
-                    color: #1422aa            
+                    color: #1422aa
             .item-8
-                order: 8               
+                order: 8
                 &::after
                     position: absolute
                     display: block
@@ -1109,12 +1110,12 @@ a.read-more
                     font-size: 26px
                     color: #1422aa
             .item-9
-                order: 9               
-                
+                order: 9
 
-    .project-wrap                    
+
+    .project-wrap
         .project-flex-wrap
-            display: flex        
+            display: flex
             flex-wrap: wrap
             justify-content: center !important
             .project
@@ -1140,7 +1141,7 @@ a.read-more
                     font-weight: 900
                     transform: translateY(0%) rotate(90deg)
                     font-size: 26px
-                    color: #1422aa           
+                    color: #1422aa
             .item-2
                 border: 2px solid #1422aa
                 order: 0
@@ -1166,18 +1167,18 @@ a.read-more
                     position: absolute
                     display: block
                     bottom: -18%
-                    left: 47%                
+                    left: 47%
                     content: '\f30b'
                     font-family: $font-awesome
                     font-weight: 900
                     transform: translateX(0%) rotate(90deg)
                     font-size: 26px
-                    color: #fecf73            
+                    color: #fecf73
             .item-4
                 border: 2px solid #fecf73
                 order: 3
                 span
-                    color: #fecf73                      
+                    color: #fecf73
             .item-5
                 border: 2px solid #1422aa
                 order: 2
@@ -1187,7 +1188,7 @@ a.read-more
                     position: absolute
                     display: block
                     top: 100%
-                    left: 47%               
+                    left: 47%
                     content: '\f30b'
                     font-family: $font-awesome
                     font-weight: 900
@@ -1203,7 +1204,7 @@ a.read-more
                     position: absolute
                     display: block
                     top: 100%
-                    left: 47%                
+                    left: 47%
                     content: '\f30b'
                     font-family: $font-awesome
                     font-weight: 900
@@ -1214,33 +1215,33 @@ a.read-more
 
 // Extra small devices (portrait phones, less than 414px)
 @media (max-width: 414px)
-    .partners-wrap, .project-wrap 
-        a[aria-expanded="true"]                     
+    .partners-wrap, .project-wrap
+        a[aria-expanded="true"]
             i
                 right: 10px
         a[aria-expanded="false"]
-            i        
+            i
                 right: 10px
 
     .accordion-advantages
-        .accordion-card            
+        .accordion-card
             padding: 30px 0
             &-head
-                a                    
+                a
                     padding-right: 30px
                     padding-left: 40px
                     i:last-child
                         margin-left: 15px
                         position: absolute
                         top: 0%
-                        right: 0px                        
+                        right: 0px
                         transform: rotate(0deg)
                         transition: all 0.3s ease
                 a.collapsed
-                    i:last-child                        
+                    i:last-child
                         position: absolute
                         top: 0%
-                        right: 0px                       
+                        right: 0px
                         transform: rotate(180deg)
 
     .copyright

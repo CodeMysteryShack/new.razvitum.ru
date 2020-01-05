@@ -1,0 +1,104 @@
+header
+  .s-header
+    .container
+      .row
+        .col-md-6.col-sm-8.col-xs-12.logo-wrap
+          a.logo(href="/")
+            img(src="img/logo.svg", onerror="this.onerror=null; this.src='img/logo.png';", alt="Razvitum Logo")
+          p.logo-title Санкт-Петербургский центр#[br]дополнительного профессионального образования#[br]<span>Образовательный проект Razvitum</span>
+        .col-lg-2.hidden-md.hidden-sm.hidden-xs
+          .header-date
+            .header-date-label Режим работы по МСК
+            .work-hours с 10:00 до 17:00
+        .col-lg-2.col-md-3.col-sm-1.col-xs-5.text-center
+          .header-phone
+            .header-phone-label.hidden-sm.hidden-xs Звонок по России бесплатный
+            .header-phone-number
+              a.number(href="tel:88005553069", title="с 8:00 до 18:00 МСК") 8 (800) 555-30-69
+        .col-lg-2.col-sm-3.col-xs-6.text-center
+          .btn-wrap
+          .header-cart
+            a.min-app(href="#", data-toggle="modal", data-target="#cartAddModal") #[i.far.fa-file-alt] Заявка:
+              span.hidden-xs.hidden-sm(id="cart-items-count-word") 3 позиции
+              span.hidden-lg.hidden-md(id="cart-items-count") 3
+          .header-btn
+            .btn-group.btn-block
+              button.btn.btn-primary.dropdown-toggle.btn-block.btn-user(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false", title="Личный кабинет")
+                i.fas.fa-user
+                span.hidden-xs.hidden-sm.user-text Траторов Н. Ю.
+                span.caret.hidden-xs
+              ul.dropdown-menu
+                li
+                  a(href="https://new.razvitum.ru/lk/profile") Профиль
+                li
+                  a(href="https://new.razvitum.ru/lk/orders") Заявки
+                li
+                  a(href="https://new.razvitum.ru/lk/bonus-account") Бонусный счет
+                li
+                  a(href="https://new.razvitum.ru/lk/study") Обучение
+                    i.fas.fa-graduation-cap
+                li
+                  a(href="https://new.razvitum.ru/lk/statistics") Статистика
+                li
+                  a(href="https://new.razvitum.ru/lk/minors") Каталог майноров
+                li.divider(role="separator")
+                li
+                  a(href="https://new.razvitum.ru/auth/signout", onclick="event.preventDefault();document.getElementById('logout-form').submit();") Выход
+            form.hidden(id="logout-form", action="https://new.razvitum.ru/auth/signout", method="POST")
+              input(type="hidden", name="_token", value="eX0oMHU1scg2XD3EwXbja9nWrM3UYd7K4vhlR4MD")
+
+  .menu-wrap
+    nav.navbar.navbar-default
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type="button", data-target="#main-menu", aria-expanded="false")
+            span.sr-only Главное меню
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        .collapse.navbar-collapse(id="main-menu")
+          .top-menu
+            .container
+              ul.nav.navbar-nav
+                li.active
+                  a(href="https://new.razvitum.ru") Главная
+                li
+                  a(href="https://new.razvitum.ru/about") О нас
+                li
+                  a(href="https://new.razvitum.ru/about/study") Об обучении
+                //- li.dropdown
+                //-   a.dropdown-toggle(href="https://new.razvitum.ru/about",data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false") О нас #[span.caret]
+                //-     ul.dropdown-menu
+                //-       li
+                //-         a(href="/about/center") О центре
+                //-       li
+                //-         a(href="/about/control") Органы управления
+                //-       li
+                //-         a(href="/about/team") Наша команда
+                //-       li
+                //-         a(href="/about/teachers") Профессорско-преподавательский состав
+                //-       li
+                //-         a(href="/about/structure") Подразделения
+                //-       li
+                //-         a(href="/about/concept") Наша концепция
+                //-       li
+                //-         a(href="/about/vacancies") Вакансии#[span.badge 2]
+                //-       li
+                //-         a(href="https://spbcdpo.ru/sveden", target="_blank") Официальные сведения#[i.fas.fa-link]
+                //- li.dropdown
+                //-   a.dropdown-toggle(href="https://new.razvitum.ru/about/study", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false") Об обучении#[span.caret]
+                //-     ul.dropdown-menu
+                //-       li
+                //-         a(href="/about/study/technologies") Технологии на службе обучения
+                //-       li
+                //-         a(href="/about/study/features") Особенности программ обучения
+                //-       li
+                //-         a(href="/about/study/solidarity") Программа профессиональной солидарности
+                //-       li
+                //-         a(href="/about/study/howto") Как стать слушателем и пройти обучение
+                li
+                  a(href="https://new.razvitum.ru/programs") Каталог программ
+                //- li
+                //-   a(href="https://new.razvitum.ru/articles") Материалы
+                li
+                  a(href="https://new.razvitum.ru/contacts") Контакты
