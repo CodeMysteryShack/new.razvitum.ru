@@ -17,35 +17,35 @@ header
               a.number(href="tel:88005553069", title="с 8:00 до 18:00 МСК") 8 (800) 555-30-69
         .col-lg-2.col-sm-3.col-xs-6.text-center
           .btn-wrap
-          .header-cart
-            a.min-app(href="#", data-toggle="modal", data-target="#cartAddModal") #[i.far.fa-file-alt] Заявка:
-              span.hidden-xs.hidden-sm(id="cart-items-count-word") 3 позиции
-              span.hidden-lg.hidden-md(id="cart-items-count") 3
-          .header-btn
-            .btn-group.btn-block
-              button.btn.btn-primary.dropdown-toggle.btn-block.btn-user(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false", title="Личный кабинет")
-                i.fas.fa-user
-                span.hidden-xs.hidden-sm.user-text Траторов Н. Ю.
-                span.caret.hidden-xs
-              ul.dropdown-menu
-                li
-                  a(href="https://new.razvitum.ru/lk/profile") Профиль
-                li
-                  a(href="https://new.razvitum.ru/lk/orders") Заявки
-                li
-                  a(href="https://new.razvitum.ru/lk/bonus-account") Бонусный счет
-                li
-                  a(href="https://new.razvitum.ru/lk/study") Обучение
-                    i.fas.fa-graduation-cap
-                li
-                  a(href="https://new.razvitum.ru/lk/statistics") Статистика
-                li
-                  a(href="https://new.razvitum.ru/lk/minors") Каталог майноров
-                li.divider(role="separator")
-                li
-                  a(href="https://new.razvitum.ru/auth/signout", onclick="event.preventDefault();document.getElementById('logout-form').submit();") Выход
-            form.hidden(id="logout-form", action="https://new.razvitum.ru/auth/signout", method="POST")
-              input(type="hidden", name="_token", value="eX0oMHU1scg2XD3EwXbja9nWrM3UYd7K4vhlR4MD")
+            .header-cart
+              a.min-app(href="#", data-toggle="modal", data-target="#cartAddModal") #[i.far.fa-file-alt] Заявка:
+                span.hidden-xs.hidden-sm(id="cart-items-count-word") 3 позиции
+                span.hidden-lg.hidden-md(id="cart-items-count") 3
+            .header-btn
+              .btn-group.btn-block
+                button.btn.btn-primary.dropdown-toggle.btn-block.btn-user(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false", title="Личный кабинет")
+                  i.fas.fa-user
+                  span.hidden-xs.hidden-sm.user-text Траторов Н. Ю.
+                  span.caret.hidden-xs
+                ul.dropdown-menu
+                  li
+                    a(href="https://new.razvitum.ru/lk/profile") Профиль
+                  li
+                    a(href="https://new.razvitum.ru/lk/orders") Заявки
+                  li
+                    a(href="https://new.razvitum.ru/lk/bonus-account") Бонусный счет
+                  li
+                    a(href="https://new.razvitum.ru/lk/study") Обучение
+                      i.fas.fa-graduation-cap
+                  li
+                    a(href="https://new.razvitum.ru/lk/statistics") Статистика
+                  li
+                    a(href="https://new.razvitum.ru/lk/minors") Каталог майноров
+                  li.divider(role="separator")
+                  li
+                    a(href="https://new.razvitum.ru/auth/signout", onclick="event.preventDefault();document.getElementById('logout-form').submit();") Выход
+              form.hidden(id="logout-form", action="https://new.razvitum.ru/auth/signout", method="POST")
+                input(type="hidden", name="_token", value="eX0oMHU1scg2XD3EwXbja9nWrM3UYd7K4vhlR4MD")
 
   .menu-wrap
     nav.navbar.navbar-default

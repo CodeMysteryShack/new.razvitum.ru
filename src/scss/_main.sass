@@ -136,14 +136,15 @@ header
     color: #ffffff
     position: relative
 
-    &::before
-      content: ''
-      position: absolute
-      top: 0
-      left: 0
-      width: 100%
-      height: 3px
-      background-color: $active-color
+    &::after
+      content: '•'
+      position: relative
+      right: -5px
+    //   top: 0
+    //   left: 0
+    //   width: 100%
+    //   height: 3px
+    //   background-color: $active-color
 
   .navbar.navbar-default
     background-color: #ffffff
@@ -166,24 +167,27 @@ header
     background-color: $accent
 
     .navbar-nav > li > a
-      padding: 20px 15px
+      padding: 30px 30px 30px 0
+      font-size: 14px
+      line-height: 14px
+      text-align: left
       color: #ffffff
       text-transform: uppercase
       position: relative
 
-      &::before
-        content: ''
-        position: absolute
-        top: 0
-        left: 0
-        width: 100%
-        height: 0
-        background-color: $highlight
-        transition: all 0.2s
+      // &::before
+      //   content: ''
+      //   position: absolute
+      //   top: 0
+      //   left: 0
+      //   width: 100%
+      //   height: 0
+      //   // background-color: $highlight
+      //   transition: all 0.2s
 
-      &:hover
-        &::before
-          height: 3px
+      // &:hover
+      //   &::before
+      //     height: 3px
 
   .dropdown-menu > li > a
     padding: 10px 25px
