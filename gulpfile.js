@@ -20,6 +20,8 @@ const pug = require('gulp-pug');
 const prettyHtml = require('gulp-pretty-html');
 const replace = require('gulp-replace');
 const cpy = require('cpy');
+const merge = require('merge-stream');
+const spritesmith = require('gulp.spritesmith');
 
 const nth = {};
 nth.config = require('./config.js');
@@ -123,6 +125,21 @@ function clean() {
 }
 exports.clean = clean;
 
+function spritePNG() {
+  let spriteData = src(dir.src + 'img/spritePNG/*.png')
+    .pipe(spritesmith({
+      imgName: 'spritePNG.png',
+      cssName: 'spritePNG.css',
+      padding: 4
+      })
+    );
+  let imgStream = spriteData.img.pipe(dest(dir.src + 'img/'));
+  let cssStream = spriteData.css.pipe(dest(dir.src + 'scss/'));
+  return merge(imgStream, cssStream);
+};
+exports.spritePNG = spritePNG;
+
+
 function serve() {
   browserSync.init({
     server: dir.build,
@@ -135,6 +152,9 @@ function serve() {
     dir.src + 'scss/blocks/*.sass',
   ], compileStyles);
   watch([
+    dir.src + 'img/spritePNG/*.png',
+  ], spritePNG);
+    watch([
     dir.src + 'pages/*.pug',
     dir.src + 'pug/*.pug',
   ], compilePug);
@@ -149,7 +169,7 @@ function serve() {
 }
 
 exports.default = series(
-  clean,
-  parallel(copyAssets, compileStyles, compilePug, processJs, copyJsVendors, copyImages, copyFonts, copyHTML),
+  parallel(clean),
+  parallel(spritePNG, copyAssets, compileStyles, compilePug, processJs, copyJsVendors, copyImages, copyFonts/*, copyHTML*/),
   serve
 );
