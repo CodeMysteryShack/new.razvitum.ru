@@ -11,7 +11,7 @@ block content
       .container.main-banner__first-row
         .row
           h3.col-lg-12.main-banner__title Эксперт в образовании
-          p.col-lg-6.main-banner__text Дистанционные курсы повышения квалификации и программы переподготовки для работников образования
+          p.col-lg-8.col-md-12.main-banner__text Дистанционные курсы повышения квалификации и программы переподготовки для работников образования
         .row.main-banner__statistic
           .col-md-3.col-sm-6.main-banner__stat-item #[span 15 806] слушателей
           .col-md-3.col-sm-6.main-banner__stat-item Цена от #[span 900] р.
@@ -32,17 +32,22 @@ block content
   section.article-prevs-block
     article.article-prev.aritcles__item--main
       .article-prev__img-wrap
-        img(src="", alt="")
+        img(src="img/article_photo.png", alt="")
       a.article-prev__link(href="#")
         h3.article-prev__title Яндекс.Учебники и РАО создадут хартию о цифровой образовательной среде
       p.article-prev__text Яндекс.Учебник и Российская академия образования совместно с учителями, родителями и экспертами разработают хартию о цифровой образовательной среде школы.
       .article-prev__statistic
-        span.article-prev__stat-item.article__stat-item--time 5 минут
-        <span class="article-prev__stat-item article__stat-item--views">35</span>
-        <span class="article-prev__stat-item article__stat-item--likes">14</span>
-      </div>
-    </article>
-  //-   <!-- Форма подписки -->
+      .panel-footer
+        small.text-muted
+          span.mr-1 #[span.glyphicon.glyphicon-time] 5 минут
+          span.mr-1 #[span.glyphicon.glyphicon-eye-open] 36
+          span.mr-1 #[span.glyphicon.glyphicon-heart-empty] 14
+
+        //- span.article-prev__stat-item.article__stat-item--time 5 минут
+        //- span.article-prev__stat-item.article__stat-item--views 35
+        //- span.article-prev__stat-item.article__stat-item--likes 14
+
+    // Форма подписки
   //-   <form action="" method="" class="subscribe">
   //-     <p class="subscribe-form__text"><span>Мы Вам понравились? </span>Подпишитесь</p>
   //-     <input class="subscribe-form__input" type="text" name="lastname">
