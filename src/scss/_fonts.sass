@@ -1,6 +1,25 @@
 @import "mixins/font-face"
-+font-face("RobotoLight", "/fonts/RobotoLight/RobotoLight")
-+font-face("RobotoBold", "/fonts/RobotoBold/RobotoBold")
-+font-face("RobotoBlack", "/fonts/RobotoBlack/RobotoBlack")
+// +font-face("RobotoLight", "/fonts/RobotoLight/RobotoLight")
+// +font-face("RobotoBold", "/fonts/RobotoBold/RobotoBold")
+// +font-face("RobotoBlack", "/fonts/RobotoBlack/RobotoBlack")
++font-face("Roboto", "/fonts/roboto-regular")
++font-face("RobotoBold", "/fonts/roboto-bold")
 +font-face("Font Awesome 5 Free", "/fonts/fa-regular-400")
-// +font-face("Glyphicons Halflings", "/fonts/glyphicons-halflings-regular")
++font-face("Glyphicons Halflings", "/fonts/glyphicons-halflings-regular")
+
+@mixin ff-roboto()
+  font-family: Roboto, Arial, sans-serif
+  font-weight: 400
+
+@mixin ff-roboto-bold()
+  font-family: RobotoBold, Arial, sans-serif
+  font-weight: 700
+
+@mixin ff-arial()
+  font-family: Arial, sans-serif
+  font-weight: 400
+
+@mixin ff-arial-bold()
+  font-family: Arial, sans-serif
+  font-weight: 700
+

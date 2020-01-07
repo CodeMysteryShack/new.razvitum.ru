@@ -11,270 +11,209 @@ block content
       .container.main-banner__first-row
         .row
           h3.col-lg-12.main-banner__title Эксперт в образовании
-          p.col-lg-8.col-md-12.main-banner__text Дистанционные курсы повышения квалификации и программы переподготовки для работников образования
+          p.col-lg-8.col-md-12.main-banner__text Дистанционные курсы повышения квалификации и&#160;программы переподготовки для работников образования
         .row.main-banner__statistic
-          .col-md-3.col-sm-6.main-banner__stat-item #[span 15 806] слушателей
-          .col-md-3.col-sm-6.main-banner__stat-item Цена от #[span 900] р.
-          .col-md-3.col-sm-6.main-banner__stat-item С 2013 года с вами
-          .col-md-3.col-sm-6.main-banner__stat-item Программа лояльности
-    .main-banner__info
-      a.main-banner__info-item(href="#")
-        h4 Государственная лицензия
-        p на осуществление образовательной деятельности № 0681 от 25.09.2013
-      a.main-banner__info-item(href="#")
-        h4 Официальные сведения
-        p Сведения об образовательной организации. Результаты проверки Рособрнадзора
-      a.main-banner__info-item(href="#")
-        h4 Бесплатное обучение
-        p Достойный выбор бесплатных курсов с выдачей сертификата участника
+          .col-lg-3.col-md-6.col-sm-12
+            .main-banner__stat-item.main-banner__stat-item--people #[span 15 806] слушателей
+          .col-lg-3.col-md-6.col-sm-12
+            .main-banner__stat-item.main-banner__stat-item--coin Цена от #[span 900] р.
+          .col-lg-3.col-md-6.col-sm-12
+            .main-banner__stat-item.main-banner__stat-item--building С #[span 2013] года с вами
+          .col-lg-3.col-md-6.col-sm-12
+            .main-banner__stat-item.main-banner__stat-item--percent Программа лояльности
+    .container-fluid.main-banner__info
+      .container
+        .row
+          a.col-md-4.col-sm-12.main-banner__info-item.main-banner__info-item--licence(href="#")
+            h4 Государственная лицензия
+            p на осуществление образовательной деятельности № 0681 от 25.09.-4013
+          a.col-md-4.col-sm-12.main-banner__info-item.main-banner__info-item--official(href="#")
+            h4 Официальные сведения
+            p Сведения об образовательной организации. Результаты проверки Рособрнадзора
+          a.col-md-4.col-sm-12.main-banner__info-item.main-banner__info-item--free(href="#")
+            h4 Бесплатное обучение
+            p Достойный выбор бесплатных курсов с выдачей сертификата участника
 
   // Статьи. Верхний блок
-  section.article-prevs-block
-    article.article-prev.aritcles__item--main
-      .article-prev__img-wrap
-        img(src="img/article_photo.png", alt="")
-      a.article-prev__link(href="#")
-        h3.article-prev__title Яндекс.Учебники и РАО создадут хартию о цифровой образовательной среде
-      p.article-prev__text Яндекс.Учебник и Российская академия образования совместно с учителями, родителями и экспертами разработают хартию о цифровой образовательной среде школы.
-      .article-prev__statistic
-      .panel-footer
-        small.text-muted
-          span.mr-1 #[span.glyphicon.glyphicon-time] 5 минут
-          span.mr-1 #[span.glyphicon.glyphicon-eye-open] 36
-          span.mr-1 #[span.glyphicon.glyphicon-heart-empty] 14
+  section.article-prevs-block.container
+    .row
+      article.col-sm-12.col-lg-8.article-prev.aritcles__prev--main
+        .article-prev__img-wrap
+          img(src="/img/article_photo.png", alt="")
+        a.article-prev__link(href="#")
+          h3.article-prev__title Яндекс.Учебники и РАО создадут хартию о цифровой образовательной среде
+        p.article-prev__text Яндекс.Учебник и Российская академия образования совместно с учителями, родителями и экспертами разработают хартию о цифровой образовательной среде школы.
+        +statistic
+        //- .article-prev__statistic
+        //-   small.text-muted
+        //-     span.mr-1.article-prev__stat-item #[span.glyphicon.glyphicon-time] 5 минут
+        //-     span.mr-1.article-prev__stat-item #[span.glyphicon.glyphicon-eye-open] 35
+        //-     span.mr-1.article-prev__stat-item #[span.glyphicon.glyphicon-heart-empty] 14
 
-        //- span.article-prev__stat-item.article__stat-item--time 5 минут
+        //- .article__stat-item--time 5 минут
         //- span.article-prev__stat-item.article__stat-item--views 35
         //- span.article-prev__stat-item.article__stat-item--likes 14
 
-    // Форма подписки
-  //-   <form action="" method="" class="subscribe">
-  //-     <p class="subscribe-form__text"><span>Мы Вам понравились? </span>Подпишитесь</p>
-  //-     <input class="subscribe-form__input" type="text" name="lastname">
-  //-     <input class="subscribe-form__input" type="text" name="firstname">
-  //-     <input class="subscribe-form__input" type="text" name="">
-  //-     <input class="subscribe-form__input" type="email" name="email">
-  //-     <input class="subscribe-form__input" type="checkbox">
-  //-     <input class="subscribe-form__subscribe" type="submit" value="Подписаться">
-  //-   </form>
+      // Форма подписки
+      .col-sm-12.col-lg-4
+        form(action="", method="", class="subscribe")
+          p.subscribe-form__text #[span Мы Вам понравились?] Подпишитесь
+          input.subscribe-form__input(type="text", name="lastname")
+          input.subscribe-form__input(type="text", name="firstname")
+          input.subscribe-form__input(type="text", name="")
+          input.subscribe-form__input(type="email", name="email")
+          input.subscribe-form__input(type="checkbox")
+          input.subscribe-form__subscribe(type="submit", value="Подписаться")
+    .row
+      article.article-prev.col-md-4
+        .article-prev__img-wrap
+          img(src="/img/prev_01.png", alt="")
+        a.article-prev__tag(href="#") Новости
+        a.article-prev__link(href="#")
+          h3.article-prev__title Главные новости цифрового образования
+        p.article-prev__text В еженедельном дайджесте мы рассказываем о самом важном, что случилось с цифровым образованием в России и в мире за последнюю неделю.
+        +statistic
 
-  //-   <article class="article-prev">
-  //-     <div class="article-prev__img-wrap">
-  //-       <img src="" alt="">
-  //-     </div>
-  //-     <span class="article-prev__tag">Новости</span>
-  //-     <a href="#" class="article-prev__link">
-  //- <h3 class="article-prev__title">Главные новости цифрового образования</h3>
-  //-   </a>
-  //-     <p class="article-prev__text">В еженедельном дайджесте мы рассказываем о самом важном, что случилось с цифровым образованием в России и в мире за последнюю неделю.</p>
-  //-     <div class="article-prev__statistic">
-  //-       <span class="article-prev__stat-item article__stat-item--time">5 минут</span>
-  //-       <span class="article-prev__stat-item article__stat-item--views">35</span>
-  //-       <span class="article-prev__stat-item article__stat-item--likes">14</span>
-  //-     </div>
-  //-   </article>
+      article.article-prev.col-md-4
+        .article-prev__img-wrap
+          img(src="/img/prev_02.png", alt="")
+        a.article-prev__tag(href="#") Образование
+        a.article-prev__link(href="#")
+          h3.article-prev__title Образовательное пространство России — это 70 лет консерватизма
+        p.article-prev__text Союз дизайнеров России, Московский Архитектурный институт и компания «Сетевые исследования» объявили конкурс проектов по дизайну образовательного пространства российских университетов.
+        +statistic
 
-  //-   <article class="article-prev">
-  //-     <div class="article-prev__img-wrap">
-  //-       <img src="" alt="">
-  //-     </div>
-  //-     <span class="article-prev__tag">Образование</span>
-  //-     <a href="#" class="article-prev__link">
-  //-       <h3 class="article-prev__title">Образовательное пространство России — это 70 лет консерватизма</h3>
-  //-     </a>
-  //-     <p class="article-prev__text">Союз дизайнеров России, Московский Архитектурный институт и компания «Сетевые исследования» объявили конкурс проектов по дизайну образовательного пространства российских университетов.</p>
-  //-     <div class="article-prev__statistic">
-  //-       <span class="article-prev__stat-item article__stat-item--time">5 минут</span>
-  //-       <span class="article-prev__stat-item article__stat-item--views">35</span>
-  //-       <span class="article-prev__stat-item article__stat-item--likes">14</span>
-  //-     </div>
-  //-   </article>
+      article.article-prev.col-md-4
+        .article-prev__img-wrap
+          img(src="/img/prev_03.png", alt="")
+        a.article-prev__tag(href="#") Инновации
+        a.article-prev__link(href="#")
+          h3.article-prev__title Открыт прием заявок на конкурс иноваций в образовании
+        p.article-prev__text С 1 апреля по 19 мая EdTech-стартапы могут подать заявки на участие в Конкурсе инноваций в образовании (КИвО). Прошедших первичный отбор ждет летний акселератор и открытый финал в Москве.
+        +statistic
 
-  //-   <article class="article-prev">
-  //-     <div class="article-prev__img-wrap">
-  //-       <img src="" alt="">
-  //-     </div>
-  //-     <span class="article-prev__tag">Инновации</span>
-  //-   <a href="#" class="article-prev__link">
-  //-     <h3 class="article-prev__title">Открыт прием заявок на конкурс иноваций в образовании</h3>
-  //-   </a>
-  //-     <p class="article-prev__text">С 1 апреля по 19 мая EdTech-стартапы могут подать заявки на участие в Конкурсе инноваций в образовании (КИвО). Прошедших первичный отбор ждет летний акселератор и открытый финал в Москве.</p>
-  //-   </article>
-  //-   <div class="article-prev__statistic">
-  //-       <span class="article-prev__stat-item article__stat-item--time">5 минут</span>
-  //-       <span class="article-prev__stat-item article__stat-item--views">35</span>
-  //-       <span class="article-prev__stat-item article__stat-item--likes">14</span>
-  //-     </div>
-  //- </section>
-
-  //- <!-- Анонс мероприятий -->
-  //- <section class="announcement">
-  //-   <h2 class="announcement__title">Анонс мероприятий</h2>
-  //-   <div class="announcement__item">
-  //-     <p class="announcement__date"><span>01</span>июля</p>
-  //-     <p class="announcement__text">Четвёртая встреча «Клуба руководителей»</p>
-  //-   </div>
-  //-   <div class="announcement__item">
-  //-     <p class="announcement__date"><span>01</span>июля</p>
-  //-     <p class="announcement__text">Седьмой поток на бесплатных дистанционных курсах для работников образования</p>
-  //-   </div>
-  //-   <div class="announcement__item">
-  //-     <p class="announcement__date"><span>01</span>июля</p>
-  //-     <p class="announcement__text">Старт продаж программы «Государственный контроль в образоватьельном учреждении»</p>
-  //-   </div>
-  //- </section>
+  // Анонс мероприятий
+  section.announcement.container-fluid
+    .container
+      .row
+        h2.col-md-12.announcement__title Анонс мероприятий
+      .row
+        .announcement__item.col-md-4
+          p.announcement__date #[span 01] июля
+          p.announcement__text Четвёртая встреча «Клуба руководителей»
+        .announcement__item.col-md-4
+          p.announcement__date #[span 01] июля
+          p.announcement__text Седьмой поток на бесплатных дистанционных курсах для работников образования
+        .announcement__item.col-md-4
+          p.announcement__date #[span 01] июля
+          p.announcement__text Старт продаж программы «Государственный контроль в образоватьельном учреждении»
 
   //- <!-- Видео-интервью -->
   //- <section class="article-prev article--video-interview">
   //-   <h2 class="article-prev__head">Видео-интервью</h2>
   //-   <a href="#" class="article-prev__all-article-link"></a>
-  //-   <article class="article-prev">
+  //-   <article class="article-prev.col-md-4">
   //-     <div class="article-prev__img-wrap">
   //-       <img src="" alt="">
   //-     </div>
   //-     <span class="article-prev__tag">Видео-интервью</span>
-  //-     <a href="#" class="article-prev__link">
+  //-     a.article-prev__link(href="#")
   //-        <h3 class="article-prev__title">5 правил личностного роста</h3>
   //-     </a>
   //-     <p class="article-prev__text"></p>
-  //-     <div class="article-prev__statistic">
-  //-       <span class="article-prev__stat-item article__stat-item--time">5 минут</span>
-  //-       <span class="article-prev__stat-item article__stat-item--views">35</span>
-  //-       <span class="article-prev__stat-item article__stat-item--likes">14</span>
-  //-     </div>
-  //-   </article>
-  //-   <article class="article-prev">
+  //- +statistic
+  //-   <article class="article-prev.col-md-4">
   //-     <div class="article-prev__img-wrap">
   //-       <img src="" alt="">
   //-     </div>
   //-     <span class="article-prev__tag">Видео-интервью</span>
-  //-     <a href="#" class="article-prev__link">
+  //-     a.article-prev__link(href="#")
   //- <h3 class="article-prev__title">Первый урок. Как подготовиться и не волноваться</h3>
   //-   </a>
   //-     <p class="article-prev__text"></p>
-  //-     <div class="article-prev__statistic">
-  //-       <span class="article-prev__stat-item article__stat-item--time">5 минут</span>
-  //-       <span class="article-prev__stat-item article__stat-item--views">35</span>
-  //-       <span class="article-prev__stat-item article__stat-item--likes">14</span>
-  //-     </div>
-  //-   </article>
-  //-   <article class="article-prev">
+//- +statistic
+  //-   <article class="article-prev.col-md-4">
   //-     <div class="article-prev__img-wrap">
   //-       <img src="" alt="">
   //-     </div>
   //-     <span class="article-prev__tag">Видео-интервью</span>
-  //-     <a href="#" class="article-prev__link">
+  //-     a.article-prev__link(href="#")
   //- <h3 class="article-prev__title">Мотивационные приема поддержки молодых специалистов в школе</h3>
   //-   </a>
   //-     <p class="article-prev__text"></p>
-  //-     <div class="article-prev__statistic">
-  //-       <span class="article-prev__stat-item article__stat-item--time">5 минут</span>
-  //-       <span class="article-prev__stat-item article__stat-item--views">35</span>
-  //-       <span class="article-prev__stat-item article__stat-item--likes">14</span>
-  //-     </div>
-  //-   </article>
+//- +statistic
   //- </section>
 
   //- <!-- Новости -->
   //- <section class="article-prev article--news">
   //-   <h2 class="article-prev__head">Новости</h2>
   //-   <a href="#" class="article-prev__all-article-link"></a>
-  //-   <article class="article-prev">
+  //-   <article class="article-prev.col-md-4">
   //-     <div class="article-prev__img-wrap">
   //-       <img src="" alt="">
   //-     </div>
   //-     <span class="article-prev__tag">Новости</span>
-  //-     <a href="#" class="article-prev__link">
+  //-     a.article-prev__link(href="#")
   //- <h3 class="article-prev__title">Яндекс.Учебники и РАО создадут хартию о цифровой образовательной среде</h3>
   //-   </a>
   //-     <p class="article-prev__text">Яндекс.Учебник и Российская академия образования совместно с учителями, родителями и экспертами разработают хартию о цифровой образовательной среде школы.</p>
-  //-     <div class="article-prev__statistic">
-  //-       <span class="article-prev__stat-item article__stat-item--time">5 минут</span>
-  //-       <span class="article-prev__stat-item article__stat-item--views">35</span>
-  //-       <span class="article-prev__stat-item article__stat-item--likes">14</span>
-  //-     </div>
-  //-   </article>
-  //-   <article class="article-prev">
+//- +statistic
+  //-   <article class="article-prev.col-md-4">
   //-     <div class="article-prev__img-wrap">
   //-       <img src="" alt="">
   //-     </div>
   //-     <span class="article-prev__tag">Новости</span>
-  //-     <a href="#" class="article-prev__link">
+  //-     a.article-prev__link(href="#")
   //- <h3 class="article-prev__title">Главные новости цифрового образования</h3>
   //-   </a>
   //-     <p class="article-prev__text">В еженедельном дайджесте мы рассказываем о самом важном, что случилось с цифровым образованием в России и в мире за последнюю неделю.</p>
-  //-     <div class="article-prev__statistic">
-  //-       <span class="article-prev__stat-item article__stat-item--time">5 минут</span>
-  //-       <span class="article-prev__stat-item article__stat-item--views">35</span>
-  //-       <span class="article-prev__stat-item article__stat-item--likes">14</span>
-  //-     </div>
-  //-   </article>
-  //-   <article class="article-prev">
+//- +statistic
+  //-   <article class="article-prev.col-md-4">
   //-     <div class="article-prev__img-wrap">
   //-       <img src="" alt="">
   //-     </div>
   //-     <span class="article-prev__tag">Новости</span>
-  //-     <a href="#" class="article-prev__link">
+  //-     a.article-prev__link(href="#")
   //- <h3 class="article-prev__title">10 тезисов книги «Другая школа»</h3>
   //-   </a>
   //-     <p class="article-prev__text">Современная школа больше не работает — с этих слов начинается книга Александра Мурашева «Другая школа».</p>
-  //-     <div class="article-prev__statistic">
-  //-       <span class="article-prev__stat-item article__stat-item--time">5 минут</span>
-  //-       <span class="article-prev__stat-item article__stat-item--views">35</span>
-  //-       <span class="article-prev__stat-item article__stat-item--likes">14</span>
-  //-     </div>
-  //-   </article>
+//- +statistic
   //- </section>
 
   //- <!-- Научные статьи -->
   //- <section class="article-prev article--science">
   //-   <h2 class="article-prev__head">Научные статьи</h2>
   //-   <a href="#" class="article-prev__all-article-link"></a>
-  //-   <article class="article-prev">
+  //-   <article class="article-prev.col-md-4">
   //-     <div class="article-prev__img-wrap">
   //-       <img src="" alt="">
   //-     </div>
   //-     <span class="article-prev__tag">ИКТ</span>
-  //-     <a href="#" class="article-prev__link">
+  //-     a.article-prev__link(href="#")
   //- <h3 class="article-prev__title">Киберленинка выложит в открытый доступ 40 тысяч статей из журналов РАН</h3>
   //-   </a>
   //-     <p class="article-prev__text">Онлайн-библиотека научной литературы КиберЛенинка заключила договор с Институтом научной информации по общественным наукам РАН. В течение двух месяцев ИНИОН разместит свои журналы в открытом доступе.</p>
-  //-     <div class="article-prev__statistic">
-  //-       <span class="article-prev__stat-item article__stat-item--time">5 минут</span>
-  //-       <span class="article-prev__stat-item article__stat-item--views">35</span>
-  //-       <span class="article-prev__stat-item article__stat-item--likes">14</span>
-  //-     </div>
-  //-   </article>
-  //-   <article class="article-prev">
+//- +statistic
+  //-   <article class="article-prev.col-md-4">
   //-     <div class="article-prev__img-wrap">
   //-       <img src="" alt="">
   //-     </div>
   //-     <span class="article-prev__tag">Педагогика</span>
-  //-     <a href="#" class="article-prev__link">
+  //-     a.article-prev__link(href="#")
   //- <h3 class="article-prev__title">Минпросвещения утвердило новую концепцию преподавания технологии</h3>
   //-   </a>
   //-     <p class="article-prev__text">Если верить новой концепции преподавания уроков технологии, шитье фартуков и сборка табуретов останутся в прошлом.</p>
-  //-     <div class="article-prev__statistic">
-  //-       <span class="article-prev__stat-item article__stat-item--time">5 минут</span>
-  //-       <span class="article-prev__stat-item article__stat-item--views">35</span>
-  //-       <span class="article-prev__stat-item article__stat-item--likes">14</span>
-  //-     </div>
-  //-   </article>
-  //-   <article class="article-prev">
+//- +statistic
+  //-   <article class="article-prev.col-md-4">
   //-     <div class="article-prev__img-wrap">
   //-       <img src="" alt="">
   //-     </div>
   //-     <span class="article-prev__tag">Образование</span>
-  //-     <a href="#" class="article-prev__link">
+  //-     a.article-prev__link(href="#")
   //- <h3 class="article-prev__title">Яндекс проведет конференцию о технологиях в математическом образовании</h3>
   //-   </a>
   //-     <p class="article-prev__text">Как повысить качество математического образования с помощью исследований? 18–21 марта 2019 года Яндекс и Международное общество исследователей в области психологии математического образования (PME) проведут масштабную конференцию «Психология и технологии в математическом образовании».</p>
-  //-     <div class="article-prev__statistic">
-  //-       <span class="article-prev__stat-item article__stat-item--time">5 минут</span>
-  //-       <span class="article-prev__stat-item article__stat-item--views">35</span>
-  //-       <span class="article-prev__stat-item article__stat-item--likes">14</span>
-  //-     </div>
-  //-   </article>
+//- +statistic
   //- </section>
 
   //- <!-- FAQ -->

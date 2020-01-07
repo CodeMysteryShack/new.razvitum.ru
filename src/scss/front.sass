@@ -1,7 +1,12 @@
 @import "main"
+@import "spritePNG"
+@import "mixins/calc"
 
+// Главный баннер
 .main-banner
   &__slide
+    padding-top: 41px
+    padding-bottom: 65px
     background: linear-gradient(60deg, #1422aa, #a3d3e5)
     background-size: 400% 400%
     animation: AnimationName 25s ease infinite
@@ -14,17 +19,158 @@
         background-position: 0% 82%
 
   &__title
-    font-size: 48px
-    font-weight: 700
+    +ff-roboto-bold
+    font-size: 3.75em
     color: $orange
+    text-transform: none
+    text-decoration: none
   &__text
-    font-size: 48px
+    margin-top: 15px
+    +ff-roboto
+    font-size: 3em
     font-weight: 400
+    line-height: 1.12em
     color: #fff
 
   &__statistic
+    margin-top: 97px
+
+  &__stat-item
+    $indent: 44px
+    $hb: 48px
+    padding-left: $indent
+    position: relative
+    color: #fff
+    line-height: $hb
+    span
+      font-size: 1.63em
+      line-height: $hb
+    &::before
+      +psblock(inline-block, absolute);
+    &--people
+      &::before
+        +sprite($people)
+        +leftcalc($people-width, $hb)
+        +topcalc($people-height, $hb)
+    &--coin
+      &::before
+        +sprite($coin)
+        +leftcalc(30px, $hb)
+        +topcalc(28px, $hb)
+    &--building
+      &::before
+        +sprite($building)
+        +leftcalc(18px, $hb)
+        +topcalc(28px, $hb)
+    &--percent
+      &::before
+        +sprite($percent)
+        +leftcalc(29px, $hb)
+        +topcalc(29px, $hb)
+
+  &__info
+    padding-top: 33px
+    padding-bottom: 43px
+    box-shadow: 0 0 7px rgba(102, 102, 102, 0.21)
     &-item
-      color: #fff
+      $info-pd-left: 66px
+      padding-left: $info-pd-left
+      h4
+        margin: 0
+        font-size: 1.125em
+        line-height: 1.125em
+        color: $accent
+      p
+        margin: 0
+        font-size: 0.875em
+        line-height: 1.285em
+        color: $headgray
+      &::before
+        +psblock(block, absolute)
+      &--licence
+        &::before
+          +sprite($licence)
+          +leftcalc($licence-width, $info-pd-left)
+          top: 0
+      &--official
+        &::before
+          +sprite($display)
+          +leftcalc($display-width, $info-pd-left)
+          top: 0
+      &--free
+        &::before
+          +sprite($medal)
+          +leftcalc($medal-width, $info-pd-left)
+          top: 0
+
+// карточки-превью статей
+.article-prev
+  position: relative
+  margin-top: 70px
+  &__img-wrap
+    margin-bottom: 30px
+    img
+      width: 100%
+      height: auto
+      display: cover
+  &__tag
+    display: block
+    text-decoration: none
+    +ff-arial-bold
+    color: $lightgray
+    font-size: 0.875em
+    line-height: 1.285em
+    &:hover
+      color: $lightgray
+    &:visited
+      color: $lightgray
+  &__link
+    text-decoration: none
+  &__title
+    margin-top: 6px
+    margin-bottom: 21px
+    +ff-arial-bold
+    color: $headgray
+    font-size: 1.125em
+    line-height: 1.125em
+  &__text
+    +ff-arial
+    color: $textgray
+    font-size: 0.875em
+    line-height: 1.714em
+  &__statistic
+    border: none
+    background: none
+  &__stat-item
+    font-size: 0.75em
+    color: $lightgray
+
+  // 1-я карточка
+  &--main article-prev
+    &__img-wrap
+      position: absolute
+      top: 0
+      left: 0
+
+// Анонс
+.announcement
+  background-color: #f3efe3
+  &__title
+    +ff-arial-bold
+    color: $accent
+    font-size: 1.125em
+    line-height: 1.33em
+  &__item
+  &__date
+    +ff-arial-bold
+    text-align: center
+  &__text
+    +ff-arial-bold
+    color: $headgray
+    font-size: 1em
+    line-height: 1.5em
+
+
 
 
 

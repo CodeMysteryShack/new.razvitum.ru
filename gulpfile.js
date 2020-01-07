@@ -129,7 +129,7 @@ function spritePNG() {
   let spriteData = src(dir.src + 'img/spritePNG/*.png')
     .pipe(spritesmith({
       imgName: 'spritePNG.png',
-      cssName: 'spritePNG.css',
+      cssName: 'spritePNG.scss',
       padding: 4
       })
     );

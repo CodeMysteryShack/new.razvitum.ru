@@ -1,0 +1,36 @@
+// ВСПОМОГАТЕЛЬНЫЕ МИКСИНЫ
+
+// вычисляем положение верхней точки спрайта в блоке
+// $sh - высота спрайта
+// $fh - высота фрейма
+@mixin topcalc($sh, $fh) {
+  $top-point: calc((#{$fh} / 2) - (#{$sh} / 2));
+  @if #{$top-point} > 0 {
+    top: $top-point;
+  }
+  @else {
+    top: 0;
+  }
+}
+
+// аналогично для левой точки
+// $sw - ширина спрайта
+// $fw - ширина фрейма
+@mixin leftcalc($sw, $fw) {
+  $left-point: calc((#{$fw} / 2) - (#{$sw} / 2));
+  @if #{$left-point} > 0 {
+    left: $left-point;
+  }
+  @else {
+    left: 0;
+  }
+}
+
+// миксин псевдо-блока
+// $display - св-во display
+// $pos - cв-во position
+@mixin psblock($display, $pos) {
+  content: '';
+  display: $display;
+  position: $pos;
+}
