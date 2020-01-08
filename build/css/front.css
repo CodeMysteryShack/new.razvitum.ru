@@ -6001,11 +6001,12 @@ nav.solidarity a.active {
       top: calc((48px / 2) - (29px / 2)); }
   .main-banner__info {
     padding-top: 33px;
-    padding-bottom: 43px;
+    padding-bottom: 10px;
     -webkit-box-shadow: 0 0 7px rgba(102, 102, 102, 0.21);
             box-shadow: 0 0 7px rgba(102, 102, 102, 0.21); }
     .main-banner__info-item {
       display: block;
+      margin-bottom: 33px;
       padding-left: 66px; }
       .main-banner__info-item h4 {
         margin: 0;
@@ -6147,7 +6148,7 @@ nav.solidarity a.active {
 
 .announcement {
   padding-top: 30px;
-  padding-bottom: 76px;
+  padding-bottom: 46px;
   background-color: #f3efe3; }
   .announcement__title {
     margin-bottom: 46px;
@@ -6163,7 +6164,8 @@ nav.solidarity a.active {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
+            flex-direction: row;
+    margin-bottom: 30px; }
   .announcement__date {
     display: -webkit-box;
     display: -ms-flexbox;

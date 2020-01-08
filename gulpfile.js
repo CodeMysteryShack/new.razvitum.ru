@@ -114,6 +114,12 @@ function copyImages() {
 }
 exports.copyImages = copyImages;
 
+function copyIcon() {
+  return src(dir.src + 'img/favicon/*.{jpg,jpeg,png,svg,webp,gif,webmanifest}')
+    .pipe(dest(dir.build + '/img/favicon/'));
+}
+exports.copyIcon = copyIcon;
+
 function copyFonts() {
   return src(dir.src + 'fonts/*.{ttf,eot,svg,woff,woff2}')
     .pipe(dest(dir.build + 'fonts/'));
@@ -126,9 +132,9 @@ function clean() {
 exports.clean = clean;
 
 function spritePNG() {
-  cssVarMap: function (sprite) {
-    sprite.name = 'sprite_' + sprite.name;
-  }
+  // cssVarMap: function (sprite) {
+  //   sprite.name = 'sprite_' + sprite.name;
+  // }
   let spriteData = src(dir.src + 'img/spritePNG/*.png')
     .pipe(spritesmith({
       imgName: 'spritePNG.png',
@@ -173,6 +179,6 @@ function serve() {
 
 exports.default = series(
   parallel(clean),
-  parallel(spritePNG, copyAssets, compileStyles, compilePug, processJs, copyJsVendors, copyImages, copyFonts/*, copyHTML*/),
+  parallel(spritePNG, copyAssets, compileStyles, compilePug, processJs, copyJsVendors, copyIcon, copyImages, copyFonts/*, copyHTML*/),
   serve
 );
