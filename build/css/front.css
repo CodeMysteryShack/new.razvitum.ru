@@ -5972,28 +5972,28 @@ nav.solidarity a.active {
       display: block;
       position: absolute; }
     .main-banner__stat-item--people::before {
-      background-image: url(/img/spritePNG.png);
+      background-image: url(../img/spritePNG.png);
       background-position: 0px -85px;
       width: 32px;
       height: 21px;
       left: calc((48px / 2) - (32px / 2));
       top: calc((48px / 2) - (21px / 2)); }
     .main-banner__stat-item--coin::before {
-      background-image: url(/img/spritePNG.png);
+      background-image: url(../img/spritePNG.png);
       background-position: -33px -52px;
       width: 30px;
       height: 28px;
       left: calc((48px / 2) - (30px / 2));
       top: calc((48px / 2) - (28px / 2)); }
     .main-banner__stat-item--building::before {
-      background-image: url(/img/spritePNG.png);
+      background-image: url(../img/spritePNG.png);
       background-position: -115px 0px;
       width: 18px;
       height: 28px;
       left: calc((48px / 2) - (18px / 2));
       top: calc((48px / 2) - (28px / 2)); }
     .main-banner__stat-item--percent::before {
-      background-image: url(/img/spritePNG.png);
+      background-image: url(../img/spritePNG.png);
       background-position: 0px -52px;
       width: 29px;
       height: 29px;
@@ -6023,21 +6023,21 @@ nav.solidarity a.active {
         display: block;
         position: absolute; }
       .main-banner__info-item--licence::before {
-        background-image: url(/img/spritePNG.png);
+        background-image: url(../img/spritePNG.png);
         background-position: -87px 0px;
         width: 24px;
         height: 32px;
         left: calc((66px / 2) - (24px / 2));
         top: 0; }
       .main-banner__info-item--official::before {
-        background-image: url(/img/spritePNG.png);
+        background-image: url(../img/spritePNG.png);
         background-position: -47px 0px;
         width: 36px;
         height: 32px;
         left: calc((66px / 2) - (36px / 2));
         top: 0; }
       .main-banner__info-item--free::before {
-        background-image: url(/img/spritePNG.png);
+        background-image: url(../img/spritePNG.png);
         background-position: -87px -36px;
         width: 24px;
         height: 32px;
@@ -6186,7 +6186,7 @@ nav.solidarity a.active {
       content: '';
       display: block;
       position: absolute;
-      background-image: url(/img/spritePNG.png);
+      background-image: url(../img/spritePNG.png);
       background-position: 0px 0px;
       width: 43px;
       height: 48px;
@@ -6227,7 +6227,8 @@ nav.solidarity a.active {
     .faq__tag span {
       padding-left: 12px; }
     .faq__tag:hover {
-      color: #a3d3e5; }
+      color: #a3d3e5;
+      cursor: pointer; }
   .faq__quest {
     display: block;
     margin-top: 15px;
@@ -6238,7 +6239,8 @@ nav.solidarity a.active {
     font-size: 1.125em;
     line-height: 1.2em; }
     .faq__quest:hover {
-      color: #000; }
+      color: #000;
+      cursor: pointer; }
 
 .section-list {
   margin-bottom: 64px; }

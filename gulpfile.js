@@ -139,7 +139,8 @@ function spritePNG() {
     .pipe(spritesmith({
       imgName: 'spritePNG.png',
       cssName: 'spritePNG.scss',
-      padding: 4
+      padding: 4,
+      imgPath: '../img/spritePNG.png'
       })
     );
   let imgStream = spriteData.img.pipe(dest(dir.src + 'img/'));
