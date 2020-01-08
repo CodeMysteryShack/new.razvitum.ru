@@ -1,6 +1,14 @@
 //- Примеси
 
-mixin statistic
+mixin statistic(mods)
+  -
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' main-nav--' + modsList[i].trim();
+      }
+    }
   .article-prev__statistic
     .text-muted
       span.mr-1.article-prev__stat-item #[span.glyphicon.glyphicon-time] 5 минут

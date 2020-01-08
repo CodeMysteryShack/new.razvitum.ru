@@ -126,6 +126,9 @@ function clean() {
 exports.clean = clean;
 
 function spritePNG() {
+  cssVarMap: function (sprite) {
+    sprite.name = 'sprite_' + sprite.name;
+  }
   let spriteData = src(dir.src + 'img/spritePNG/*.png')
     .pipe(spritesmith({
       imgName: 'spritePNG.png',
@@ -148,8 +151,8 @@ function serve() {
     port: 8080,
   });
   watch([
-    dir.src + 'scss/*.sass',
-    dir.src + 'scss/blocks/*.sass',
+    dir.src + 'scss/**/*.{css,sass,scss}',
+    // dir.src + 'scss/blocks/*.{css,sass,scsss}',
   ], compileStyles);
   watch([
     dir.src + 'img/spritePNG/*.png',

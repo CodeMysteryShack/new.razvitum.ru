@@ -44,15 +44,6 @@ block content
           h3.article-prev__title Яндекс.Учебники и РАО создадут хартию о цифровой образовательной среде
         p.article-prev__text Яндекс.Учебник и Российская академия образования совместно с учителями, родителями и экспертами разработают хартию о цифровой образовательной среде школы.
         +statistic
-        //- .article-prev__statistic
-        //-   small.text-muted
-        //-     span.mr-1.article-prev__stat-item #[span.glyphicon.glyphicon-time] 5 минут
-        //-     span.mr-1.article-prev__stat-item #[span.glyphicon.glyphicon-eye-open] 35
-        //-     span.mr-1.article-prev__stat-item #[span.glyphicon.glyphicon-heart-empty] 14
-
-        //- .article__stat-item--time 5 минут
-        //- span.article-prev__stat-item.article__stat-item--views 35
-        //- span.article-prev__stat-item.article__stat-item--likes 14
 
       // Форма подписки
       .col-sm-12.col-lg-4
@@ -79,7 +70,7 @@ block content
           img(src="/img/prev_02.png", alt="")
         a.article-prev__tag(href="#") Образование
         a.article-prev__link(href="#")
-          h3.article-prev__title Образовательное пространство России — это 70 лет консерватизма
+          h3.article-prev__title Образовательное пространство России&#160;— это 70 лет консерватизма
         p.article-prev__text Союз дизайнеров России, Московский Архитектурный институт и компания «Сетевые исследования» объявили конкурс проектов по дизайну образовательного пространства российских университетов.
         +statistic
 
@@ -99,138 +90,180 @@ block content
         h2.col-md-12.announcement__title Анонс мероприятий
       .row
         .announcement__item.col-md-4
-          p.announcement__date #[span 01] июля
+          .announcement__date
+            .announcement__day 25
+            .announcement__month февраля
           p.announcement__text Четвёртая встреча «Клуба руководителей»
         .announcement__item.col-md-4
-          p.announcement__date #[span 01] июля
+          .announcement__date
+            .announcement__day 01
+            .announcement__month сентября
           p.announcement__text Седьмой поток на бесплатных дистанционных курсах для работников образования
         .announcement__item.col-md-4
-          p.announcement__date #[span 01] июля
-          p.announcement__text Старт продаж программы «Государственный контроль в образоватьельном учреждении»
+          .announcement__date
+            .announcement__day 01
+            .announcement__month июля
+          p.announcement__text Старт продаж программы «Государственный контроль в образовательном учреждении»
 
-  //- <!-- Видео-интервью -->
-  //- <section class="article-prev article--video-interview">
-  //-   <h2 class="article-prev__head">Видео-интервью</h2>
-  //-   <a href="#" class="article-prev__all-article-link"></a>
-  //-   <article class="article-prev.col-md-4">
-  //-     <div class="article-prev__img-wrap">
-  //-       <img src="" alt="">
-  //-     </div>
-  //-     <span class="article-prev__tag">Видео-интервью</span>
-  //-     a.article-prev__link(href="#")
-  //-        <h3 class="article-prev__title">5 правил личностного роста</h3>
-  //-     </a>
-  //-     <p class="article-prev__text"></p>
-  //- +statistic
-  //-   <article class="article-prev.col-md-4">
-  //-     <div class="article-prev__img-wrap">
-  //-       <img src="" alt="">
-  //-     </div>
-  //-     <span class="article-prev__tag">Видео-интервью</span>
-  //-     a.article-prev__link(href="#")
-  //- <h3 class="article-prev__title">Первый урок. Как подготовиться и не волноваться</h3>
-  //-   </a>
-  //-     <p class="article-prev__text"></p>
-//- +statistic
-  //-   <article class="article-prev.col-md-4">
-  //-     <div class="article-prev__img-wrap">
-  //-       <img src="" alt="">
-  //-     </div>
-  //-     <span class="article-prev__tag">Видео-интервью</span>
-  //-     a.article-prev__link(href="#")
-  //- <h3 class="article-prev__title">Мотивационные приема поддержки молодых специалистов в школе</h3>
-  //-   </a>
-  //-     <p class="article-prev__text"></p>
-//- +statistic
-  //- </section>
+  // Видео-интервью
+  section.article-prev.article-prev--video-interview.container
+    .row
+      .col-md-12.section-head
+        hr.section-head__line
+        h2.section-head__title Видео-интервью
+        a.section-head__all-articles-link(href="#") Все статьи раздела >>
 
-  //- <!-- Новости -->
-  //- <section class="article-prev article--news">
-  //-   <h2 class="article-prev__head">Новости</h2>
-  //-   <a href="#" class="article-prev__all-article-link"></a>
-  //-   <article class="article-prev.col-md-4">
-  //-     <div class="article-prev__img-wrap">
-  //-       <img src="" alt="">
-  //-     </div>
-  //-     <span class="article-prev__tag">Новости</span>
-  //-     a.article-prev__link(href="#")
-  //- <h3 class="article-prev__title">Яндекс.Учебники и РАО создадут хартию о цифровой образовательной среде</h3>
-  //-   </a>
-  //-     <p class="article-prev__text">Яндекс.Учебник и Российская академия образования совместно с учителями, родителями и экспертами разработают хартию о цифровой образовательной среде школы.</p>
-//- +statistic
-  //-   <article class="article-prev.col-md-4">
-  //-     <div class="article-prev__img-wrap">
-  //-       <img src="" alt="">
-  //-     </div>
-  //-     <span class="article-prev__tag">Новости</span>
-  //-     a.article-prev__link(href="#")
-  //- <h3 class="article-prev__title">Главные новости цифрового образования</h3>
-  //-   </a>
-  //-     <p class="article-prev__text">В еженедельном дайджесте мы рассказываем о самом важном, что случилось с цифровым образованием в России и в мире за последнюю неделю.</p>
-//- +statistic
-  //-   <article class="article-prev.col-md-4">
-  //-     <div class="article-prev__img-wrap">
-  //-       <img src="" alt="">
-  //-     </div>
-  //-     <span class="article-prev__tag">Новости</span>
-  //-     a.article-prev__link(href="#")
-  //- <h3 class="article-prev__title">10 тезисов книги «Другая школа»</h3>
-  //-   </a>
-  //-     <p class="article-prev__text">Современная школа больше не работает — с этих слов начинается книга Александра Мурашева «Другая школа».</p>
-//- +statistic
-  //- </section>
+    .row
+      article.article-prev.col-md-4
+        .article-prev__img-wrap
+          img(src="/img/vid_01.png", alt="")
+        a.article-prev__tag(href="#") Видео-интервью
+        a.article-prev__link(href="#")
+          h3.article-prev__title 5 правил личностного роста
+        p.article-prev__text
+        +statistic
 
-  //- <!-- Научные статьи -->
-  //- <section class="article-prev article--science">
-  //-   <h2 class="article-prev__head">Научные статьи</h2>
-  //-   <a href="#" class="article-prev__all-article-link"></a>
-  //-   <article class="article-prev.col-md-4">
-  //-     <div class="article-prev__img-wrap">
-  //-       <img src="" alt="">
-  //-     </div>
-  //-     <span class="article-prev__tag">ИКТ</span>
-  //-     a.article-prev__link(href="#")
-  //- <h3 class="article-prev__title">Киберленинка выложит в открытый доступ 40 тысяч статей из журналов РАН</h3>
-  //-   </a>
-  //-     <p class="article-prev__text">Онлайн-библиотека научной литературы КиберЛенинка заключила договор с Институтом научной информации по общественным наукам РАН. В течение двух месяцев ИНИОН разместит свои журналы в открытом доступе.</p>
-//- +statistic
-  //-   <article class="article-prev.col-md-4">
-  //-     <div class="article-prev__img-wrap">
-  //-       <img src="" alt="">
-  //-     </div>
-  //-     <span class="article-prev__tag">Педагогика</span>
-  //-     a.article-prev__link(href="#")
-  //- <h3 class="article-prev__title">Минпросвещения утвердило новую концепцию преподавания технологии</h3>
-  //-   </a>
-  //-     <p class="article-prev__text">Если верить новой концепции преподавания уроков технологии, шитье фартуков и сборка табуретов останутся в прошлом.</p>
-//- +statistic
-  //-   <article class="article-prev.col-md-4">
-  //-     <div class="article-prev__img-wrap">
-  //-       <img src="" alt="">
-  //-     </div>
-  //-     <span class="article-prev__tag">Образование</span>
-  //-     a.article-prev__link(href="#")
-  //- <h3 class="article-prev__title">Яндекс проведет конференцию о технологиях в математическом образовании</h3>
-  //-   </a>
-  //-     <p class="article-prev__text">Как повысить качество математического образования с помощью исследований? 18–21 марта 2019 года Яндекс и Международное общество исследователей в области психологии математического образования (PME) проведут масштабную конференцию «Психология и технологии в математическом образовании».</p>
-//- +statistic
-  //- </section>
+      article.article-prev.col-md-4
+        .article-prev__img-wrap
+          img(src="/img/vid_02.png", alt="")
+        a.article-prev__tag(href="#") Видео-интервью
+        a.article-prev__link(href="#")
+          h3.article-prev__title Первый урок. Как подготовиться и не волноваться
+        p.article-prev__text
+        +statistic
 
-  //- <!-- FAQ -->
-  //- <section class="faq">
+      article.article-prev.col-md-4
+        .article-prev__img-wrap
+          img(src="/img/vid_03.png", alt="")
+        a.article-prev__tag(href="#") Видео-интервью
+        a.article-prev__link(href="#")
+          h3.article-prev__title Мотивационные приема поддержки молодых специалистов в школе
+        p.article-prev__text
+        +statistic
 
-  //- </section>
+  // Новости
+  section.article-prev.article-prev--news.container
+    .row
+      .col-md-12.section-head
+        hr.section-head__line
+        h2.section-head__title Новости
+        a.section-head__all-articles-link(href="#") Все статьи раздела >>
 
-  //- <!-- Инструкции -->
+    .row
+      article.article-prev.col-md-4
+        .article-prev__img-wrap
+          img(src="/img/news_01.png", alt="")
+        a.article-prev__tag(href="#") Новости
+        a.article-prev__link(href="#")
+          h3.article-prev__title Яндекс.Учебники и РАО создадут хартию о цифровой образовательной среде
+        p.article-prev__text Яндекс.Учебник и Российская академия образования совместно с учителями, родителями и экспертами разработают хартию о цифровой образовательной среде школы.
+        +statistic
 
-  //- <!-- Список разделов -->
-  //- <section class="section-list">
-  //-   <a href="#" class="section-list__item">Новости</a>
-  //-   <a href="#" class="section-list__item">Научные статьи</a>
-  //-   <a href="#" class="section-list__item">Инструкции</a>
-  //-   <a href="#" class="section-list__item">Технология</a>
-  //-   <a href="#" class="section-list__item section-list__item--2nd">Образование</a>
-  //-   <a href="#" class="section-list__item section-list__item--2nd">ИКТ</a>
-  //-   <a href="#" class="section-list__item section-list__item--2nd">Выступления</a>
-  //-   <a href="#" class="section-list__item section-list__item--2nd">Сборник</a>
-  //- </section>
+      article.article-prev.col-md-4
+        .article-prev__img-wrap
+          img(src="/img/news_02.png", alt="")
+        a.article-prev__tag(href="#") Новости
+        a.article-prev__link(href="#")
+          h3.article-prev__title Главные новости цифрового образовании
+        p.article-prev__text В еженедельном дайджесте мы рассказываем о самом важном, что случилось с цифровым образованием в России и в мире за последнюю неделю.
+        +statistic
+
+      article.article-prev.col-md-4
+        .article-prev__img-wrap
+          img(src="/img/news_03.png", alt="")
+        a.article-prev__tag(href="#") Новости
+        a.article-prev__link(href="#")
+          h3.article-prev__title 10 тезисов книги «Другая школа»
+        p.article-prev__text Современная школа больше не работает — с этих слов начинается книга Александра Мурашева «Другая школа».
+        +statistic
+
+  // Научные статьи
+  section.article-prev.article-prev--science.container
+    .row
+      .col-md-12.section-head
+        .section-head__line
+        h2.section-head__title Научные статьи
+        a.section-head__all-articles-link(href="#") Все статьи раздела >>
+
+    .row
+      article.article-prev.col-md-4
+        .article-prev__img-wrap
+          img(src="/img/sci_01.png", alt="")
+        a.article-prev__tag(href="#") ИКТ
+        a.article-prev__link(href="#")
+          h3.article-prev__title Киберленинка выложит в открытый доступ 40 тысяч статей из журналов РАН
+        p.article-prev__text Онлайн-библиотека научной литературы КиберЛенинка заключила договор с Институтом научной информации по общественным наукам РАН. В течение двух месяцев ИНИОН разместит свои журналы в открытом доступе.
+        +statistic
+
+      article.article-prev.col-md-4
+        .article-prev__img-wrap
+          img(src="/img/sci_02.png", alt="")
+        a.article-prev__tag(href="#") Педагогика
+        a.article-prev__link(href="#")
+          h3.article-prev__title Минпросвещения утвердило новую концепцию преподавания технологии
+        p.article-prev__text Если верить новой концепции преподавания уроков технологии, шитье фартуков и сборка табуретов останутся в прошлом.
+        +statistic
+
+      article.article-prev.col-md-4
+        .article-prev__img-wrap
+          img(src="/img/sci_03.png", alt="")
+        a.article-prev__tag(href="#") Образование
+        a.article-prev__link(href="#")
+          h3.article-prev__title Яндекс проведет конференцию о технологиях в математическом образовании
+        p.article-prev__text Как повысить качество математического образования с помощью исследований? 18–21 марта 2019 года Яндекс и Международное общество исследователей в области психологии математического образования (PME) проведут масштабную конференцию «Психология и технологии в математическом образовании».
+        +statistic
+
+  // FAQ
+  section.faq.container
+    .row
+      - var Arr=['ИКТ', 'Педагогика', 'Выступления', 'Сборник', 'Технологии', 'Мастер-класс', 'Читаем', 'Лайфхаки-учителя']
+        each item in Arr
+          .faq__section.col-md-3.col-sm-6.col-xs-12
+            a.faq__tag(href="#") #{item}#[span >>]
+            .faq__item
+              a.faq__quest Вы предоставляете рассрочку?
+              +statistic
+            .faq__item
+              a.faq__quest Как оплачивать обучение?
+              +statistic
+      -;
+  // Инструкции
+  section.article-prev.article-prev--science.container
+    .row
+      .col-md-12.section-head
+        .section-head__line
+        h2.section-head__title Инструкции
+        a.section-head__all-articles-link(href="#") Все статьи раздела >>
+
+    .row
+      article.article-prev.col-md-4
+        .article-prev__img-wrap
+          img(src="/img/inst_01.png", alt="")
+        a.article-prev__tag(href="#") Инструкции
+        a.article-prev__link(href="#")
+          h3.article-prev__title Яндекс проведет конференцию о технологиях в математическом образовании
+        p.article-prev__text Как повысить качество математического образования с помощью исследований? 18–21 марта 2019 года Яндекс и Международное общество исследователей в области психологии математического образования (PME) проведут масштабную конференцию «Психология и технологии в математическом образовании».
+        +statistic
+
+      article.article-prev.col-md-4
+        .article-prev__img-wrap
+          img(src="/img/inst_02.png", alt="")
+        a.article-prev__tag(href="#") Инструкции
+        a.article-prev__link(href="#")
+          h3.article-prev__title Яндекс проведет конференцию о технологиях в математическом образовании
+        p.article-prev__text Как повысить качество математического образования с помощью исследований? 18–21 марта 2019 года Яндекс и Международное общество исследователей в области психологии математического образования (PME) проведут масштабную конференцию «Психология и технологии в математическом образовании».
+        +statistic
+
+  // Список разделов
+  section.section-list.container
+    .row
+      .col-md-12.section-list__group
+        a.section-list__item(href="#") Новости
+        a.section-list__item(href="#") Научные статьи
+        a.section-list__item(href="#") Инструкции
+        a.section-list__item(href="#") Технология
+      .col-md-12.section-list__group
+        a.section-list__item.section-list__item--2nd(href="#") Образование
+        a.section-list__item.section-list__item--2nd(href="#") ИКТ
+        a.section-list__item.section-list__item--2nd(href="#") Выступления
+        a.section-list__item.section-list__item--2nd(href="#") Сборник
