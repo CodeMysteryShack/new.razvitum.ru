@@ -6045,6 +6045,33 @@ nav.solidarity a.active {
         left: calc((66px / 2) - (24px / 2));
         top: 0; }
 
+.subscribe {
+  padding: 24px;
+  border: 2px solid #1422aa; }
+  .subscribe__legend {
+    margin: 0;
+    padding: 0 0 24px 0;
+    border: none;
+    font-size: 1em;
+    color: #000; }
+    .subscribe__legend span {
+      font-family: Arial, sans-serif;
+      font-weight: 700;
+      color: #1422aa;
+      font-style: italic; }
+  .subscribe__input {
+    margin-bottom: 11px;
+    border: 1px solid #bcbcbc;
+    color: #545454;
+    background-color: #fff; }
+  .subscribe__check-label {
+    margin: 0 0 0 10px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-weight: 400; }
+  .subscribe__btn {
+    margin: 0; }
+
 .article-prev {
   position: relative; }
   .article-prev__img-wrap {

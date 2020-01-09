@@ -9,8 +9,14 @@ mixin statistic(mods)
         allMods = allMods + ' main-nav--' + modsList[i].trim();
       }
     }
+  //- .article-prev__statistic
+  //-   .text-muted
+  //-     span.mr-1.article-prev__stat-item #[span.glyphicon.glyphicon-time] 5 минут
+  //-     span.mr-1.article-prev__stat-item #[span.glyphicon.glyphicon-eye-open] 35
+  //-     span.mr-1.article-prev__stat-item #[span.glyphicon.glyphicon-heart-empty] 14
+
   .article-prev__statistic
     .text-muted
-      span.mr-1.article-prev__stat-item #[span.glyphicon.glyphicon-time] 5 минут
-      span.mr-1.article-prev__stat-item #[span.glyphicon.glyphicon-eye-open] 35
-      span.mr-1.article-prev__stat-item #[span.glyphicon.glyphicon-heart-empty] 14
+      span.mr-1.article-prev__stat-item #[span.fas.fa-clock] 5 минут
+      span.mr-1.article-prev__stat-item #[span.fas.fa-eye] 35
+      span.mr-1.article-prev__stat-item #[span.fas.fa-heart] 14

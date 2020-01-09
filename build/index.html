@@ -129,20 +129,21 @@
     </section><!-- Статьи. Верхний блок-->
     <section class="article-prevs-block container">
       <div class="row">
-        <article class="col-sm-12 col-lg-8 article-prev aritcles__prev--main">
+        <article class="col-xs-12 col-sm-6 col-md-8 article-prev aritcles__prev--main">
           <div class="article-prev__img-wrap"><img src="/img/article_photo.png" alt=""></div><a class="article-prev__link" href="#">
             <h3 class="article-prev__title">Яндекс.Учебники и РАО создадут хартию о цифровой образовательной среде</h3>
           </a>
           <p class="article-prev__text">Яндекс.Учебник и Российская академия образования совместно с учителями, родителями и экспертами разработают хартию о цифровой образовательной среде школы.</p>
           <div class="article-prev__statistic">
-            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
           </div>
         </article><!-- Форма подписки-->
-        <div class="col-sm-12 col-lg-4 col-sm-8">
-          <form class="subscribe-form" action="#" method="POST">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <form class="subscribe" action="#" method="POST">
             <fieldset class="form-group">
-              <legend class="subscribe-form__text"><span>Мы Вам понравились?</span> Подпишитесь</legend><label class="sr-only" for="lastname">Фамилия</label><input class="form-control subscribe-form__input" type="text" name="lastname" placeholder="Фамилия"><label class="sr-only" for="firstname">Имя</label><input class="form-control subscribe-form__input" type="text" name="firstname" placeholder="Имя"><input class="form-control subscribe-form__input" type="text" name=""><label class="sr-only" for="firstname">Имя</label><input class="form-control subscribe-form__input" type="email" name="email"><input class="subscribe-form__input" type="checkbox"><input class="btn subscribe-form__subscribe" type="submit" value="Подписаться">
-            </fieldset>
+              <legend class="subscribe__legend"><span>Мы Вам понравились?</span> Подпишитесь</legend><label class="sr-only" for="lastname">Фамилия</label><input class="form-control subscribe__input" type="text" id="lastname" placeholder="Фамилия"><label class="sr-only" for="firstname">Имя</label><input class="form-control subscribe__input" type="text" id="firstname" placeholder="Имя"><label class="sr-only" for="patronymic">Отчество</label><input class="form-control subscribe__input" type="text" id="patronymic" placeholder="Отчество"><label class="sr-only" for="firstname">e-mail</label><input class="form-control subscribe__input" type="email" id="email" placeholder="Ваш e-mail адрес">
+              <div class="subscribe__check"><input class="subscribe__checkbox" type="checkbox" id="freqcheck"><label class="subscribe__check-label" for="freqcheck">Не более 1 письма в неделю</label></div>
+            </fieldset><button class="btn btn-primary subscribe__btn" type="submit">Подписаться</button>
           </form>
         </div>
       </div>
@@ -153,7 +154,7 @@
           </a>
           <p class="article-prev__text">В еженедельном дайджесте мы рассказываем о самом важном, что случилось с цифровым образованием в России и в мире за последнюю неделю.</p>
           <div class="article-prev__statistic">
-            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
           </div>
         </article>
         <article class="article-prev col-md-4">
@@ -162,7 +163,7 @@
           </a>
           <p class="article-prev__text">Союз дизайнеров России, Московский Архитектурный институт и компания «Сетевые исследования» объявили конкурс проектов по дизайну образовательного пространства российских университетов.</p>
           <div class="article-prev__statistic">
-            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
           </div>
         </article>
         <article class="article-prev col-md-4">
@@ -171,7 +172,7 @@
           </a>
           <p class="article-prev__text">С 1 апреля по 19 мая EdTech-стартапы могут подать заявки на участие в Конкурсе инноваций в образовании (КИвО). Прошедших первичный отбор ждет летний акселератор и открытый финал в Москве.</p>
           <div class="article-prev__statistic">
-            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
           </div>
         </article>
       </div>
@@ -220,7 +221,7 @@
           </a>
           <p class="article-prev__text"></p>
           <div class="article-prev__statistic">
-            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
           </div>
         </article>
         <article class="article-prev col-md-4">
@@ -229,7 +230,7 @@
           </a>
           <p class="article-prev__text"></p>
           <div class="article-prev__statistic">
-            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
           </div>
         </article>
         <article class="article-prev col-md-4">
@@ -238,7 +239,7 @@
           </a>
           <p class="article-prev__text"></p>
           <div class="article-prev__statistic">
-            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
           </div>
         </article>
       </div>
@@ -257,7 +258,7 @@
           </a>
           <p class="article-prev__text">Яндекс.Учебник и Российская академия образования совместно с учителями, родителями и экспертами разработают хартию о цифровой образовательной среде школы.</p>
           <div class="article-prev__statistic">
-            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
           </div>
         </article>
         <article class="article-prev col-md-4">
@@ -266,7 +267,7 @@
           </a>
           <p class="article-prev__text">В еженедельном дайджесте мы рассказываем о самом важном, что случилось с цифровым образованием в России и в мире за последнюю неделю.</p>
           <div class="article-prev__statistic">
-            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
           </div>
         </article>
         <article class="article-prev col-md-4">
@@ -275,7 +276,7 @@
           </a>
           <p class="article-prev__text">Современная школа больше не работает — с этих слов начинается книга Александра Мурашева «Другая школа».</p>
           <div class="article-prev__statistic">
-            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
           </div>
         </article>
       </div>
@@ -294,7 +295,7 @@
           </a>
           <p class="article-prev__text">Онлайн-библиотека научной литературы КиберЛенинка заключила договор с Институтом научной информации по общественным наукам РАН. В течение двух месяцев ИНИОН разместит свои журналы в открытом доступе.</p>
           <div class="article-prev__statistic">
-            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
           </div>
         </article>
         <article class="article-prev col-md-4">
@@ -303,7 +304,7 @@
           </a>
           <p class="article-prev__text">Если верить новой концепции преподавания уроков технологии, шитье фартуков и сборка табуретов останутся в прошлом.</p>
           <div class="article-prev__statistic">
-            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
           </div>
         </article>
         <article class="article-prev col-md-4">
@@ -312,7 +313,7 @@
           </a>
           <p class="article-prev__text">Как повысить качество математического образования с помощью исследований? 18–21 марта 2019 года Яндекс и Международное общество исследователей в области психологии математического образования (PME) проведут масштабную конференцию «Психология и технологии в математическом образовании».</p>
           <div class="article-prev__statistic">
-            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
           </div>
         </article>
       </div>
@@ -322,96 +323,96 @@
         <div class="faq__section col-md-3 col-sm-6 col-xs-12"><a class="faq__tag" href="#">ИКТ<span>>></span></a>
           <div class="faq__item"><a class="faq__quest">Вы предоставляете рассрочку?</a>
             <div class="article-prev__statistic">
-              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
             </div>
           </div>
-          <div class="faq__item"><a class="faq__quest">Как оплачивать обучение?</a>
+          <div class="faq__item hidden-xs"><a class="faq__quest">Как оплачивать обучение?</a>
             <div class="article-prev__statistic">
-              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
             </div>
           </div>
         </div>
         <div class="faq__section col-md-3 col-sm-6 col-xs-12"><a class="faq__tag" href="#">Педагогика<span>>></span></a>
           <div class="faq__item"><a class="faq__quest">Вы предоставляете рассрочку?</a>
             <div class="article-prev__statistic">
-              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
             </div>
           </div>
-          <div class="faq__item"><a class="faq__quest">Как оплачивать обучение?</a>
+          <div class="faq__item hidden-xs"><a class="faq__quest">Как оплачивать обучение?</a>
             <div class="article-prev__statistic">
-              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
             </div>
           </div>
         </div>
         <div class="faq__section col-md-3 col-sm-6 col-xs-12"><a class="faq__tag" href="#">Выступления<span>>></span></a>
           <div class="faq__item"><a class="faq__quest">Вы предоставляете рассрочку?</a>
             <div class="article-prev__statistic">
-              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
             </div>
           </div>
-          <div class="faq__item"><a class="faq__quest">Как оплачивать обучение?</a>
+          <div class="faq__item hidden-xs"><a class="faq__quest">Как оплачивать обучение?</a>
             <div class="article-prev__statistic">
-              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
             </div>
           </div>
         </div>
         <div class="faq__section col-md-3 col-sm-6 col-xs-12"><a class="faq__tag" href="#">Сборник<span>>></span></a>
           <div class="faq__item"><a class="faq__quest">Вы предоставляете рассрочку?</a>
             <div class="article-prev__statistic">
-              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
             </div>
           </div>
-          <div class="faq__item"><a class="faq__quest">Как оплачивать обучение?</a>
+          <div class="faq__item hidden-xs"><a class="faq__quest">Как оплачивать обучение?</a>
             <div class="article-prev__statistic">
-              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
             </div>
           </div>
         </div>
         <div class="faq__section col-md-3 col-sm-6 col-xs-12"><a class="faq__tag" href="#">Технологии<span>>></span></a>
           <div class="faq__item"><a class="faq__quest">Вы предоставляете рассрочку?</a>
             <div class="article-prev__statistic">
-              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
             </div>
           </div>
-          <div class="faq__item"><a class="faq__quest">Как оплачивать обучение?</a>
+          <div class="faq__item hidden-xs"><a class="faq__quest">Как оплачивать обучение?</a>
             <div class="article-prev__statistic">
-              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
             </div>
           </div>
         </div>
         <div class="faq__section col-md-3 col-sm-6 col-xs-12"><a class="faq__tag" href="#">Мастер-класс<span>>></span></a>
           <div class="faq__item"><a class="faq__quest">Вы предоставляете рассрочку?</a>
             <div class="article-prev__statistic">
-              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
             </div>
           </div>
-          <div class="faq__item"><a class="faq__quest">Как оплачивать обучение?</a>
+          <div class="faq__item hidden-xs"><a class="faq__quest">Как оплачивать обучение?</a>
             <div class="article-prev__statistic">
-              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
             </div>
           </div>
         </div>
         <div class="faq__section col-md-3 col-sm-6 col-xs-12"><a class="faq__tag" href="#">Читаем<span>>></span></a>
           <div class="faq__item"><a class="faq__quest">Вы предоставляете рассрочку?</a>
             <div class="article-prev__statistic">
-              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
             </div>
           </div>
-          <div class="faq__item"><a class="faq__quest">Как оплачивать обучение?</a>
+          <div class="faq__item hidden-xs"><a class="faq__quest">Как оплачивать обучение?</a>
             <div class="article-prev__statistic">
-              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
             </div>
           </div>
         </div>
         <div class="faq__section col-md-3 col-sm-6 col-xs-12"><a class="faq__tag" href="#">Лайфхаки-учителя<span>>></span></a>
           <div class="faq__item"><a class="faq__quest">Вы предоставляете рассрочку?</a>
             <div class="article-prev__statistic">
-              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
             </div>
           </div>
-          <div class="faq__item"><a class="faq__quest">Как оплачивать обучение?</a>
+          <div class="faq__item hidden-xs"><a class="faq__quest">Как оплачивать обучение?</a>
             <div class="article-prev__statistic">
-              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
             </div>
           </div>
         </div>
@@ -431,7 +432,7 @@
           </a>
           <p class="article-prev__text">Минпросвещения и Рособрсоюз запустили Национальную электронную платформу педагогического образования (НЭППО), на которой учителя смогут пройти курсы повышения квалификации и научиться разрабатывать свои онлайн-курсы.</p>
           <div class="article-prev__statistic">
-            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
           </div>
         </article>
         <article class="article-prev col-md-4">
@@ -440,7 +441,7 @@
           </a>
           <p class="article-prev__text">До 15 апреля 2019 можно подать заявку на конкурс «Практики внутриклассного оценивания-2019». Победители получат денежные гранты и возможность выступить с докладом на международном симпозиуме в Болгарии.</p>
           <div class="article-prev__statistic">
-            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
+            <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
           </div>
         </article>
       </div>

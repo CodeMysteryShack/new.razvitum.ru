@@ -37,7 +37,7 @@ block content
   // Статьи. Верхний блок
   section.article-prevs-block.container
     .row
-      article.col-sm-12.col-lg-8.article-prev.aritcles__prev--main
+      article.col-xs-12.col-sm-6.col-md-8.article-prev.aritcles__prev--main
         .article-prev__img-wrap
           img(src="/img/article_photo.png", alt="")
         a.article-prev__link(href="#")
@@ -46,19 +46,22 @@ block content
         +statistic
 
       // Форма подписки
-      .col-sm-12.col-lg-4.col-sm-8
-        form.subscribe-form(action="#", method="POST")
+      .col-xs-12.col-sm-6.col-md-4
+        form.subscribe(action="#", method="POST")
           fieldset.form-group
-            legend.subscribe-form__text #[span Мы Вам понравились?] Подпишитесь
+            legend.subscribe__legend #[span Мы Вам понравились?] Подпишитесь
             label.sr-only(for="lastname") Фамилия
-            input.form-control.subscribe-form__input(type="text", name="lastname", placeholder="Фамилия")
+            input.form-control.subscribe__input(type="text", id="lastname", placeholder="Фамилия")
             label.sr-only(for="firstname") Имя
-            input.form-control.subscribe-form__input(type="text", name="firstname", placeholder="Имя")
-            input.form-control.subscribe-form__input(type="text", name="")
-            label.sr-only(for="firstname") Имя
-            input.form-control.subscribe-form__input(type="email", name="email")
-            input.subscribe-form__input(type="checkbox")
-            input.btn.subscribe-form__subscribe(type="submit", value="Подписаться")
+            input.form-control.subscribe__input(type="text", id="firstname", placeholder="Имя")
+            label.sr-only(for="patronymic") Отчество
+            input.form-control.subscribe__input(type="text", id="patronymic", placeholder="Отчество")
+            label.sr-only(for="firstname") e-mail
+            input.form-control.subscribe__input(type="email", id="email", placeholder="Ваш e-mail адрес")
+            .subscribe__check
+              input.subscribe__checkbox(type="checkbox", id="freqcheck")
+              label.subscribe__check-label(for="freqcheck") Не более 1 письма в неделю
+          button.btn.btn-primary.subscribe__btn(type="submit") Подписаться
     .row
       article.article-prev.col-md-4
         .article-prev__img-wrap
@@ -227,7 +230,7 @@ block content
             .faq__item
               a.faq__quest Вы предоставляете рассрочку?
               +statistic
-            .faq__item
+            .faq__item.hidden-xs
               a.faq__quest Как оплачивать обучение?
               +statistic
       - ;
