@@ -90,8 +90,8 @@
   <main>
     <!-- main banner-->
     <section class="main-banner">
-      <div class="container-fluid main-banner__slide">
-        <div class="container main-banner__first-row">
+      <div class="main-banner__first-row">
+        <div class="container">
           <div class="row">
             <h3 class="col-lg-12 main-banner__title">Эксперт в образовании</h3>
             <p class="col-lg-8 col-md-12 main-banner__text">Дистанционные курсы повышения квалификации и&#160;программы переподготовки для работников образования</p>
@@ -112,19 +112,17 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid main-banner__info">
-        <div class="container">
-          <div class="row"><a class="col-md-4 col-sm-12 main-banner__info-item main-banner__info-item--licence" href="#">
-              <h4>Государственная лицензия</h4>
-              <p>на осуществление образовательной деятельности № 0681 от 25.09.-4013</p>
-            </a><a class="col-md-4 col-sm-12 main-banner__info-item main-banner__info-item--official" href="#">
-              <h4>Официальные сведения</h4>
-              <p>Сведения об образовательной организации. Результаты проверки Рособрнадзора</p>
-            </a><a class="col-md-4 col-sm-12 main-banner__info-item main-banner__info-item--free" href="#">
-              <h4>Бесплатное обучение</h4>
-              <p>Достойный выбор бесплатных курсов с выдачей сертификата участника</p>
-            </a></div>
-        </div>
+      <div class="container main-banner__info">
+        <div class="row"><a class="col-md-4 col-sm-12 main-banner__info-item main-banner__info-item--licence" href="#">
+            <h4>Государственная лицензия</h4>
+            <p>на осуществление образовательной деятельности № 0681 от 25.09.-4013</p>
+          </a><a class="col-md-4 col-sm-12 main-banner__info-item main-banner__info-item--official" href="#">
+            <h4>Официальные сведения</h4>
+            <p>Сведения об образовательной организации. Результаты проверки Рособрнадзора</p>
+          </a><a class="col-md-4 col-sm-12 main-banner__info-item main-banner__info-item--free" href="#">
+            <h4>Бесплатное обучение</h4>
+            <p>Достойный выбор бесплатных курсов с выдачей сертификата участника</p>
+          </a></div>
       </div>
     </section><!-- Статьи. Верхний блок-->
     <section class="article-prevs-block container">
@@ -138,9 +136,11 @@
             <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-time"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-eye-open"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="glyphicon glyphicon-heart-empty"></span> 14</span></div>
           </div>
         </article><!-- Форма подписки-->
-        <div class="col-sm-12 col-lg-4">
-          <form class="subscribe" action="" method="">
-            <p class="subscribe-form__text"><span>Мы Вам понравились?</span> Подпишитесь</p><input class="subscribe-form__input" type="text" name="lastname"><input class="subscribe-form__input" type="text" name="firstname"><input class="subscribe-form__input" type="text" name=""><input class="subscribe-form__input" type="email" name="email"><input class="subscribe-form__input" type="checkbox"><input class="subscribe-form__subscribe" type="submit" value="Подписаться">
+        <div class="col-sm-12 col-lg-4 col-sm-8">
+          <form class="subscribe-form" action="#" method="POST">
+            <fieldset class="form-group">
+              <legend class="subscribe-form__text"><span>Мы Вам понравились?</span> Подпишитесь</legend><label class="sr-only" for="lastname">Фамилия</label><input class="form-control subscribe-form__input" type="text" name="lastname" placeholder="Фамилия"><label class="sr-only" for="firstname">Имя</label><input class="form-control subscribe-form__input" type="text" name="firstname" placeholder="Имя"><input class="form-control subscribe-form__input" type="text" name=""><label class="sr-only" for="firstname">Имя</label><input class="form-control subscribe-form__input" type="email" name="email"><input class="subscribe-form__input" type="checkbox"><input class="btn subscribe-form__subscribe" type="submit" value="Подписаться">
+            </fieldset>
           </form>
         </div>
       </div>
@@ -174,36 +174,7 @@
         </article>
       </div>
     </section><!-- Анонс мероприятий-->
-    <section class="announcement container-fluid">
-      <div class="container">
-        <div class="row">
-          <h2 class="col-md-12 announcement__title">Анонс мероприятий</h2>
-        </div>
-        <div class="row">
-          <div class="announcement__item col-md-4">
-            <div class="announcement__date">
-              <div class="announcement__day">25</div>
-              <div class="announcement__month">февраля</div>
-            </div>
-            <p class="announcement__text">Четвёртая встреча «Клуба руководителей»</p>
-          </div>
-          <div class="announcement__item col-md-4">
-            <div class="announcement__date">
-              <div class="announcement__day">01</div>
-              <div class="announcement__month">сентября</div>
-            </div>
-            <p class="announcement__text">Седьмой поток на бесплатных дистанционных курсах для работников образования</p>
-          </div>
-          <div class="announcement__item col-md-4">
-            <div class="announcement__date">
-              <div class="announcement__day">01</div>
-              <div class="announcement__month">июля</div>
-            </div>
-            <p class="announcement__text">Старт продаж программы «Государственный контроль в образовательном учреждении»</p>
-          </div>
-        </div>
-      </div>
-    </section><!-- Видео-интервью-->
+    <!-- Видео-интервью-->
     <section class="article-prev article-prev--video-interview container">
       <div class="row">
         <div class="col-md-12 section-head">
