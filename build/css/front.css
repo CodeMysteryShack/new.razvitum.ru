@@ -5919,7 +5919,7 @@ nav.solidarity a.active {
 /**/
 .main-banner {
   margin-bottom: 70px; }
-  .main-banner__slide {
+  .main-banner__first-row {
     padding-top: 41px;
     padding-bottom: 65px;
     background: linear-gradient(60deg, #1422aa, #a3d3e5);
@@ -6000,6 +6000,7 @@ nav.solidarity a.active {
       left: calc((48px / 2) - (29px / 2));
       top: calc((48px / 2) - (29px / 2)); }
   .main-banner__info {
+    width: 100%;
     padding-top: 33px;
     padding-bottom: 10px;
     -webkit-box-shadow: 0 0 7px rgba(102, 102, 102, 0.21);
@@ -6147,6 +6148,7 @@ nav.solidarity a.active {
       color: #1422aa; }
 
 .announcement {
+  width: 100%;
   padding-top: 30px;
   padding-bottom: 46px;
   background-color: #f3efe3; }
