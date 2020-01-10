@@ -7,7 +7,7 @@
   margin-bottom: 70px
   &__first-row
     padding-top: 41px
-    padding-bottom: 65px
+    padding-bottom: 41px
     background: linear-gradient(60deg, #1422aa, #a3d3e5)
     background-size: 400% 400%
     animation: AnimationName 25s ease infinite
@@ -72,7 +72,7 @@
   &__info
     width: 100%
     padding-top: 33px
-    padding-bottom: 10px
+    padding-bottom: 34px
     box-shadow: 0 0 7px rgba(102, 102, 102, 0.21)
     &-item
       display: block
@@ -165,17 +165,18 @@
     height: 100%
     top: 0
     left: $pad
-    &::before
-      content: ''
-      display: block
-      position: absolute
-      z-index: 0
-      left: 0
-      top: 0
-      height: 0
-      width: calc(100% - #{$pad})
-      height: 100%
-      background: linear-gradient(0deg, rgba(255, 255, 255, 0), $accent)
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0), $accent)
+    // &::before
+    //   content: ''
+    //   display: block
+    //   position: absolute
+    //   z-index: 0
+    //   left: 0
+    //   top: 0
+    //   height: 0
+    //   width: calc(100% - #{$pad})
+    //   height: 100%
+    //   background: linear-gradient(0deg, rgba(255, 255, 255, 0), $accent)
     // img
     //   object-fit: cover
   &__tag

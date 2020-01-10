@@ -5921,7 +5921,7 @@ nav.solidarity a.active {
   margin-bottom: 70px; }
   .main-banner__first-row {
     padding-top: 41px;
-    padding-bottom: 65px;
+    padding-bottom: 41px;
     background: linear-gradient(60deg, #1422aa, #a3d3e5);
     background-size: 400% 400%;
     -webkit-animation: AnimationName 25s ease infinite;
@@ -6002,7 +6002,7 @@ nav.solidarity a.active {
   .main-banner__info {
     width: 100%;
     padding-top: 33px;
-    padding-bottom: 10px;
+    padding-bottom: 34px;
     -webkit-box-shadow: 0 0 7px rgba(102, 102, 102, 0.21);
             box-shadow: 0 0 7px rgba(102, 102, 102, 0.21); }
     .main-banner__info-item {
@@ -6105,19 +6105,9 @@ nav.solidarity a.active {
     width: calc(100% - 15px);
     height: 100%;
     top: 0;
-    left: 15px; }
-    .article-prev__img-wrap--main::before {
-      content: '';
-      display: block;
-      position: absolute;
-      z-index: 0;
-      left: 0;
-      top: 0;
-      height: 0;
-      width: calc(100% - 15px);
-      height: 100%;
-      background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(#1422aa));
-      background: linear-gradient(0deg, rgba(255, 255, 255, 0), #1422aa); }
+    left: 15px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(#1422aa));
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0), #1422aa); }
   .article-prev__tag {
     display: block;
     text-decoration: none;
