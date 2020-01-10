@@ -6263,11 +6263,14 @@ nav.solidarity a.active {
     text-align: center;
     width: 95px; }
   .announcement__text {
+    display: block;
     font-family: Arial, sans-serif;
     font-weight: 700;
     color: #333;
     font-size: 1em;
     line-height: 1.5em; }
+    .announcement__text:hover {
+      color: #333; }
 
 .faq {
   margin-top: 44px; }
