@@ -6186,6 +6186,8 @@ nav.solidarity a.active {
     font-size: 1.125em;
     line-height: 1.33em;
     color: #1422aa; }
+    .section-head__title:hover {
+      text-decoration: underline; }
   .section-head__all-articles-link {
     margin: 0;
     padding: 0 0 0 15px;
@@ -6196,6 +6198,8 @@ nav.solidarity a.active {
     font-size: 1em;
     line-height: 1.5em;
     color: #1422aa; }
+    .section-head__all-articles-link--title {
+      padding: 0; }
     .section-head__all-articles-link:hover {
       color: #1422aa; }
 
