@@ -6046,6 +6046,7 @@ nav.solidarity a.active {
         top: 0; }
 
 .subscribe {
+  margin-bottom: 30px;
   padding: 24px;
   border: 2px solid #1422aa; }
   .subscribe__legend {
@@ -6072,8 +6073,23 @@ nav.solidarity a.active {
   .subscribe__btn {
     margin: 0; }
 
+.article-prevs-block__1st-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch; }
+
 .article-prev {
-  position: relative; }
+  margin-bottom: 30px;
+  position: relative;
+  -ms-flex-item-align: stretch;
+      align-self: stretch; }
+  .article-prev--main {
+    overflow: hidden; }
   .article-prev__img-wrap {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -6081,10 +6097,27 @@ nav.solidarity a.active {
     height: 220px;
     overflow: hidden; }
     .article-prev__img-wrap img {
-      width: 100%;
-      height: auto;
       -o-object-fit: cover;
          object-fit: cover; }
+  .article-prev__img-wrap--main {
+    position: absolute;
+    z-index: -5;
+    width: calc(100% - 15px);
+    height: 100%;
+    top: 0;
+    left: 15px; }
+    .article-prev__img-wrap--main::before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 0;
+      left: 0;
+      top: 0;
+      height: 0;
+      width: calc(100% - 15px);
+      height: 100%;
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(#1422aa));
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0), #1422aa); }
   .article-prev__tag {
     display: block;
     text-decoration: none;
@@ -6093,6 +6126,8 @@ nav.solidarity a.active {
     color: #ccc;
     font-size: 0.875em;
     line-height: 1.285em; }
+    .article-prev__tag--main {
+      display: none; }
     .article-prev__tag:hover {
       color: #ccc; }
     .article-prev__tag:visited {
@@ -6107,23 +6142,23 @@ nav.solidarity a.active {
     color: #333;
     font-size: 1.125em;
     line-height: 1.125em; }
+    .article-prev__title--main {
+      color: #fff;
+      z-index: 5; }
   .article-prev__text {
     font-family: Arial, sans-serif;
     font-weight: 400;
     color: #545454;
     font-size: 0.875em;
     line-height: 1.714em; }
+    .article-prev__text--main {
+      color: #fff; }
   .article-prev__statistic {
     border: none;
     background: none; }
   .article-prev__stat-item {
     font-size: 0.75em;
     color: #ccc; }
-  .article-prev--main article-prev__img-wrap {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0; }
 
 .section-head {
   display: -webkit-box;
