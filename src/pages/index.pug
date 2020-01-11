@@ -37,7 +37,7 @@ block content
   // Статьи. Верхний блок
   section.article-prevs-block.container
     .row.article-prevs-block__1st-line
-      article.col-xs-12.col-sm-6.col-md-8.article-prev.aritcle__prev--main
+      article.col-sm-12.col-md-8.article-prev.aritcle__prev
         .article-prev__img-wrap.article-prev__img-wrap--main
           img.img-fluid(src="/img/article_photo.png", alt="")
         a.article-prev__tag.article-prev__tag--main(href="#") Новости
@@ -47,7 +47,7 @@ block content
         +statistic
 
       // Форма подписки
-      .col-xs-12.col-sm-6.col-md-4
+      .col-sm-12.col-md-4
         form.subscribe(action="#", method="POST")
           fieldset.form-group
             legend.subscribe__legend #[span Мы Вам понравились?] Подпишитесь
@@ -60,9 +60,9 @@ block content
             label.sr-only(for="firstname") e-mail
             input.form-control.subscribe__input(type="email", id="email", placeholder="Ваш e-mail адрес")
             .subscribe__check
-              input.subscribe__checkbox(type="checkbox", id="freqcheck")
+              input.subscribe__checkbox.subscribe__checkbox--fa(type="checkbox", id="freqcheck")
               label.subscribe__check-label(for="freqcheck") Не более 1 письма в неделю
-          button.btn.btn-primary.subscribe__btn(type="submit") Подписаться
+          button.btn.btn-primary.subscribe__btn(type="submit") #[span.fas.fa-envelope.fa-lg] Подписаться
     .row
       article.article-prev.col-md-4
         a.article-prev__img-wrap

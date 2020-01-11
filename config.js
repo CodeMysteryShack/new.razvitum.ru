@@ -7,6 +7,8 @@ let config = {
     'src/assets/jquery-3.4.1.min.js' : 'js/',
     'src/assets/fontawesome-free-5.12.0-web/css/all.min.css' : 'css/',
     'src/assets/fontawesome-free-5.12.0-web/js/all.js' : 'js/',
+    'src/js/vendor.min.js' : 'js/',
+
   }
 };
 

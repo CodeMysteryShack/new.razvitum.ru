@@ -121,8 +121,12 @@ function copyIcon() {
 exports.copyIcon = copyIcon;
 
 function copyFonts() {
-  return src(dir.src + 'fonts/*.{ttf,eot,svg,woff,woff2}')
+  let basicFonts =  src(dir.src + 'fonts/*.{ttf,eot,svg,woff,woff2}')
     .pipe(dest(dir.build + 'fonts/'));
+let faFonts =  src(dir.src + 'webfonts/*.{ttf,eot,svg,woff,woff2}')
+    .pipe(dest(dir.build + 'webfonts/'));
+
+  return merge(basicFonts, faFonts);
 }
 exports.copyFonts = copyFonts;
 

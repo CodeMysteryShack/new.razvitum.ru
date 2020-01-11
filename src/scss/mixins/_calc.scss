@@ -34,3 +34,20 @@
   display: $display;
   position: $pos;
 }
+
+// миксин стилизации checkbox'а в форме с использованием символов @fontawesome
+@mixin chbx-fa($col, $indent, $font: 'Font Awesome 5 Free') {
+  display: none;
+
+  & + label:before {
+    font-family: $font;
+    display: inline-block;
+    content: '\f111';
+    letter-spacing: $indent;
+    color: $col;
+  }
+
+  &:checked + label:before {
+    content: '\f058';
+  }
+}
