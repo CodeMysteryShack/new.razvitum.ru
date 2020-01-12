@@ -6078,6 +6078,7 @@ nav.solidarity a.active {
         top: 0; }
 
 .subscribe {
+  width: 100%;
   margin-bottom: 30px;
   padding: 22px 26px;
   border: 2px solid #1422aa; }
@@ -6121,14 +6122,66 @@ nav.solidarity a.active {
     font-weight: 400; }
   .subscribe__btn {
     margin: 0;
-    font-size: 1em; }
+    padding: 9px 32px;
+    font-size: 1em;
+    line-height: 1em; }
+
+.article-1st {
+  margin-bottom: 30px;
+  overflow: hidden;
+  background-image: url("../img/article_photo.png");
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-size: cover; }
+  .article-1st__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 46px 100px 14px 40px;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(#1422aa));
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), #1422aa); }
+  .article-1st__title {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    margin: 0 0 30px 0;
+    color: #fff;
+    font-size: 2.25em; }
+  .article-1st__link {
+    color: #fff; }
+    .article-1st__link:hover {
+      color: #fff; }
+  .article-1st__text {
+    -webkit-box-flex: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;
+    color: #fff; }
+  .article-1st__statistic {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0; }
+    .article-1st__statistic .text-muted span {
+      color: #000;
+      font-size: 1em; }
 
 .article-prevs-block__1st-line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-line-pack: stretch;
       align-content: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: stretch;
       -ms-flex-pack: stretch;
           justify-content: stretch; }
@@ -6138,33 +6191,20 @@ nav.solidarity a.active {
   position: relative;
   -ms-flex-item-align: stretch;
       align-self: stretch; }
-  .article-prev--main {
-    overflow: hidden; }
   .article-prev__img-wrap {
     display: block;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    width: 100%;
     margin-bottom: 30px;
     height: 220px;
     overflow: hidden; }
     .article-prev__img-wrap img {
-      -o-object-fit: cover;
-         object-fit: cover; }
-    .article-prev__img-wrap:hover img {
-      -webkit-transform: scale(1.1, 1.1) 1s ease;
-              transform: scale(1.1, 1.1) 1s ease; }
-
-@-webkit-keyframes zoomImg {}
-
-@keyframes zoomImg {}  .article-prev__img-wrap--main {
-    position: absolute;
-    z-index: -5;
-    width: calc(100% - 15px);
-    height: 100%;
-    top: 0;
-    left: 15px;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(#1422aa));
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0), #1422aa); }
+      width: 100%;
+      height: auto; }
+    .article-prev__img-wrap:hover {
+      -webkit-transform: scale(1.05, 1.05);
+              transform: scale(1.05, 1.05); }
   .article-prev__tag {
     display: block;
     text-decoration: none;
@@ -6173,8 +6213,6 @@ nav.solidarity a.active {
     color: #ccc;
     font-size: 0.875em;
     line-height: 1.285em; }
-    .article-prev__tag--main {
-      display: none; }
     .article-prev__tag:hover {
       color: #ccc; }
     .article-prev__tag:visited {
@@ -6189,17 +6227,12 @@ nav.solidarity a.active {
     color: #333;
     font-size: 1.125em;
     line-height: 1.125em; }
-    .article-prev__title--main {
-      color: #fff;
-      z-index: 5; }
   .article-prev__text {
     font-family: Arial, sans-serif;
     font-weight: 400;
     color: #545454;
     font-size: 0.875em;
     line-height: 1.714em; }
-    .article-prev__text--main {
-      color: #fff; }
   .article-prev__statistic {
     border: none;
     background: none; }

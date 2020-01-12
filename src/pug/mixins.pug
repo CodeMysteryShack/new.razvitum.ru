@@ -16,7 +16,7 @@ mixin statistic(mods)
   //-     span.mr-1.article-prev__stat-item #[span.glyphicon.glyphicon-eye-open] 35
   //-     span.mr-1.article-prev__stat-item #[span.glyphicon.glyphicon-heart-empty] 14
 
-  .article-prev__statistic
+  .article-prev__statistic&attributes(attributes)
     .text-muted
       span.mr-1.article-prev__stat-item #[span.fas.fa-clock] 5 минут
       span.mr-1.article-prev__stat-item #[span.fas.fa-eye] 35
@@ -32,7 +32,7 @@ mixin statistic(mods)
 mixin article__prev(obj)
   article.article-prev.col-md-4
     a.article-prev__img-wrap(href="#")
-      img(src=obj.img, alt="")
+      img.img-responsiv(src=obj.img, alt="")
     a.article-prev__tag(href="#") !{obj.tag}
     a.article-prev__link(href="#")
       h3.article-prev__title !{obj.title}

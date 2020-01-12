@@ -38,14 +38,13 @@ block content
   section.article-prevs-block.container
     .row.article-prevs-block__1st-line
 
-      article.col-sm-12.col-md-8.article-prev.aritcle__prev
-        .article-prev__img-wrap.article-prev__img-wrap--main
-          img.img-fluid(src="/img/article_photo.png", alt="")
-        a.article-prev__tag.article-prev__tag--main(href="#") Новости
-        a.article-prev__link(href="#")
-          h3.article-prev__title.article-prev__title--main Яндекс.Учебники и РАО создадут хартию о цифровой образовательной среде
-        p.article-prev__text.article-prev__text--main Яндекс.Учебник и Российская академия образования совместно с учителями, родителями и экспертами разработают хартию о цифровой образовательной среде школы.
-        +statistic
+      article.col-sm-12.col-md-8.article-1st
+        .article-1st__wrap
+          //- a.article-1st__tag(href="#") Новости
+          a.article-1st__link(href="#")
+            h3.article-1st__title Яндекс.Учебники и РАО создадут хартию о цифровой образовательной среде
+          p.article-1st__text Яндекс.Учебник и Российская академия образования совместно с учителями, родителями и экспертами разработают хартию о цифровой образовательной среде школы.
+          +statistic(class="article-1st__statistic")
 
       // Форма подписки
       .col-sm-12.col-md-4
