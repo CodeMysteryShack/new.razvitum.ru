@@ -6141,6 +6141,7 @@ nav.solidarity a.active {
   .article-prev--main {
     overflow: hidden; }
   .article-prev__img-wrap {
+    display: block;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin-bottom: 30px;
@@ -6149,7 +6150,13 @@ nav.solidarity a.active {
     .article-prev__img-wrap img {
       -o-object-fit: cover;
          object-fit: cover; }
-  .article-prev__img-wrap--main {
+    .article-prev__img-wrap:hover img {
+      -webkit-transform: scale(1.1, 1.1) 1s ease;
+              transform: scale(1.1, 1.1) 1s ease; }
+
+@-webkit-keyframes zoomImg {}
+
+@keyframes zoomImg {}  .article-prev__img-wrap--main {
     position: absolute;
     z-index: -5;
     width: calc(100% - 15px);

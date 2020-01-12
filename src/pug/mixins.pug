@@ -1,5 +1,6 @@
 //- Примеси
 
+//- Блок статистики (часы-глаз-сердечко)
 mixin statistic(mods)
   -
     var allMods = '';
@@ -20,3 +21,21 @@ mixin statistic(mods)
       span.mr-1.article-prev__stat-item #[span.fas.fa-clock] 5 минут
       span.mr-1.article-prev__stat-item #[span.fas.fa-eye] 35
       span.mr-1.article-prev__stat-item #[span.fas.fa-heart] 14
+
+//- Блок превью статьи
+      +article__prev({
+        title: ,
+        img: ,
+        tag: ,
+        text:
+        })
+mixin article__prev(obj)
+  article.article-prev.col-md-4
+    a.article-prev__img-wrap(href="#")
+      img(src=obj.img, alt="")
+    a.article-prev__tag(href="#") !{obj.tag}
+    a.article-prev__link(href="#")
+      h3.article-prev__title !{obj.title}
+    - if (obj.text)
+      p.article-prev__text !{obj.text}
+    +statistic

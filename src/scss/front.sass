@@ -161,12 +161,24 @@
   &--main
     overflow: hidden
   &__img-wrap
+    display: block
     box-sizing: border-box
     margin-bottom: 30px
     height: 220px
     overflow: hidden
     img
       object-fit: cover
+    &:hover
+      img
+        transform: scale(1.1, 1.1) 1s ease
+        @keyframes zoomImg
+          // 0%
+          //   background-position: 0% 82%
+          // 50%
+          //   background-position: 100% 19%
+          // 100%
+            transform:
+
   &__img-wrap--main
     position: absolute
     z-index: -5
