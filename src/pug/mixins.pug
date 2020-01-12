@@ -39,3 +39,13 @@ mixin article__prev(obj)
     - if (obj.text)
       p.article-prev__text !{obj.text}
     +statistic
+  -;
+
+//- Миксин для «Хлебных крошек» (breadcrumbs)
+mixin breadcrumbs(Arr)
+  .breadcrumbs
+  - for(i = 0; i < Arr.length; i++)
+    if i != Arr.length - 1
+      a.breadcrumbs__link(href="#")= "!{Arr[i]} / "
+    else
+      a.breadcrumbs__link(href="#") !{Arr[i]}

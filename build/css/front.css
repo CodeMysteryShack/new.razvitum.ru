@@ -5949,6 +5949,9 @@ nav.solidarity a.active {
 
 /* Large Devices, Wide Screens */
 /**/
+.main--margin-top {
+  margin-top: 40px; }
+
 .main-banner {
   margin-bottom: 70px; }
   .main-banner__first-row {

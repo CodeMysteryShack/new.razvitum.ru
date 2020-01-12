@@ -5,7 +5,12 @@ block meta
   title АНО СПб ЦДПО - Всероссийский проект Развитум | Матриалы – Новости
 
 block content
-  .container
+  .container.main--top-margin
+    .row
+      .col-md-12
+        +breadcrumbs(['Материалы', 'Новости'])
+      .col-md-12
+        h1 Раздел «Новости»
     .row
       +article__prev({
         title: "Яндекс.Учебники и РАО создадут хартию о цифровой образовательной среде",
