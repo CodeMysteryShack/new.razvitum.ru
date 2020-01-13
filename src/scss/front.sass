@@ -146,6 +146,15 @@
     font-size: 1em
     line-height: 1em
 
+//
+.article-prevs-block
+  &__1st-line
+    display: flex
+    flex-direction: row
+    align-content: stretch
+    flex-wrap: wrap
+    justify-content: stretch
+
 // 1-я карточка-превью статьи
 .article-1st
   margin-bottom: 30px
@@ -180,16 +189,6 @@
         color: #000
         font-size: 1em
 
-
-//
-.article-prevs-block
-  &__1st-line
-    display: flex
-    flex-direction: row
-    align-content: stretch
-    flex-wrap: wrap
-    justify-content: stretch
-
 // карточки-превью статей
 .article-prev
   margin-bottom: 30px
@@ -209,15 +208,6 @@
       // object-position: left top
     &:hover
       transform: scale(1.05, 1.05)
-  // &__img-wrap--main
-  //   position: absolute
-  //   z-index: -5
-  //   // padding: 0 $pad
-  //   width: calc(100% - #{$pad})
-  //   height: 100%
-  //   top: 0
-  //   left: $pad
-  //
   &__tag
     display: block
     text-decoration: none
@@ -249,7 +239,8 @@
   &__stat-item
     font-size: 0.75em
     color: $lightgray
-
+  &--margin-bottom
+    margin-bottom: 60px
 
 // Заголовки разделов
 .section-head

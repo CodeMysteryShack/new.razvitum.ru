@@ -5955,6 +5955,8 @@ nav.solidarity a.active {
 .page__title {
   -ms-flex-item-align: baseline;
       align-self: baseline;
+  margin-top: 50px;
+  margin-bottom: 40px;
   font-family: Arial, sans-serif;
   font-weight: 700;
   font-size: 1.5em;
@@ -6201,6 +6203,22 @@ nav.solidarity a.active {
     font-size: 1em;
     line-height: 1em; }
 
+.article-prevs-block__1st-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch; }
+
 .article-1st {
   margin-bottom: 30px;
   overflow: hidden;
@@ -6244,22 +6262,6 @@ nav.solidarity a.active {
     .article-1st__statistic .text-muted span {
       color: #000;
       font-size: 1em; }
-
-.article-prevs-block__1st-line {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch; }
 
 .article-prev {
   margin-bottom: 30px;
@@ -6314,6 +6316,8 @@ nav.solidarity a.active {
   .article-prev__stat-item {
     font-size: 0.75em;
     color: #ccc; }
+  .article-prev--margin-bottom {
+    margin-bottom: 60px; }
 
 .section-head {
   display: -webkit-box;

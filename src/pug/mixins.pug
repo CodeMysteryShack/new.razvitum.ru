@@ -30,7 +30,7 @@ mixin statistic(mods)
         text:
         })
 mixin article__prev(obj)
-  article.article-prev.col-md-4
+  article.article-prev.col-md-4&attributes(attributes)
     a.article-prev__img-wrap(href="#")
       img.img-responsiv(src=obj.img, alt="")
     a.article-prev__tag(href="#") !{obj.tag}
@@ -43,7 +43,7 @@ mixin article__prev(obj)
 
 //- Миксин для «Хлебных крошек» (breadcrumbs)
 mixin breadcrumbs(Arr)
-  .breadcrumbs
+  .breadcrumbs&attributes(attributes)
   - for(i = 0; i < Arr.length; i++)
     if i != Arr.length - 1
       a.breadcrumbs__link(href="#") !{Arr[i]}
