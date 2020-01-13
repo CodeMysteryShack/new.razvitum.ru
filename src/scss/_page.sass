@@ -13,9 +13,13 @@
   &__title-wrap
     display: flex
     flex-direction: row
-    align-content: flex-end
+    justify-content: auto
+    align-items: baseline
+    flex-wrap: wrap
+    // align-content: flex-end
 
 .breadcrumbs
+  display: flex
   color: $lightgray
   +ff-arial
   &__link
@@ -35,6 +39,7 @@
     text-decoration: none
 
 .display-filter
+  align-self: baseline
   +ff-arial
   font-size: 1em
   text-align: right
@@ -45,6 +50,7 @@
     padding: 0
     background-color: rgba(255, 255, 255, 0)
     border: none
+    outline: 0
     cursor: pointer
     &:hover
       text-decoration: underline
@@ -52,4 +58,4 @@
       color: $active-color
       cursor: default
       &:hover
-      text-decoration: none
+        text-decoration: none

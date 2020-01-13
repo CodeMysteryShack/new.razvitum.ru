@@ -5968,10 +5968,19 @@ nav.solidarity a.active {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-line-pack: end;
-      align-content: flex-end; }
+  -webkit-box-pack: auto;
+      -ms-flex-pack: auto;
+          justify-content: auto;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #ccc;
   font-family: Arial, sans-serif;
   font-weight: 400; }
@@ -5992,6 +6001,8 @@ nav.solidarity a.active {
     text-decoration: none; }
 
 .display-filter {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
   font-family: Arial, sans-serif;
   font-weight: 400;
   font-size: 1em;
@@ -6003,13 +6014,15 @@ nav.solidarity a.active {
     padding: 0;
     background-color: rgba(255, 255, 255, 0);
     border: none;
+    outline: 0;
     cursor: pointer; }
     .display-filter__item:hover {
       text-decoration: underline; }
     .display-filter__item--active {
       color: #a3d3e5;
-      cursor: default;
-      text-decoration: none; }
+      cursor: default; }
+      .display-filter__item--active:hover {
+        text-decoration: none; }
 
 .main-banner {
   margin-bottom: 70px; }
