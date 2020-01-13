@@ -30,12 +30,15 @@ mixin statistic(mods)
         text:
         })
 mixin article__prev(obj)
-  article.article-prev.col-md-4&attributes(attributes)
-    a.article-prev__img-wrap(href="#")
-      img.img-responsiv(src=obj.img, alt="")
-    a.article-prev__tag(href="#") !{obj.tag}
-    a.article-prev__link(href="#")
-      h3.article-prev__title !{obj.title}
+  article.article-prev&attributes(attributes)
+    - if (obj.img)
+      a.article-prev__img-wrap(href="#")
+        img.img-responsiv(src=obj.img, alt="")
+    - if (obj.tag)
+      a.article-prev__tag(href="#") !{obj.tag}
+    - if (obj.title)
+      a.article-prev__link(href="#")
+        h3.article-prev__title !{obj.title}
     - if (obj.text)
       p.article-prev__text !{obj.text}
     +statistic
@@ -76,3 +79,10 @@ mixin section-list()
         a.section-list__item.section-list__item--2nd(href="#") ИКТ
         a.section-list__item.section-list__item--2nd(href="#") Выступления
         a.section-list__item.section-list__item--2nd(href="#") Сборник
+
+//- блок «Авторизация / Регистрация»
+mixin auth-reg
+  .auth-reg&attributes(attributes)
+    button Авторизация
+    span /
+    button Регистрация
