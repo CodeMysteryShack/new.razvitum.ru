@@ -10,7 +10,7 @@ block content
     .main-banner__first-row
       .container
         .row
-          h3.col-lg-12.main-banner__title Эксперт в образовании
+          h3.col-xs-12.col-lg-12.main-banner__title Эксперт в образовании
           p.col-lg-8.col-md-12.main-banner__text Дистанционные курсы повышения квалификации и&#160;программы переподготовки для работников образования
         .row.main-banner__statistic.hidden-xs
           .col-lg-3.col-md-6.col-sm-12
@@ -38,7 +38,7 @@ block content
   section.article-prevs-block.container
     .row.article-prevs-block__1st-line
 
-      article.col-sm-12.col-md-8.article-1st
+      article.col-xs-12.col-sm-12.col-md-8.article-1st
         .article-1st__wrap
           //- a.article-1st__tag(href="#") Новости
           a.article-1st__link(href="#")
@@ -47,7 +47,7 @@ block content
           +statistic(class="article-1st__statistic")
 
       // Форма подписки
-      .col-sm-12.col-md-4
+      .col-xs-12.col-sm-12.col-md-4
         form.subscribe(action="#", method="POST")
           fieldset.form-group
             legend.subscribe__legend #[span Мы Вам понравились?] Подпишитесь
@@ -227,16 +227,5 @@ block content
         text: "До 15 апреля 2019 можно подать заявку на конкурс «Практики внутриклассного оценивания-2019». Победители получат денежные гранты и возможность выступить с докладом на международном симпозиуме в Болгарии."
         })
 
-  // Список разделов
-  section.section-list.container
-    .row
-      .col-md-12.section-list__group
-        a.section-list__item(href="#") Новости
-        a.section-list__item(href="#") Научные статьи
-        a.section-list__item(href="#") Инструкции
-        a.section-list__item(href="#") Технология
-      .col-md-12.section-list__group
-        a.section-list__item.section-list__item--2nd(href="#") Образование
-        a.section-list__item.section-list__item--2nd(href="#") ИКТ
-        a.section-list__item.section-list__item--2nd(href="#") Выступления
-        a.section-list__item.section-list__item--2nd(href="#") Сборник
+  //- Список разделов
+  +section-list()

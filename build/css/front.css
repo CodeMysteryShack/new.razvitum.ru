@@ -5952,6 +5952,65 @@ nav.solidarity a.active {
 .main--margin-top {
   margin-top: 40px; }
 
+.page__title {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #1422aa; }
+
+.page__title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: end;
+      align-content: flex-end; }
+
+.breadcrumbs {
+  color: #ccc;
+  font-family: Arial, sans-serif;
+  font-weight: 400; }
+  .breadcrumbs__link {
+    display: inline-block;
+    font-size: 1em;
+    color: #ccc;
+    text-decoration: none; }
+    .breadcrumbs__link:hover {
+      color: #ccc; }
+    .breadcrumbs__link:visited {
+      color: #ccc; }
+  .breadcrumbs__divider {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 1em;
+    color: #ccc;
+    text-decoration: none; }
+
+.display-filter {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: right;
+  color: #ccc; }
+  .display-filter__item {
+    display: inline-block;
+    margin: 0 0 0 18px;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer; }
+    .display-filter__item:hover {
+      text-decoration: underline; }
+    .display-filter__item--active {
+      color: #a3d3e5;
+      cursor: default;
+      text-decoration: none; }
+
 .main-banner {
   margin-bottom: 70px; }
   .main-banner__first-row {
@@ -6341,12 +6400,12 @@ nav.solidarity a.active {
       background-position: 0px 0px;
       width: 43px;
       height: 48px;
-      left: calc((95px / 2) - (43px / 2));
+      left: calc((115px / 2) - (43px / 2));
       z-index: 1;
       top: 0; }
   .announcement__day {
     padding-top: 9px;
-    width: 95px;
+    width: 115px;
     z-index: 12;
     text-align: center;
     font-size: 1.33em; }
@@ -6354,7 +6413,7 @@ nav.solidarity a.active {
     font-family: Arial, sans-serif;
     font-weight: 400;
     text-align: center;
-    width: 95px; }
+    width: 115px; }
   .announcement__text {
     display: block;
     font-family: Arial, sans-serif;

@@ -1,0 +1,25 @@
+extends ../pug/layout.pug
+include ../pug/mixins.pug
+
+block meta
+  title АНО СПб ЦДПО - Всероссийский проект Развитум | Матриалы – Новости
+
+block content
+  .container.main--margin-top
+    .row
+      .col-md-12
+        +breadcrumbs(['Материалы', 'Новости'])
+    .row.page__title-wrap
+      .col-md-7.col-sm-12
+        h1.page__title Раздел «Новости»
+      .col-md-5.col-sm-12
+        .display-filter Сортировать:
+          button.display-filter__item.display-filter__item--active по новизне
+          button.display-filter__item по популярности
+
+
+    .row
+
+
+    +head-with-links("Список разделов")
+  +section-list

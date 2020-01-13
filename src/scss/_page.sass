@@ -1,0 +1,55 @@
+// Общие стили элементов страницы
+
+.main
+  &--margin-top
+    margin-top: 40px
+
+.page
+  &__title
+    align-self: baseline
+    +ff-arial-bold
+    font-size: 1.5em
+    color: $accent
+  &__title-wrap
+    display: flex
+    flex-direction: row
+    align-content: flex-end
+
+.breadcrumbs
+  color: $lightgray
+  +ff-arial
+  &__link
+    display: inline-block
+    font-size: 1em
+    color: $lightgray
+    text-decoration: none
+    &:hover
+      color: $lightgray
+    &:visited
+      color: $lightgray
+  &__divider
+    margin-left: 5px
+    margin-right: 5px
+    font-size: 1em
+    color: $lightgray
+    text-decoration: none
+
+.display-filter
+  +ff-arial
+  font-size: 1em
+  text-align: right
+  color: $lightgray
+  &__item
+    display: inline-block
+    margin: 0 0 0 18px
+    padding: 0
+    background-color: rgba(255, 255, 255, 0)
+    border: none
+    cursor: pointer
+    &:hover
+      text-decoration: underline
+    &--active
+      color: $active-color
+      cursor: default
+      &:hover
+      text-decoration: none

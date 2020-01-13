@@ -46,6 +46,33 @@ mixin breadcrumbs(Arr)
   .breadcrumbs
   - for(i = 0; i < Arr.length; i++)
     if i != Arr.length - 1
-      a.breadcrumbs__link(href="#")= "!{Arr[i]} / "
+      a.breadcrumbs__link(href="#") !{Arr[i]}
+      span.breadcrumbs__divider /
     else
       a.breadcrumbs__link(href="#") !{Arr[i]}
+  -;
+
+//- Миксин для заголовка 2-го уровня со ссылкой
+mixin head-with-links($title)
+  .row
+    .col-md-12.section-head
+      .section-head__line
+      a.section-head__all-articles-link.section-head__all-articles-link--title(href="#")
+        h2.section-head__title !{$title}
+      a.section-head__all-articles-link.hidden-xs(href="#") Все статьи раздела >>
+
+//- Миксин для списка разделов
+mixin section-list()
+  // Список разделов
+  section.section-list.container
+    .row
+      .col-md-12.section-list__group
+        a.section-list__item(href="#") Новости
+        a.section-list__item(href="#") Научные статьи
+        a.section-list__item(href="#") Инструкции
+        a.section-list__item(href="#") Технология
+      .col-md-12.section-list__group
+        a.section-list__item.section-list__item--2nd(href="#") Образование
+        a.section-list__item.section-list__item--2nd(href="#") ИКТ
+        a.section-list__item.section-list__item--2nd(href="#") Выступления
+        a.section-list__item.section-list__item--2nd(href="#") Сборник

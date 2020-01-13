@@ -5,12 +5,19 @@ block meta
   title АНО СПб ЦДПО - Всероссийский проект Развитум | Матриалы – Новости
 
 block content
-  .container.main--top-margin
+  .container.main--margin-top
     .row
       .col-md-12
         +breadcrumbs(['Материалы', 'Новости'])
-      .col-md-12
-        h1 Раздел «Новости»
+    .row.page__title-wrap
+      .col-md-7.col-sm-12
+        h1.page__title Раздел «Новости»
+      .col-md-5.col-sm-12
+        .display-filter Сортировать:
+          button.display-filter__item.display-filter__item--active по новизне
+          button.display-filter__item по популярности
+
+
     .row
       +article__prev({
         title: "Яндекс.Учебники и РАО создадут хартию о цифровой образовательной среде",
@@ -37,3 +44,6 @@ block content
         tag: "Новости",
         text: "Минпросвещения и Рособрсоюз запустили Национальную электронную платформу педагогического образования (НЭППО), на которой учителя смогут пройти курсы повышения квалификации и научиться разрабатывать свои онлайн-курсы."
         })
+
+    +head-with-links("Список разделов")
+  +section-list
