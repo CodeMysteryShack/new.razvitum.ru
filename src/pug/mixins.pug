@@ -83,6 +83,6 @@ mixin section-list()
 //- блок «Авторизация / Регистрация»
 mixin auth-reg
   .auth-reg&attributes(attributes)
-    button(type="button") Авторизация
-    span /
-    button(type="button") Регистрация
+    button.auth-reg__item(type="button") Авторизация
+    span.auth-reg__divider /
+    button.auth-reg__item(type="button") Регистрация
