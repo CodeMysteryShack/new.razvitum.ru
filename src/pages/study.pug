@@ -1,0 +1,111 @@
+extends ../pug/layout.pug
+include ../pug/mixins.pug
+
+block meta
+  title АНО СПб ЦДПО - Всероссийский проект Развитум | Об обучении
+
+block content
+  section.study-service.container
+    .row
+      .col-xs-12
+        h2.study__title Удобный и дружелюбный сервис
+        p.study__text Используйте все богатство функций нашего сайта и личного кабинета.#[br]Оцените новый уровень дистанционного взаимодействия и наслаждайтесь лучшим сервисом для обучения
+    .row
+      .study-service__col.study-service__col--left.col-xs-12.col-sm-12.col-md-4
+        .study_item
+          h3.study_item__title Простая регистрация
+          p.study_item__text Вход в личный кабинет по звонку
+        .study_item
+          h3.study_item__title Адаптивный интерфейс
+          p.study_item__text Обучайтесь в любое время на любом устройстве: компьютер, ноутбук, планшет, смартфон
+        .study_item
+          h3.study_item__title Оперативный прием документов
+          p.study_item__text Обрабатываем в течение дня документы, поданные через единое окно слушателя в личном кабинете
+        .study_item
+          h3.study_item__title Безопасность оплаты
+          p.study_item__text Надежность оплаты обеспечивает подключенный к системе авторизационный сервер банка «Сбербанк России»
+      .study-service__col.study-service__col--pic.col-xs-12.col-sm-12.col-md-4.hidden-sm.hidden-xs
+        .study-service__center-pic-wrap
+          img(src="#")
+      .study-service__col.study-service__col--right.col-xs-12.col-sm-12.col-md-4
+        .study_item
+          h3.study_item__title Удобство платежей
+          p.study_item__text Оплачивайте обучение по договору, в рассрочку, частями, онлайн, через терминал или по квитанции
+        .study_item.study_item--highlight
+          h3.study_item__title Самая быстрая доставка документов
+          p.study_item__text День в день формируем конверт на отправку в ближайшую среду 1 классом. Уведомляем СМС-сообщением
+        .study_item
+          h3.study_item__title Своевременное напоминание
+          p.study_item__text Система СМС-уведомлений напомнит Вам о ключевых событиях процесса обучения
+        .study_item
+          h3.study_item__title Приятное постобслуживание
+          p.study_item__text Восстанавливаем утерянные документы, дарим маленькие подарки с большим смыслом!
+
+  section.study-access.jumbotron
+    .container
+      .row
+        .col-xs-12
+          h2.study__title.study__title--white Получите демо-доступ в учебный кабинет
+          p Проверьте на практике удобство нашего сервиса и качество программы обучения. Выбирайте только лучшее на пути своего саморазвития!
+      .row
+        .col-xs-12
+          form.study-access__form(method="POST", action="#", id="")
+            fieldset
+              input.study-accsess__form-input(type="text", name="firstname", placeholder="Ваше имя")
+              input.study-accsess__form-input(type="text", name="firstname", placeholder="Ваше Отчество")
+              input.study-accsess__form-input(type="email", name="email", placeholder="Ваше имя")
+            button.study-accsess__button-submit.btn.btn-primary(type="submit") Попробовать бесплатно
+
+  section.study-process.container
+    .row
+      .col-xs-12
+        h2.study-process__title Доступный и комфортный процесс обучения
+        p.study-process__text Испытайте удовольствие от получения актуальных знаний и новых компетенций.  Почувствуйте особое отношение к вам в ходе процесса обучения
+    .row
+      .study-service__col.col-xs-12.col-sm-12.col-md-4
+        .study_item
+          h3.study_item__title Заботливый тьютор-онлайн
+          p.study_item__text Сопровождаем вас от оформления заявки до получения документов. Оказываем помощь и поддержку по горячей линии, в мессенджерах и чатах
+        .study_item
+          h3.study_item__title Контент на любой вкус
+          p.study_item__text Учитываем индивидуальность Вашего восприятия и ритм жизни. Обучайтесь по текстовым материалам с акцентом на визуальную восприимчивость, смотрите короткие видео уроки и слушайте аудио подкасты в дороге
+        .study_item
+          h3.study_item__title Индивидуальный план обучения
+          p.study_item__text Сокращайте или увеличивайте сроки обучения под изменяющиеся обстоятельства жизни. За 1 клик оформите свое желание в личном кабинете
+      .study-service__col.col-xs-12.col-sm-12.col-md-4
+        .study_item
+          h3.study_item__title Управляемый учебный процесс
+          p.study_item__text В личном кабинете предусмотрено решение всех учебных ситуаций через электронные заявления: выход в академ, изменения данных и т.д.
+        .study_item.study_item--highlight
+          h3.study_item__title Спокойная аттестация
+          p.study_item__text Тестирование по принципу «зачтено» проходить одно удовольствие. Неограниченное количество попыток поможет пройти тестирование без стресса
+      .study-service__col.col-xs-12.col-sm-12.col-md-4
+
+  section.study-details.jumbotron
+    .container
+      .col-md-1.hidden-sm.hidden-xs
+      .col-md-5.col-sm-8.col-xs-12
+        h2.study-details__title Особенности программ обучения
+        p.study-details__text Вы можете узнать об авторском  модульном подходе в создании образовательных программ Центра
+        button.study-details__submit-btn.btn.btn-primary(type="submit") Подробнее
+      .col-md-6.col-sm-4.hidden-xs
+
+  section.study-cashback.container
+    .row
+      .col-xs-12
+        h2.study-cashback__title Кэшбэк «Просто накопить»!
+        p.study-details__text Совершая своевременные действия при оформлении заявки и в период обучения,  Вы получаете рубли на счет в личном кабинете.  Используйте их на свое дальнейшее обучение до 50% от стоимости программ
+//- 1.  Регистрируетесь  на сайте razvitum.ru
+//- 2.  Совершаете своевременные действия
+//- 3.  Получаете кэшбэк автоматически на свой счет в личном кабинете
+//- 4.  Оплачивайте до 50% от стоимости программ
+//- Обучайтесь и возвращайте + 2 000 ₽
+//- Кэшбек + 300 ₽  Подача документов до 3-х дней Кэшбек + 500 ₽  Оплата обучения до 5-и дней Кэшбек + 500 ₽  Успешная аттестация
+//- Кэшбек + 500 ₽  С Днем Рождения!
+//- Кэшбек + ∞ ₽  Секретные акции
+
+//- Отдадим любой курс за справедливую цену Учиться с коллегами всегда веселее: делитесь учебными материалами, помогайте друг другу,  и, конечно, получайте максимальные скидки для групповых заявок до 60%!
+//- 1.  Скачайте форму заявки. Мы подготовили таблицу в формате excell для Вашего удобства.
+//- 2.  Загрузите заполненную заявку в поле ниже или отправьте на почту info@razvitum.ru.
+
+

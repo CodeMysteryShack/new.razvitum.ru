@@ -7,14 +7,14 @@ block meta
 block content
   .container
     menu.about-menu.row
-      a.col-md-3.col-sm-12.col-xs-12.about-menu__item(href="#") О центре
-      a.col-md-3.col-sm-12.col-xs-12.about-menu__item(href="#") Стратегия развития
-      a.col-md-3.col-sm-12.col-xs-12.about-menu__item(href="#") История
-      a.col-md-3.col-sm-12.col-xs-12.about-menu__item(href="#") Цифры и факты
+      a.col-md-3.col-sm-12.col-xs-12.about-menu__item(href="#about-centre") О центре
+      a.col-md-3.col-sm-12.col-xs-12.about-menu__item(href="#about-innovations") Стратегия развития
+      a.col-md-3.col-sm-12.col-xs-12.about-menu__item(href="#about-history") История
+      a.col-md-3.col-sm-12.col-xs-12.about-menu__item(href="#about-facts") Цифры и факты
   section.about-carousel.jumbotron
     .container
       .row
-  section.about-centre.container
+  section.about-centre.container(id="about-centre")
     .row
       .col-xs-12
         h2.about__title О центре
@@ -45,7 +45,7 @@ block content
         p.about__banner-text Мы ежедневно создаем условия для развития способностей и профессионального роста, чтобы каждый участник смог проявить себя и не остаться без внимания для дальнейшего желания идти к своей мечте.
         p.about__banner-text Миссия организация, сформулирована в 2011 г.
 
-  section.about-docs.container
+  section.about-history.container(id="about-history")
     .row
       .col-xs-12
         h2.about__title Наша история
@@ -69,7 +69,7 @@ block content
           p.about-quote__text Мы хотим стать другом нашему слушателю, помощником на пути саморазвития, личным экспертом в образовании!»
           p.about-quote__text Директор СПБ ЦДПО Середенко М.Ю.
 
-  section.about-innovations.container
+  section.about-innovations.container(id="about-innovations")
     .row
       .col-xs-12
         h2.about__title Фокус на инновационные решения
@@ -84,4 +84,7 @@ block content
       .about-innovations__item.col-xs-12.col-sm-12.col-md-4         Индивидуальный образовательный маршрут
       .about-innovations__item.col-xs-12.col-sm-12.col-md-4 Интерактивный образовательный контент
       .about-innovations__item.col-xs-12.col-sm-12.col-md-4 Учебная статистика и прогресс
+
+  section.about-facts(id="about-facts")
+
 
