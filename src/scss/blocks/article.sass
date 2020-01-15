@@ -1,0 +1,76 @@
+@import '../fonts'
+@import '../vars'
+
+.article
+  &__img-wrap
+    width: 100%
+    img
+      width: 100%
+      height: auto
+  &__statistic
+    display: flex
+    flex-direction: row
+    align-items: baseline
+    margin-top: 20px
+  &__tag
+    margin-right: 50px
+    display: inline-block
+    +ff-arial-bold
+    color: $lightgray
+    font-size: 1em
+    &:hover, &:visited
+      color: $lightgray
+      cursor: pointer
+  &__title
+    margin-top: 32px
+    margin-bottom: 42px
+    +ff-arial
+    font-size: 2.25em
+  &__text
+    margin: 0 0 6px 0
+    +ff-arial
+    font-size: 1em
+    line-height: 1.75em
+    color: $headgray
+
+  &-interest
+    &__title
+      margin: 0 0 25px 0
+      padding: 0
+      +ff-arial-bold
+      font-size: 1em
+      color: $active-color
+    & > .article-prev
+      margin-bottom: 70px
+
+.share
+  &__declaration
+    margin: 70px 0 40px 0
+    padding: 40px
+    border: 2px dashed $accent
+    p
+      margin: 0
+      padding: 0
+      font-size: 1.125em
+      line-height: 1.33em
+      text-align: center
+      color: $headgray
+  &__send
+    margin-top: 70px
+    text-align: center
+    +ff-arial
+    font-style: italic
+    font-size: 1.25em
+    color: $headgray
+    span
+      color: $accent
+    &--unautorized
+      display: block
+    &--autorized
+      display: none
+  &__auth
+    display: flex
+    flex-direction: row
+    justify-content: center
+    font-size: 1em
+    color: $lightgray

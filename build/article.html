@@ -25,7 +25,7 @@
 
 <body><noscript>У вас отключен JavaScript. Это пугает.</noscript>
   <header>
-    <div class="s-header jumbobox">
+    <div class="s-header">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-sm-8 col-xs-12 logo-wrap"><a class="logo" href="/"><img src="img/logo.svg" onerror="this.onerror=null; this.src='img/logo.png';" alt="Razvitum Logo"></a>
@@ -94,14 +94,13 @@
           <div class="breadcrumbs"></div><a class="breadcrumbs__link" href="#">Материалы</a><span class="breadcrumbs__divider">/</span><a class="breadcrumbs__link" href="#">Новости</a>
         </div>
       </div>
-      <div class="row">
+      <div class="row mt-3">
         <div class="col-md-8 col-sm-12 col-xs-12">
           <article class="article">
-            <div class="article__img-wrap"><img src=""></div>
-            <div class="article__statistic">
-              <div class="article__tag">Новости</div>
-              <div class="article-prev__statistic">
-                <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
+            <div class="article__img-wrap"><img src="/img/article.png" alt=""></div>
+            <div class="article__statistic"><a class="article__tag">Новости</a>
+              <div class="stat  stat--article">
+                <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
               </div>
             </div>
             <h1 class="article__title">Яндекс.Учебники и РАО создадут хартию о цифровой образовательной среде</h1>
@@ -118,7 +117,8 @@
               <p>Еще раз вам спасибо!</p>
             </div>
             <div class="share__send share__send--unautorized"><span>Понравилась статья?</span> Отправьте себе на почту</div>
-            <div class="share__send share__send--autorized"><span>Лампа Леонидовна</span>
+            <div class="share__send share__send--autorized"><span>Лампа Леонидовна</span></div>
+            <div class="share__auth">
               <div class="auth-reg share__controls"><button class="auth-reg__item" type="button">Авторизация</button><span class="auth-reg__divider">/</span><button class="auth-reg__item" type="button">Регистрация</button></div>
             </div>
             <form class="share__form" method="POST" action="#" id=""><input class="share__email-input" type="email" name="email" placeholder="E-mail"><button class="btn share__submit" type="submit">Отправить ссылку</button></form>
@@ -135,16 +135,16 @@
               <h3 class="article-prev__title">Главные новости цифрового образования</h3>
             </a>
             <p class="article-prev__text">В еженедельном дайджесте мы рассказываем о самом важном, что случилось с цифровым образованием в России и в мире за последнюю неделю. режиме предоставляет возможность ...</p>
-            <div class="article-prev__statistic">
-              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
+            <div class="stat">
+              <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
             </div>
           </article>
           <article class="article-prev"><a class="article-prev__link" href="#">
               <h3 class="article-prev__title">10 тезисов книги «Другая школа»</h3>
             </a>
             <p class="article-prev__text">Современная школа больше не работает — с этих слов начинается книга Александра Мурашева «Другая школа».</p>
-            <div class="article-prev__statistic">
-              <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
+            <div class="stat">
+              <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
             </div>
           </article>
           <div class="check-list">
@@ -166,16 +166,16 @@
         <h3 class="article-prev__title">Главные новости цифрового образования</h3>
       </a>
       <p class="article-prev__text">В еженедельном дайджесте мы рассказываем о самом важном, что случилось с цифровым образованием в России и в мире за последнюю неделю. режиме предоставляет возможность ...</p>
-      <div class="article-prev__statistic">
-        <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
+      <div class="stat">
+        <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
       </div>
     </article>
     <article class="article-prev"><a class="article-prev__link" href="#">
         <h3 class="article-prev__title">10 тезисов книги «Другая школа»</h3>
       </a>
       <p class="article-prev__text">Современная школа больше не работает — с этих слов начинается книга Александра Мурашева «Другая школа».</p>
-      <div class="article-prev__statistic">
-        <div class="text-muted"><span class="mr-1 article-prev__stat-item"><span class="fas fa-clock"></span> 5 минут</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-eye"></span> 35</span><span class="mr-1 article-prev__stat-item"><span class="fas fa-heart"></span> 14</span></div>
+      <div class="stat">
+        <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
       </div>
     </article>
     <div class="check-list">

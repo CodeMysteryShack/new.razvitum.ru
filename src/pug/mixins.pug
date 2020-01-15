@@ -7,7 +7,7 @@ mixin statistic(mods)
     if(typeof(mods) !== 'undefined' && mods) {
       var modsList = mods.split(',');
       for (var i = 0; i < modsList.length; i++) {
-        allMods = allMods + ' main-nav--' + modsList[i].trim();
+        allMods = allMods + ' stat--' + modsList[i].trim();
       }
     }
   //- .article-prev__statistic
@@ -16,11 +16,11 @@ mixin statistic(mods)
   //-     span.mr-1.article-prev__stat-item #[span.glyphicon.glyphicon-eye-open] 35
   //-     span.mr-1.article-prev__stat-item #[span.glyphicon.glyphicon-heart-empty] 14
 
-  .article-prev__statistic&attributes(attributes)
+  .stat(class=allMods)&attributes(attributes)
     .text-muted
-      span.mr-1.article-prev__stat-item #[span.fas.fa-clock] 5 минут
-      span.mr-1.article-prev__stat-item #[span.fas.fa-eye] 35
-      span.mr-1.article-prev__stat-item #[span.fas.fa-heart] 14
+      span.stat__item #[span.fas.fa-clock] 5 минут
+      span.stat__item #[span.fas.fa-eye] 35
+      span.stat__item #[span.fas.fa-heart] 14
 
 //- Блок превью статьи
       +article__prev({
