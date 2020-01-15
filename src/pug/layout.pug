@@ -41,7 +41,8 @@ html(class='no-js', lang='ru')
 
     block aside
 
-    include _footer.pug
+    block footer
+      include _footer.pug
 
     block page-bottom
       script(src='/js/jquery-3.4.1.min.js')
