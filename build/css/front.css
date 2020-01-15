@@ -6085,28 +6085,28 @@ nav.solidarity a.active {
       position: absolute; }
     .main-banner__stat-item--people::before {
       background-image: url(../img/spritePNG.png);
-      background-position: 0px -85px;
+      background-position: -438px -189px;
       width: 32px;
       height: 21px;
       left: calc((48px / 2) - (32px / 2));
       top: calc((48px / 2) - (21px / 2)); }
     .main-banner__stat-item--coin::before {
       background-image: url(../img/spritePNG.png);
-      background-position: -33px -52px;
+      background-position: -404px -189px;
       width: 30px;
       height: 28px;
       left: calc((48px / 2) - (30px / 2));
       top: calc((48px / 2) - (28px / 2)); }
     .main-banner__stat-item--building::before {
       background-image: url(../img/spritePNG.png);
-      background-position: -115px 0px;
+      background-position: -469px -149px;
       width: 18px;
       height: 28px;
       left: calc((48px / 2) - (18px / 2));
       top: calc((48px / 2) - (28px / 2)); }
     .main-banner__stat-item--percent::before {
       background-image: url(../img/spritePNG.png);
-      background-position: 0px -52px;
+      background-position: -436px -149px;
       width: 29px;
       height: 29px;
       left: calc((48px / 2) - (29px / 2));
@@ -6137,21 +6137,21 @@ nav.solidarity a.active {
         position: absolute; }
       .main-banner__info-item--licence::before {
         background-image: url(../img/spritePNG.png);
-        background-position: -87px 0px;
+        background-position: -404px -255px;
         width: 24px;
         height: 32px;
         left: calc((66px / 2) - (24px / 2));
         top: 0; }
       .main-banner__info-item--official::before {
         background-image: url(../img/spritePNG.png);
-        background-position: -47px 0px;
+        background-position: -451px -97px;
         width: 36px;
         height: 32px;
         left: calc((66px / 2) - (36px / 2));
         top: 0; }
       .main-banner__info-item--free::before {
         background-image: url(../img/spritePNG.png);
-        background-position: -87px -36px;
+        background-position: -432px -255px;
         width: 24px;
         height: 32px;
         left: calc((66px / 2) - (24px / 2));
@@ -6423,7 +6423,7 @@ nav.solidarity a.active {
       display: block;
       position: absolute;
       background-image: url(../img/spritePNG.png);
-      background-position: 0px 0px;
+      background-position: -404px -97px;
       width: 43px;
       height: 48px;
       left: calc((115px / 2) - (43px / 2));

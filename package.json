@@ -34,6 +34,7 @@
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^6.2.0",
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^8.0.0",
@@ -60,7 +61,8 @@
     "select2": "^4.0.12",
     "select2-bootstrap-theme": "0.1.0-beta.10",
     "suggestions-jquery": "^19.11.0",
-    "svg4everybody": "^2.1.9"
+    "svg4everybody": "^2.1.9",
+    "vinyl-buffer": "^1.0.1"
   },
   "husky": {
     "hooks": {
