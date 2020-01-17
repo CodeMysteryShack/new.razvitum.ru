@@ -1,0 +1,80 @@
+@import '../_vars'
+@import '../_fonts'
+
+.about
+  &-menu
+    &__item
+      color: $headgray
+      font-size: 0.875em
+      text-decoration: none
+      &:hover
+        color: $headgray
+  &-carousel
+    background-color: $accent
+  &__title
+    +ff-roboto-light
+    font-size: 2.25em
+    color: $headgray
+    text-align: center
+  &__subhead
+    +ff-arial
+    font-size: 1.125em
+    color: $headgray
+    text-align: center
+  &__text
+    +ff-arial
+    text-align: center
+    color: $headgray
+    font-size: 1.125em
+    line-height: 1.75em
+    &--left
+      text-align: left
+  &__list
+    &-item
+      padding-left: 70px
+      position: relative
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        top: 5px
+        left: 15px
+        width: 40px
+        height: 40px
+        padding-top: 3px
+        border: 2px solid $accent
+        border-radius: 20px
+        text-align: center
+        color: $accent
+        font-size: 1.125em
+      &--one
+        &:before
+          content: '1'
+      &--two
+        &:before
+          content: '2'
+      &--three
+        &:before
+          content: '3'
+
+.quotes
+  position: relative
+  padding: 120px 75px
+  border: 2px solid $accent
+  &:before
+    content: '“'
+    display: block
+    position: absolute
+    top: 0px
+    left: 50%
+    text-align: center
+    font-size: 100px
+    position: absolute
+    color: $accent
+  &__text
+    +ff-roboto-light
+    text-align: center
+    font-size: 1.875em
+    line-height: 1.2em
+    color: $headgray
+

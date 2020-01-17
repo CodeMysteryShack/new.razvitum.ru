@@ -16,6 +16,14 @@
   src: url("/fonts/roboto-bold.eot?#iefix") format("embedded-opentype"), url("/fonts/roboto-bold.woff") format("woff"), url("/fonts/roboto-bold.ttf") format("truetype"); }
 
 @font-face {
+  font-family: "RobotoLight";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("/fonts/Roboto-Light.eot");
+  src: url("/fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-Light.woff") format("woff"), url("/fonts/Roboto-Light.ttf") format("truetype"); }
+
+@font-face {
   font-family: "Font Awesome 5 Free";
   font-weight: normal;
   font-style: normal;
