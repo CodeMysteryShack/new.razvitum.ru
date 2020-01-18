@@ -8,7 +8,7 @@ let config = {
     'src/assets/fontawesome-free-5.12.0-web/css/all.min.css' : 'css/',
     'src/assets/fontawesome-free-5.12.0-web/js/all.js' : 'js/',
     'src/js/vendor.min.js' : 'js/',
-
+    'src/docs/**/*.*' : 'docs/',
   }
 };
 

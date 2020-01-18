@@ -3,7 +3,6 @@
 @import "../spritePNG"
 @import "../mixins/calc"
 
-
 .about
   &-menu
     margin: 8px 0 6px 0
@@ -70,6 +69,37 @@
       &--three
         &:before
           content: '3'
+  &-docs
+    &__list
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      flex-wrap: wrap
+      width: 100%
+      background-color: rgba(255, 255, 255, 0)
+    &__item
+      display: block
+      position: relative
+      width: 165px
+      height: 230px
+      margin-bottom: 30px
+      border: 1px solid  $orange
+      overflow: hidden
+      box-shadow: 4px 4px 40px 10px #e2e2e2
+      &:before
+        +psblock(none, absolute)
+        z-index: 12
+        width: 100%
+        height: 100%
+        background: linear-gradient(30deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.75))
+      &:hover
+        border-color: $highlight
+        &:before
+          display: block
+      img
+        width: 100%
+        height: auto
+
   &-greet
     width: 100%
     padding: 85px 0 45px 0
@@ -95,10 +125,14 @@
   &-innovations
     &__list
     &__item
-      margin-top: 50px
+      margin-top: 100px
       font-size: 1em
       color: $textgray
       text-align: center
+      img
+        width: auto
+        height: 94px
+        margin-bottom: 55px
 
   &-facts
     &__wrap
