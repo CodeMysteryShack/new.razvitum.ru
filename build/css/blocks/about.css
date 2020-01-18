@@ -67,6 +67,35 @@
   padding: 2px 0;
   border-top: 2px solid  #fff;
   background-color: #1422aa; }
+  .about-carousel__btn {
+    background: none !important;
+    background-image: none !important; }
+  .about-carousel__arrow--back {
+    width: 24px;
+    height: 27px; }
+    .about-carousel__arrow--back:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: calc(50% - 27px/2);
+      left: -71px;
+      background-image: url(../img/spritePNG.png);
+      background-position: -176px -25px;
+      width: 24px;
+      height: 27px; }
+  .about-carousel__arrow--fow {
+    width: 24px;
+    height: 27px; }
+    .about-carousel__arrow--fow:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: calc(50% - 27px/2);
+      right: 71px;
+      background-image: url(../img/spritePNG.png);
+      background-position: -176px -56px;
+      width: 24px;
+      height: 27px; }
 
 .about__title {
   margin-top: 77px;

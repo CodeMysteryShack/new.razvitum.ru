@@ -6327,6 +6327,35 @@ nav.solidarity a.active {
   padding: 2px 0;
   border-top: 2px solid  #fff;
   background-color: #1422aa; }
+  .about-carousel__btn {
+    background: none !important;
+    background-image: none !important; }
+  .about-carousel__arrow--back {
+    width: 24px;
+    height: 27px; }
+    .about-carousel__arrow--back:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: calc(50% - 27px/2);
+      left: -71px;
+      background-image: url(../img/spritePNG.png);
+      background-position: -176px -25px;
+      width: 24px;
+      height: 27px; }
+  .about-carousel__arrow--fow {
+    width: 24px;
+    height: 27px; }
+    .about-carousel__arrow--fow:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: calc(50% - 27px/2);
+      right: 71px;
+      background-image: url(../img/spritePNG.png);
+      background-position: -176px -56px;
+      width: 24px;
+      height: 27px; }
 
 .about__title {
   margin-top: 77px;
@@ -6547,7 +6576,7 @@ nav.solidarity a.active {
       top: calc((48px / 2) - (28px / 2)); }
     .main-banner__stat-item--building::before {
       background-image: url(../img/spritePNG.png);
-      background-position: -176px -25px;
+      background-position: -176px -87px;
       width: 18px;
       height: 28px;
       left: calc((48px / 2) - (18px / 2));
@@ -6585,7 +6614,7 @@ nav.solidarity a.active {
         position: absolute; }
       .main-banner__info-item--licence::before {
         background-image: url(../img/spritePNG.png);
-        background-position: -142px -102px;
+        background-position: -142px -66px;
         width: 24px;
         height: 32px;
         left: calc((66px / 2) - (24px / 2));
@@ -6599,7 +6628,7 @@ nav.solidarity a.active {
         top: 0; }
       .main-banner__info-item--free::before {
         background-image: url(../img/spritePNG.png);
-        background-position: -142px -66px;
+        background-position: -142px -102px;
         width: 24px;
         height: 32px;
         left: calc((66px / 2) - (24px / 2));

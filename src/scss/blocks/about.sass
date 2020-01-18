@@ -16,6 +16,27 @@
     padding: 2px 0
     border-top: 2px solid  #fff
     background-color: $accent
+    &__btn
+      background: none !important
+      background-image: none !important
+      &--left
+    &__arrow--back
+      width: $arrow-back-width
+      height: $arrow-back-height
+      // position: relative
+      &:before
+        +psblock(block, absolute)
+        top: calc(50% - #{$arrow-back-height}/2)
+        left: -71px
+        +sprite($arrow-back)
+    &__arrow--fow
+      width: $arrow-fow-width
+      height: $arrow-fow-height
+      &:before
+        +psblock(block, absolute)
+        top: calc(50% - #{$arrow-fow-height}/2)
+        right: -71px
+        +sprite($arrow-fow)
   &__title
     margin-top: 77px
     margin-bottom: 38px
