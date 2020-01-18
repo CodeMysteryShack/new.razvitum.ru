@@ -1,0 +1,18 @@
+@import 'font-face'
+// миксины стилей
+
+@mixin title()
+  margin-top: 77px
+  margin-bottom: 38px
+  +ff-roboto-light
+  font-size: 2.25em
+  color: $headgray
+  text-align: center
+
+@mixin text-basic()
+  margin: 0 0 6px 0
+  +ff-arial
+  font-size: 1em
+  line-height: 1.75em
+  color: $headgray
+  text-align: center

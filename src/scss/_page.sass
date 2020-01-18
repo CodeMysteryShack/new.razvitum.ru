@@ -4,6 +4,14 @@
   &--margin-top
     margin-top: 40px
 
+// кнопка для слабовидящих
+.rs-btn
+  margin-top: 11px
+  display: block
+  color: #fff
+  opacity: 1
+  cursor: pointer
+
 .page
   &__title
     align-self: baseline
@@ -100,6 +108,8 @@
   margin: 55px 0 35px 0
   padding: 120px 75px
   border: 2px solid $accent
+  @media(max-width: 700px)
+    padding: 100px 30px 50px 30px
   &:before
     content: '“'
     display: block
@@ -116,6 +126,8 @@
     font-size: 1.875em
     line-height: 1.2em
     color: $headgray
+    @media(max-width: 700px)
+      font-size: 1.125em
     &--comment
       margin-top: 35px
       margin-bottom: -50px

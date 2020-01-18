@@ -83,6 +83,9 @@
       background-position: -176px -25px;
       width: 24px;
       height: 27px; }
+      @media (max-width: 1330px) {
+        .about-carousel__arrow--back:before {
+          left: 10px; } }
   .about-carousel__arrow--fow {
     width: 24px;
     height: 27px; }
@@ -91,11 +94,14 @@
       display: block;
       position: absolute;
       top: calc(50% - 27px/2);
-      right: 71px;
+      right: -71px;
       background-image: url(../img/spritePNG.png);
       background-position: -176px -56px;
       width: 24px;
       height: 27px; }
+      @media (max-width: 1330px) {
+        .about-carousel__arrow--fow:before {
+          right: 10px; } }
 
 .about__title {
   margin-top: 77px;

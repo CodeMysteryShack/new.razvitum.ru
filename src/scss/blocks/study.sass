@@ -1,0 +1,59 @@
+@import '../fonts'
+@import '../vars'
+@import '../mixins/styles'
+
+.study
+  &__title
+    +title
+    &--white
+      color: #fff
+  &__text
+    +text-basic
+    &--white
+      color: #fff
+
+  &-service
+    &__wrap
+      margin-top: 77px
+      margin-bottom: 212px
+    &__center-pic-wrap
+      height: 100%
+      vertical-align: center
+      img
+        width: 100%
+        height: auto
+    &__col
+      &--left
+        text-align: right
+      &--right
+        text-align: left
+
+  &-item
+    margin: 0 -15px
+    padding-left: 15px
+    padding-right: 15px
+    padding-top: 10px
+    padding-bottom: 20px
+    &--highlight
+      background-color: $active-color
+    &__title
+      +ff-roboto-light
+      font-size: 1.5em
+    &__text
+      +ff-arial
+      font-size: 1em
+      line-height: 1.5em
+  &-access
+    padding-top: 110px
+    padding-bottom: 150px
+    width: 100%
+    background-image: url('../img/foto_demo.jpg')
+    background-size: cover
+    .study__title
+      margin-bottom: 20px
+    &__form-input
+      width: 100%
+      margin-bottom: 15px
+      text-align: center
+    &__button-submit
+

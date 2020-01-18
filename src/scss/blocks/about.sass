@@ -29,6 +29,8 @@
         top: calc(50% - #{$arrow-back-height}/2)
         left: -71px
         +sprite($arrow-back)
+        @media(max-width: 1330px)
+          left: 10px
     &__arrow--fow
       width: $arrow-fow-width
       height: $arrow-fow-height
@@ -37,6 +39,9 @@
         top: calc(50% - #{$arrow-fow-height}/2)
         right: -71px
         +sprite($arrow-fow)
+        @media(max-width: 1330px)
+          right: 10px
+
   &__title
     margin-top: 77px
     margin-bottom: 38px

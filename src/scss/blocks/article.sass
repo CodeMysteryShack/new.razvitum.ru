@@ -1,5 +1,6 @@
 @import '../fonts'
 @import '../vars'
+@import '../mixins/styles'
 
 .article
   &__img-wrap
@@ -22,16 +23,9 @@
       color: $lightgray
       cursor: pointer
   &__title
-    margin-top: 32px
-    margin-bottom: 42px
-    +ff-arial
-    font-size: 2.25em
+    +title
   &__text
-    margin: 0 0 6px 0
-    +ff-arial
-    font-size: 1em
-    line-height: 1.75em
-    color: $headgray
+    +text-basic
 
   &-interest
     &__title
