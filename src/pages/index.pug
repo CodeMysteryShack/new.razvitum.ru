@@ -5,6 +5,13 @@ block meta
   title АНО СПб ЦДПО - Всероссийский проект Развитум
 
 block content
+  // заголовок (только на xs)
+  p.visible-xs.text-center.mv-2.head-logo
+    a(href="/")
+      img(src="img/logo.svg", onerror="this.onerror=null; this.src='img/logo.png';", alt="Razvitum Logo")
+    span Санкт-Петербургский центр#[br]дополнительного профессионального образования#[br]
+      span ОБРАЗОВАТЕЛЬНЫЙ ПРОЕКТ RAZVITUM
+
   // main banner
   section.main-banner
     .jumbotron.main-banner__first-row

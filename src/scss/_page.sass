@@ -94,3 +94,25 @@
       cursor: default
       &:hover
         text-decoration: none
+
+.quotes
+  position: relative
+  padding: 120px 75px
+  border: 2px solid $accent
+  &:before
+    content: '“'
+    display: block
+    position: absolute
+    top: 0px
+    left: 50%
+    text-align: center
+    font-size: 100px
+    position: absolute
+    color: $accent
+  &__text
+    +ff-roboto-light
+    text-align: center
+    font-size: 1.875em
+    line-height: 1.2em
+    color: $headgray
+

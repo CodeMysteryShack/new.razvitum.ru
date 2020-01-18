@@ -5,7 +5,7 @@ block meta
   title АНО СПб ЦДПО - Всероссийский проект Развитум | О нас
 
 block content
-  .container
+  .container.hidden-sm.hidden-xs
     menu.about-menu.row
       a.col-md-3.col-sm-12.col-xs-12.about-menu__item(href="#about-centre") О центре
       a.col-md-3.col-sm-12.col-xs-12.about-menu__item(href="#about-innovations") Стратегия развития
@@ -78,17 +78,19 @@ block content
           h4.about-dates-slider__title Конкурсы для детей
           p.about-dates-slider__text Организованы конкурсы «Ангел вдохновения», «Уши, ноги и хвосты», конкурс профессионального мастерства«Профи». За пять лет к конкурсной деятельности мы привлекли более 36 000 участников.
 
-  section.about-quote.jumbotron
+  section.about-greet.jumbotron
     .container
       .row
-        .about-quote__img-wrap.col-md-6.col-sm-12.col-xs-12
-          img(src="")
+        .about-greet__img-wrap.mb-1.col-md-6.col-sm-12.col-xs-12
+          img(src="/img/seredenko.jpg", alt="")
         .col-md-6.col-sm-12.col-xs-12
-          p.about-quote__text «Да, мы амбициозные перфекционисты, и создаем лучшую образовательную модель для нашего клиента. Такой модели вы не найдете ни в одном другом образовательном центре!
-          p.about-quote__text Наши инновационные решения позволяют организовать обучение понятным и логичным, при котором слушателю остается только с удовольствием погрузиться в процесс.
-          p.about-quote__text А регулярная работа по исследованию интересов слушателей позволяет обогащать образовательный продукт знаниями, дополняющими картину мира и практическими инструментами, которые можно применять «здесь и сейчас».
-          p.about-quote__text Мы хотим стать другом нашему слушателю, помощником на пути саморазвития, личным экспертом в образовании!»
-          p.about-quote__text Директор СПБ ЦДПО Середенко М.Ю.
+          p.about-greet__text «Да, мы амбициозные перфекционисты, и создаем лучшую образовательную модель для нашего клиента. Такой модели вы не найдете ни в одном другом образовательном центре!
+          p.about-greet__text Наши инновационные решения позволяют организовать обучение понятным и логичным, при котором слушателю остается только с удовольствием погрузиться в процесс.
+          p.about-greet__text А регулярная работа по исследованию интересов слушателей позволяет обогащать образовательный продукт знаниями, дополняющими картину мира и практическими инструментами, которые можно применять «здесь и сейчас».
+          p.about-greet__text Мы хотим стать другом нашему слушателю, помощником на пути саморазвития, личным экспертом в образовании!»
+          p.about-greet__text.about-greet__text--name.mt-2 Директор СПБ ЦДПО Середенко М.Ю.
+          .about__img-wrap
+            img.about-greet__autograph(src="/img/sign2.png", alt="")
 
   section.about-innovations.container(id="about-innovations")
     .row
@@ -107,7 +109,6 @@ block content
       .about-innovations__item.col-xs-12.col-sm-12.col-md-4 Учебная статистика и прогресс
 
   section.about-facts(id="about-facts")
-  script.
-    $('#carousel-active').carousel();
-
-
+  block script
+    script.
+      $('#carousel-active').carousel();

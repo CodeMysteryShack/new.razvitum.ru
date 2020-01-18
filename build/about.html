@@ -87,7 +87,7 @@
     </div>
   </header>
   <main>
-    <div class="container">
+    <div class="container hidden-sm hidden-xs">
       <menu class="about-menu row"><a class="col-md-3 col-sm-12 col-xs-12 about-menu__item" href="#about-centre">О центре</a><a class="col-md-3 col-sm-12 col-xs-12 about-menu__item" href="#about-innovations">Стратегия развития</a><a class="col-md-3 col-sm-12 col-xs-12 about-menu__item" href="#about-history">История</a><a class="col-md-3 col-sm-12 col-xs-12 about-menu__item" href="#about-facts">Цифры и факты</a></menu>
     </div>
     <section class="about-carousel jumbotron">
@@ -176,16 +176,17 @@
         </div>
       </div>
     </section>
-    <section class="about-quote jumbotron">
+    <section class="about-greet jumbotron">
       <div class="container">
         <div class="row">
-          <div class="about-quote__img-wrap col-md-6 col-sm-12 col-xs-12"><img src=""></div>
+          <div class="about-greet__img-wrap mb-1 col-md-6 col-sm-12 col-xs-12"><img src="/img/seredenko.jpg" alt=""></div>
           <div class="col-md-6 col-sm-12 col-xs-12">
-            <p class="about-quote__text">«Да, мы амбициозные перфекционисты, и создаем лучшую образовательную модель для нашего клиента. Такой модели вы не найдете ни в одном другом образовательном центре!</p>
-            <p class="about-quote__text">Наши инновационные решения позволяют организовать обучение понятным и логичным, при котором слушателю остается только с удовольствием погрузиться в процесс.</p>
-            <p class="about-quote__text">А регулярная работа по исследованию интересов слушателей позволяет обогащать образовательный продукт знаниями, дополняющими картину мира и практическими инструментами, которые можно применять «здесь и сейчас».</p>
-            <p class="about-quote__text">Мы хотим стать другом нашему слушателю, помощником на пути саморазвития, личным экспертом в образовании!»</p>
-            <p class="about-quote__text">Директор СПБ ЦДПО Середенко М.Ю.</p>
+            <p class="about-greet__text">«Да, мы амбициозные перфекционисты, и создаем лучшую образовательную модель для нашего клиента. Такой модели вы не найдете ни в одном другом образовательном центре!</p>
+            <p class="about-greet__text">Наши инновационные решения позволяют организовать обучение понятным и логичным, при котором слушателю остается только с удовольствием погрузиться в процесс.</p>
+            <p class="about-greet__text">А регулярная работа по исследованию интересов слушателей позволяет обогащать образовательный продукт знаниями, дополняющими картину мира и практическими инструментами, которые можно применять «здесь и сейчас».</p>
+            <p class="about-greet__text">Мы хотим стать другом нашему слушателю, помощником на пути саморазвития, личным экспертом в образовании!»</p>
+            <p class="about-greet__text about-greet__text--name mt-2">Директор СПБ ЦДПО Середенко М.Ю.</p>
+            <div class="about__img-wrap"><img class="about-greet__autograph" src="/img/sign2.png" alt=""></div>
           </div>
         </div>
       </div>
@@ -302,6 +303,9 @@
       </div>
     </div>
   </footer>
+  <script>
+    $('#carousel-active').carousel();
+  </script>
   <script src="/js/jquery-3.4.1.min.js"></script>
   <script src="/js/bootstrap.js"></script>
   <script src="/js/vendors.min.js"></script>

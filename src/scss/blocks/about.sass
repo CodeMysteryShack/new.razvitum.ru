@@ -56,25 +56,21 @@
       &--three
         &:before
           content: '3'
-
-.quotes
-  position: relative
-  padding: 120px 75px
-  border: 2px solid $accent
-  &:before
-    content: '“'
-    display: block
-    position: absolute
-    top: 0px
-    left: 50%
-    text-align: center
-    font-size: 100px
-    position: absolute
-    color: $accent
-  &__text
-    +ff-roboto-light
-    text-align: center
-    font-size: 1.875em
-    line-height: 1.2em
-    color: $headgray
-
+  &-greet
+    &__img-wrap
+      max-width: 100%
+      img
+        width: 100%
+        height: auto
+    &__text, p
+      +ff-arial
+      text-align: center
+      color: $headgray
+      font-size: 1.125em
+      line-height: 1.75em
+      text-align: left
+    &__text--name
+      +ff-arial-bold
+    &__autograph
+      width: 50%
+      height: auto
