@@ -54,17 +54,23 @@
   src: url("../fonts/glyphicons-halflings-regular.eot");
   src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"); }
 
-.about-menu__item {
-  color: #333;
-  font-size: 0.875em;
-  text-decoration: none; }
-  .about-menu__item:hover {
-    color: #333; }
+.about-menu {
+  margin: 8px 0 6px 0; }
+  .about-menu__item {
+    color: #333;
+    font-size: 0.875em;
+    text-decoration: none; }
+    .about-menu__item:hover {
+      color: #333; }
 
 .about-carousel {
+  padding: 2px 0;
+  border-top: 2px solid  #fff;
   background-color: #1422aa; }
 
 .about__title {
+  margin-top: 77px;
+  margin-bottom: 38px;
   font-family: RobotoLight, Arial, sans-serif;
   font-weight: 400;
   font-size: 2.25em;
@@ -72,6 +78,8 @@
   text-align: center; }
 
 .about__subhead {
+  margin-top: 84px;
+  margin-bottom: 42px;
   font-family: Arial, sans-serif;
   font-weight: 400;
   font-size: 1.125em;
@@ -84,11 +92,15 @@
   text-align: center;
   color: #333;
   font-size: 1.125em;
-  line-height: 1.75em; }
+  line-height: 1.65em; }
   .about__text--left {
     text-align: left; }
+  .about__text--docs {
+    text-align: left;
+    font-size: 1em; }
 
 .about__list-item {
+  margin-bottom: 42px;
   padding-left: 70px;
   position: relative; }
   .about__list-item:before {
@@ -112,27 +124,44 @@
   .about__list-item--three:before {
     content: '3'; }
 
-.about-greet__img-wrap {
-  max-width: 100%; }
-  .about-greet__img-wrap img {
-    width: 100%;
+.about-greet {
+  width: 100%;
+  padding: 85px 0 45px 0;
+  background-color: #e8e8e8; }
+  .about-greet__img-wrap {
+    max-width: 100%; }
+    .about-greet__img-wrap img {
+      width: 100%;
+      height: auto; }
+  .about-greet__text {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #333;
+    font-size: 1.125em;
+    line-height: 1.75em;
+    text-align: left; }
+  .about-greet__text--name {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1em; }
+  .about-greet__autograph {
+    width: 50%;
     height: auto; }
 
-.about-greet__text, .about-greet p {
-  font-family: Arial, sans-serif;
-  font-weight: 400;
-  text-align: center;
-  color: #333;
-  font-size: 1.125em;
-  line-height: 1.75em;
-  text-align: left; }
+.about-innovations__item {
+  margin-top: 50px;
+  font-size: 1em;
+  color: #545454;
+  text-align: center; }
 
-.about-greet__text--name {
-  font-family: Arial, sans-serif;
-  font-weight: 700; }
-
-.about-greet__autograph {
-  width: 50%;
-  height: auto; }
+.about-facts__wrap {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  min-height: 100px;
+  border-bottom: 4px solid #fff;
+  background-image: url("/img/factsbg.png");
+  min-height: 100px; }
 
 /*# sourceMappingURL=about.css.map */

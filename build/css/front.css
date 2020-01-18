@@ -6078,6 +6078,7 @@ nav.solidarity a.active {
 
 .quotes {
   position: relative;
+  margin: 55px 0 35px 0;
   padding: 120px 75px;
   border: 2px solid #1422aa; }
   .quotes:before {
@@ -6097,6 +6098,12 @@ nav.solidarity a.active {
     font-size: 1.875em;
     line-height: 1.2em;
     color: #333; }
+    .quotes__text--comment {
+      margin-top: 35px;
+      margin-bottom: -50px;
+      font-family: Arial, sans-serif;
+      font-weight: 400;
+      font-size: 1.125em; }
 
 @font-face {
   font-family: "Roboto";
@@ -6307,17 +6314,23 @@ nav.solidarity a.active {
   src: url("../fonts/glyphicons-halflings-regular.eot");
   src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"); }
 
-.about-menu__item {
-  color: #333;
-  font-size: 0.875em;
-  text-decoration: none; }
-  .about-menu__item:hover {
-    color: #333; }
+.about-menu {
+  margin: 8px 0 6px 0; }
+  .about-menu__item {
+    color: #333;
+    font-size: 0.875em;
+    text-decoration: none; }
+    .about-menu__item:hover {
+      color: #333; }
 
 .about-carousel {
+  padding: 2px 0;
+  border-top: 2px solid  #fff;
   background-color: #1422aa; }
 
 .about__title {
+  margin-top: 77px;
+  margin-bottom: 38px;
   font-family: RobotoLight, Arial, sans-serif;
   font-weight: 400;
   font-size: 2.25em;
@@ -6325,6 +6338,8 @@ nav.solidarity a.active {
   text-align: center; }
 
 .about__subhead {
+  margin-top: 84px;
+  margin-bottom: 42px;
   font-family: Arial, sans-serif;
   font-weight: 400;
   font-size: 1.125em;
@@ -6337,11 +6352,15 @@ nav.solidarity a.active {
   text-align: center;
   color: #333;
   font-size: 1.125em;
-  line-height: 1.75em; }
+  line-height: 1.65em; }
   .about__text--left {
     text-align: left; }
+  .about__text--docs {
+    text-align: left;
+    font-size: 1em; }
 
 .about__list-item {
+  margin-bottom: 42px;
   padding-left: 70px;
   position: relative; }
   .about__list-item:before {
@@ -6365,28 +6384,45 @@ nav.solidarity a.active {
   .about__list-item--three:before {
     content: '3'; }
 
-.about-greet__img-wrap {
-  max-width: 100%; }
-  .about-greet__img-wrap img {
-    width: 100%;
+.about-greet {
+  width: 100%;
+  padding: 85px 0 45px 0;
+  background-color: #e8e8e8; }
+  .about-greet__img-wrap {
+    max-width: 100%; }
+    .about-greet__img-wrap img {
+      width: 100%;
+      height: auto; }
+  .about-greet__text {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #333;
+    font-size: 1.125em;
+    line-height: 1.75em;
+    text-align: left; }
+  .about-greet__text--name {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1em; }
+  .about-greet__autograph {
+    width: 50%;
     height: auto; }
 
-.about-greet__text, .about-greet p {
-  font-family: Arial, sans-serif;
-  font-weight: 400;
-  text-align: center;
-  color: #333;
-  font-size: 1.125em;
-  line-height: 1.75em;
-  text-align: left; }
+.about-innovations__item {
+  margin-top: 50px;
+  font-size: 1em;
+  color: #545454;
+  text-align: center; }
 
-.about-greet__text--name {
-  font-family: Arial, sans-serif;
-  font-weight: 700; }
-
-.about-greet__autograph {
-  width: 50%;
-  height: auto; }
+.about-facts__wrap {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  min-height: 100px;
+  border-bottom: 4px solid #fff;
+  background-image: url("/img/factsbg.png");
+  min-height: 100px; }
 
 .main-banner {
   margin-bottom: 70px; }
@@ -6451,28 +6487,28 @@ nav.solidarity a.active {
       position: absolute; }
     .main-banner__stat-item--people::before {
       background-image: url(../img/spritePNG.png);
-      background-position: -438px -189px;
+      background-position: -176px 0px;
       width: 32px;
       height: 21px;
       left: calc((48px / 2) - (32px / 2));
       top: calc((48px / 2) - (21px / 2)); }
     .main-banner__stat-item--coin::before {
       background-image: url(../img/spritePNG.png);
-      background-position: -404px -189px;
+      background-position: -142px 0px;
       width: 30px;
       height: 28px;
       left: calc((48px / 2) - (30px / 2));
       top: calc((48px / 2) - (28px / 2)); }
     .main-banner__stat-item--building::before {
       background-image: url(../img/spritePNG.png);
-      background-position: -469px -149px;
+      background-position: -176px -25px;
       width: 18px;
       height: 28px;
       left: calc((48px / 2) - (18px / 2));
       top: calc((48px / 2) - (28px / 2)); }
     .main-banner__stat-item--percent::before {
       background-image: url(../img/spritePNG.png);
-      background-position: -436px -149px;
+      background-position: -95px -128px;
       width: 29px;
       height: 29px;
       left: calc((48px / 2) - (29px / 2));
@@ -6503,21 +6539,21 @@ nav.solidarity a.active {
         position: absolute; }
       .main-banner__info-item--licence::before {
         background-image: url(../img/spritePNG.png);
-        background-position: -404px -255px;
+        background-position: -142px -102px;
         width: 24px;
         height: 32px;
         left: calc((66px / 2) - (24px / 2));
         top: 0; }
       .main-banner__info-item--official::before {
         background-image: url(../img/spritePNG.png);
-        background-position: -451px -97px;
+        background-position: -95px -52px;
         width: 36px;
         height: 32px;
         left: calc((66px / 2) - (36px / 2));
         top: 0; }
       .main-banner__info-item--free::before {
         background-image: url(../img/spritePNG.png);
-        background-position: -432px -255px;
+        background-position: -142px -66px;
         width: 24px;
         height: 32px;
         left: calc((66px / 2) - (24px / 2));
@@ -6783,7 +6819,7 @@ nav.solidarity a.active {
       display: block;
       position: absolute;
       background-image: url(../img/spritePNG.png);
-      background-position: -404px -97px;
+      background-position: -95px 0px;
       width: 43px;
       height: 48px;
       left: calc((115px / 2) - (43px / 2));
