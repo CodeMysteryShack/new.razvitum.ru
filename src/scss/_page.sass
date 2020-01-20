@@ -8,7 +8,7 @@
 .rs-btn
   margin-top: 11px
   display: block
-  color: #fff
+  color: $lightgray
   opacity: 1
   cursor: pointer
 
@@ -108,7 +108,7 @@
   margin: 55px 0 35px 0
   padding: 120px 75px
   border: 2px solid $accent
-  @media(max-width: 700px)
+  @media(max-width: 768px)
     padding: 100px 30px 50px 30px
   &:before
     content: '“'
@@ -129,9 +129,17 @@
     @media(max-width: 700px)
       font-size: 1.125em
     &--comment
-      margin-top: 35px
-      margin-bottom: -50px
+      margin-top: 50px
+      margin-bottom: 50px
       +ff-arial
       font-size: 1.125em
 
+// блок социальных кнопок
+.social
+  display: flex
+  flex-direction: row
+  list-style: none
+  li
+    margin-left: 10px
+    font-size: 0.875em
 

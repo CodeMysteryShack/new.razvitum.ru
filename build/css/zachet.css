@@ -2303,7 +2303,7 @@ footer {
     display: block;
     position: absolute;
     top: 0;
-    right: 0; }
+    right: 28px; }
   footer .footer_nav .up-arrow a {
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s; }

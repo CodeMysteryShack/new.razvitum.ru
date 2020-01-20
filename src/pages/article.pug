@@ -34,18 +34,19 @@ block content
           .share__auth
             +auth-reg.share__controls
 
-          form.share__form(method="POST", action="#", id="")
-            input.share__email-input(type="email", name="email", placeholder="E-mail")
-            button.btn.share__submit(type="submit") Отправить ссылку
+          .share__form-wrap
+            form.share__form(method="POST", action="#", id="")
+              input.share__email-input(type="email", name="email", placeholder="E-mail")
+              button.btn.btn-default.share__submit(type="submit") Отправить ссылку
 
           .share__social
-            button.btn.share__applause Апплодировать
+            button.btn.btn-primary.share__btn #[i.fas.fa-sign-language.fa-2x] Апплодировать
             .share__social-links
+              +social-buttons
 
-      block aside
-        aside.col-md-4.hidden-sm.hidden-xs
-          .article-interest
-            h2.article-interest__title Может быть интересно
+      .col-md-4.hidden-sm.hidden-xs
+        .article-interest
+          h2.article-interest__title Может быть интересно
           +article__prev({
             title: "Главные новости цифрового образования",
             text: "В еженедельном дайджесте мы рассказываем о самом важном, что случилось с цифровым образованием в России и в мире за последнюю неделю. режиме предоставляет возможность ..."
@@ -55,8 +56,7 @@ block content
             text: "Современная школа больше не работает — с этих слов начинается книга Александра Мурашева «Другая школа»."
             })
 
-          .check-list
-            .check-list
-              h4 Чек-лист
-              p «Проверка подготовки материалов к уроку»
-            +auth-reg.check-list__controls
+        .check-list
+          h4 Чек-лист
+          p «Проверка подготовки материалов к уроку»
+          +auth-reg.check-list__controls

@@ -50,7 +50,7 @@ block content
       .row
         .col-xs-12
           form.study-access__form(method="POST", action="#", id="")
-            fieldset.form-group
+            fieldset.form-group.text-center
               .row
                 .col-md-2.col-sm-1.hidden-xs
                 .col-md-8.col-sm-10.col-xs-12
@@ -62,47 +62,51 @@ block content
                     .col-md-4.col-sm-4.col-xm-12
                       input.study-access__form-input(type="email", name="email", placeholder="Ваше имя")
                 .col-md-2.col-sm-1.hidden-xs
-          button.study-access__button-submit.btn.btn-primary(type="submit") Попробовать бесплатно
+              button.study-access__button-submit.btn.btn-primary(type="submit") Попробовать бесплатно
 
-  section.study-process.container
-    .row
-      .col-xs-12
-        h2.study-process__title Доступный и комфортный процесс обучения
-        p.study-process__text Испытайте удовольствие от получения актуальных знаний и новых компетенций.  Почувствуйте особое отношение к вам в ходе процесса обучения
-    .row
-      .study-service__col.col-xs-12.col-sm-12.col-md-4
-        .study-item
-          h3.study-item__title Заботливый тьютор-онлайн
-          p.study-item__text Сопровождаем вас от оформления заявки до получения документов. Оказываем помощь и поддержку по горячей линии, в мессенджерах и чатах
-        .study-item
-          h3.study-item__title Контент на любой вкус
-          p.study-item__text Учитываем индивидуальность Вашего восприятия и ритм жизни. Обучайтесь по текстовым материалам с акцентом на визуальную восприимчивость, смотрите короткие видео уроки и слушайте аудио подкасты в дороге
-        .study-item
-          h3.study-item__title Индивидуальный план обучения
-          p.study-item__text Сокращайте или увеличивайте сроки обучения под изменяющиеся обстоятельства жизни. За 1 клик оформите свое желание в личном кабинете
-      .study-service__col.col-xs-12.col-sm-12.col-md-4
-        .study-item
-          h3.study-item__title Управляемый учебный процесс
-          p.study-item__text В личном кабинете предусмотрено решение всех учебных ситуаций через электронные заявления: выход в академ, изменения данных и т.д.
-        .study-item.study-item--highlight
-          h3.study-item__title Спокойная аттестация
-          p.study-item__text Тестирование по принципу «зачтено» проходить одно удовольствие. Неограниченное количество попыток поможет пройти тестирование без стресса
-      .study-service__col.col-xs-12.col-sm-12.col-md-4
+  section.study-process
+    .container
+      .row
+        .col-xs-12
+          h2.study__title Доступный и комфортный процесс обучения
+          p.study__text Испытайте удовольствие от получения актуальных знаний и новых компетенций.#[br]Почувствуйте особое отношение к вам в ходе процесса обучения
+    .study-process__col-wrap
+      .container
+        .row
+          .study-service__col.col-xs-12.col-sm-12.col-md-3
+            .study-item
+              h3.study-item__title Заботливый тьютор-онлайн
+              p.study-item__text Сопровождаем вас от оформления заявки до получения документов. Оказываем помощь и поддержку по горячей линии, в мессенджерах и чатах
+            .study-item
+              h3.study-item__title Контент на любой вкус
+              p.study-item__text Учитываем индивидуальность Вашего восприятия и ритм жизни. Обучайтесь по текстовым материалам с акцентом на визуальную восприимчивость, смотрите короткие видео уроки и слушайте аудио подкасты в дороге
+            .study-item
+              h3.study-item__title Индивидуальный план обучения
+              p.study-item__text Сокращайте или увеличивайте сроки обучения под изменяющиеся обстоятельства жизни. За 1 клик оформите свое желание в личном кабинете
+          .col-md-1.hidden-xs.hidden-sm
+          .study-service__col.col-xs-12.col-sm-12.col-md-3
+            .study-item
+              h3.study-item__title Управляемый учебный процесс
+              p.study-item__text В личном кабинете предусмотрено решение всех учебных ситуаций через электронные заявления: выход в академ, изменения данных и т.д.
+            .study-item.study-item--highlight
+              h3.study-item__title Спокойная аттестация
+              p.study-item__text Тестирование по принципу «зачтено» проходить одно удовольствие. Неограниченное количество попыток поможет пройти тестирование без стресса
+          .study-service__col.col-xs-12.col-sm-12.col-md-4
 
-  section.study-details.jumbotron
+  section.study-details
     .container
       .col-md-1.hidden-sm.hidden-xs
       .col-md-5.col-sm-8.col-xs-12
-        h2.study-details__title Особенности программ обучения
-        p.study-details__text Вы можете узнать об авторском  модульном подходе в создании образовательных программ Центра
-        button.study-details__submit-btn.btn.btn-primary(type="submit") Подробнее
+        h2.study__title Особенности программ обучения
+        p.study__text Вы можете узнать об авторском  модульном подходе в создании образовательных программ Центра
+        button.study-details__btn.btn.btn-primary Подробнее
       .col-md-6.col-sm-4.hidden-xs
 
   section.study-cashback.container
     .row
       .col-xs-12
-        h2.study-cashback__title Кэшбэк «Просто накопить»!
-        p.study-details__text Совершая своевременные действия при оформлении заявки и в период обучения,  Вы получаете рубли на счет в личном кабинете.  Используйте их на свое дальнейшее обучение до 50% от стоимости программ
+        h2.study__title Кэшбэк «Просто накопить»!
+        p.study__text Совершая своевременные действия при оформлении заявки и в период обучения, #[br]Вы получаете рубли на счет в личном кабинете. #[br]Используйте их на свое дальнейшее обучение до 50% от стоимости программ
 //- 1.  Регистрируетесь  на сайте razvitum.ru
 //- 2.  Совершаете своевременные действия
 //- 3.  Получаете кэшбэк автоматически на свой счет в личном кабинете

@@ -86,3 +86,22 @@ mixin auth-reg
     button.auth-reg__item(type="button") Авторизация
     span.auth-reg__divider /
     button.auth-reg__item(type="button") Регистрация
+
+//- блок социальных кнопок
+mixin social-buttons
+  ul.social&attributes(attributes)
+    li
+      span
+        a.btn.btn-lg.btn-soc-enter.vk(href="https://vk.com/obr_razvitum", class="", target="_blank", title="Группа Развитум в Vk.ru") #[i.fab.fa-vk]
+    li
+      span
+        a.btn.btn-lg.btn-soc-enter.ok(href="https://ok.ru/proektrazvitum", target="_blank", title="Группа Развитум в Ok.ru") #[i.fab.fa-odnoklassniki]
+    li
+      span
+        a.btn.btn-lg.btn-soc-enter.mailru(href="https://my.mail.ru/community/razvitum/", target="_blank", title="Сообщество Развитум в Mail.ru") #[i.fas.fa-at]
+    li
+      span
+        a.btn.btn-lg.btn-soc-enter.facebook(href="https://www.facebook.com/razvitum.ru", target="_blank", title="Проект Развитум в Facebook.com") #[i.fab.fa-facebook-f]
+    li
+      span
+        a.btn.btn-lg.btn-soc-enter.viber(href="https://invite.viber.com/?g2=AQBud0Le5W62zUm4u4v%2FOmYFPqKOZRWaTnmVuC44jjmMwZHYHJRKn1e62hEO8s8m", target="_blank", title="Сообщество Развитум в Viber") #[i.fab.fa-viber]

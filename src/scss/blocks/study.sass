@@ -25,6 +25,8 @@
     &__col
       &--left
         text-align: right
+        @media(max-width: 768px)
+          text-align: left
       &--right
         text-align: left
 
@@ -44,16 +46,64 @@
       font-size: 1em
       line-height: 1.5em
   &-access
-    padding-top: 110px
-    padding-bottom: 150px
     width: 100%
+    margin-bottom: 140px
+    padding-top: 110px
+    padding-bottom: 142px
     background-image: url('../img/foto_demo.jpg')
+    background-position: center center
     background-size: cover
     .study__title
       margin-bottom: 20px
+    &__col-wrap
+      margin-top: 120px
+    &__form
+      margin-top: 67px
     &__form-input
       width: 100%
+      padding: 6px 20px
       margin-bottom: 15px
       text-align: center
     &__button-submit
+      margin-top: 37px
+      padding-left: 50px
+      padding-right: 50px
+
+  &-process
+    margin-bottom: 200px
+    width: 100%
+    &__col-wrap
+      width: 100%
+      background-image: url('../img/study3.png')
+      background-position: 45vw 0%
+      background-size: contain
+      background-repeat: no-repeat
+      @media(max-width: 992px)
+        background-image: none
+    .study__title
+      margin-bottom: 20px
+
+  &-details
+    margin-bottom: 160px
+    padding-top: 100px
+    padding-bottom: 120px
+    width: 100%
+    background-image: url('../img/foto_statia.jpg')
+    background-position: center center
+    background-size: cover
+    .study__title
+      text-align: left
+      text-transform: uppercase
+      color: #fff
+      font-size: 3em
+      line-height: 1.1em
+    .study__text
+      margin-bottom: 60px
+      color: #fff
+      text-align: left
+      font-size: 1.5em
+      line-height: 1.5em
+    .btn
+      padding-left: 100px
+      padding-right: 100px
 

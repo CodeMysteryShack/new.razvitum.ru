@@ -82,7 +82,7 @@
                       <li><a href="https://new.razvitum.ru/contacts">Контакты</a></li>
                     </ul>
                   </div>
-                  <div class="col-md-1"><a class="rs-btn fa-2x" type="button"><span class="far fa-eye"></span></a></div>
+                  <div class="col-md-1"><a class="rs-btn fa-2x hidden-xs" type="button"><span class="far fa-eye"></span></a></div>
                 </div>
               </div>
             </div>
@@ -125,71 +125,51 @@
             <div class="share__auth">
               <div class="auth-reg share__controls"><button class="auth-reg__item" type="button">Авторизация</button><span class="auth-reg__divider">/</span><button class="auth-reg__item" type="button">Регистрация</button></div>
             </div>
-            <form class="share__form" method="POST" action="#" id=""><input class="share__email-input" type="email" name="email" placeholder="E-mail"><button class="btn share__submit" type="submit">Отправить ссылку</button></form>
-            <div class="share__social"><button class="btn share__applause">Апплодировать</button>
-              <div class="share__social-links"></div>
+            <div class="share__form-wrap">
+              <form class="share__form" method="POST" action="#" id=""><input class="share__email-input" type="email" name="email" placeholder="E-mail"><button class="btn btn-default share__submit" type="submit">Отправить ссылку</button></form>
+            </div>
+            <div class="share__social"><button class="btn btn-primary share__btn"><i class="fas fa-sign-language fa-2x"></i> Апплодировать</button>
+              <div class="share__social-links">
+                <ul class="social">
+                  <li><span><a class="btn btn-lg btn-soc-enter vk" href="https://vk.com/obr_razvitum" target="_blank" title="Группа Развитум в Vk.ru"><i class="fab fa-vk"></i></a></span></li>
+                  <li><span><a class="btn btn-lg btn-soc-enter ok" href="https://ok.ru/proektrazvitum" target="_blank" title="Группа Развитум в Ok.ru"><i class="fab fa-odnoklassniki"></i></a></span></li>
+                  <li><span><a class="btn btn-lg btn-soc-enter mailru" href="https://my.mail.ru/community/razvitum/" target="_blank" title="Сообщество Развитум в Mail.ru"><i class="fas fa-at"></i></a></span></li>
+                  <li><span><a class="btn btn-lg btn-soc-enter facebook" href="https://www.facebook.com/razvitum.ru" target="_blank" title="Проект Развитум в Facebook.com"><i class="fab fa-facebook-f"></i></a></span></li>
+                  <li><span><a class="btn btn-lg btn-soc-enter viber" href="https://invite.viber.com/?g2=AQBud0Le5W62zUm4u4v%2FOmYFPqKOZRWaTnmVuC44jjmMwZHYHJRKn1e62hEO8s8m" target="_blank" title="Сообщество Развитум в Viber"><i class="fab fa-viber"></i></a></span></li>
+                </ul>
+              </div>
             </div>
           </section>
         </div>
-        <aside class="col-md-4 hidden-sm hidden-xs">
+        <div class="col-md-4 hidden-sm hidden-xs">
           <div class="article-interest">
             <h2 class="article-interest__title">Может быть интересно</h2>
+            <article class="article-prev"><a class="article-prev__link" href="#">
+                <h3 class="article-prev__title">Главные новости цифрового образования</h3>
+              </a>
+              <p class="article-prev__text">В еженедельном дайджесте мы рассказываем о самом важном, что случилось с цифровым образованием в России и в мире за последнюю неделю. режиме предоставляет возможность ...</p>
+              <div class="stat">
+                <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+              </div>
+            </article>
+            <article class="article-prev"><a class="article-prev__link" href="#">
+                <h3 class="article-prev__title">10 тезисов книги «Другая школа»</h3>
+              </a>
+              <p class="article-prev__text">Современная школа больше не работает — с этих слов начинается книга Александра Мурашева «Другая школа».</p>
+              <div class="stat">
+                <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+              </div>
+            </article>
           </div>
-          <article class="article-prev"><a class="article-prev__link" href="#">
-              <h3 class="article-prev__title">Главные новости цифрового образования</h3>
-            </a>
-            <p class="article-prev__text">В еженедельном дайджесте мы рассказываем о самом важном, что случилось с цифровым образованием в России и в мире за последнюю неделю. режиме предоставляет возможность ...</p>
-            <div class="stat">
-              <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
-            </div>
-          </article>
-          <article class="article-prev"><a class="article-prev__link" href="#">
-              <h3 class="article-prev__title">10 тезисов книги «Другая школа»</h3>
-            </a>
-            <p class="article-prev__text">Современная школа больше не работает — с этих слов начинается книга Александра Мурашева «Другая школа».</p>
-            <div class="stat">
-              <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
-            </div>
-          </article>
           <div class="check-list">
-            <div class="check-list">
-              <h4>Чек-лист</h4>
-              <p>«Проверка подготовки материалов к уроку»</p>
-            </div>
+            <h4>Чек-лист</h4>
+            <p>«Проверка подготовки материалов к уроку»</p>
             <div class="auth-reg check-list__controls"><button class="auth-reg__item" type="button">Авторизация</button><span class="auth-reg__divider">/</span><button class="auth-reg__item" type="button">Регистрация</button></div>
           </div>
-        </aside>
+        </div>
       </div>
     </div>
   </main>
-  <aside class="col-md-4 hidden-sm hidden-xs">
-    <div class="article-interest">
-      <h2 class="article-interest__title">Может быть интересно</h2>
-    </div>
-    <article class="article-prev"><a class="article-prev__link" href="#">
-        <h3 class="article-prev__title">Главные новости цифрового образования</h3>
-      </a>
-      <p class="article-prev__text">В еженедельном дайджесте мы рассказываем о самом важном, что случилось с цифровым образованием в России и в мире за последнюю неделю. режиме предоставляет возможность ...</p>
-      <div class="stat">
-        <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
-      </div>
-    </article>
-    <article class="article-prev"><a class="article-prev__link" href="#">
-        <h3 class="article-prev__title">10 тезисов книги «Другая школа»</h3>
-      </a>
-      <p class="article-prev__text">Современная школа больше не работает — с этих слов начинается книга Александра Мурашева «Другая школа».</p>
-      <div class="stat">
-        <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
-      </div>
-    </article>
-    <div class="check-list">
-      <div class="check-list">
-        <h4>Чек-лист</h4>
-        <p>«Проверка подготовки материалов к уроку»</p>
-      </div>
-      <div class="auth-reg check-list__controls"><button class="auth-reg__item" type="button">Авторизация</button><span class="auth-reg__divider">/</span><button class="auth-reg__item" type="button">Регистрация</button></div>
-    </div>
-  </aside>
   <footer class="jumbobox">
     <div class="container">
       <div class="row footer_up">
@@ -238,7 +218,7 @@
               </nav>
             </div>
             <div class="col-xs-1">
-              <div class="up-arrow"><a class="animated-scroll" href="#top" title="Наверх"><i class="fas fa-2 fa-chevron-circle-up text-white"></i></a></div>
+              <div class="up-arrow"><a class="animated-scroll" href="#top" title="Наверх"><i class="fas fa-2 fa-chevron-circle-up fa-2x text-white"></i></a></div>
             </div>
           </div>
         </div>
@@ -280,7 +260,8 @@
   </footer>
   <script src="/js/jquery-3.4.1.min.js"></script>
   <script src="/js/bootstrap.js"></script>
-  <script src="/js/vendors.min.js"></script>
+  <script src="/js/front.min.js"></script>
+  <script src="/js/script.min.js"></script>
 </body>
 
 </html>
