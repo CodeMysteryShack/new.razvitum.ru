@@ -24,6 +24,8 @@ const cpy = require('cpy');
 const merge = require('merge-stream');
 const spritesmith = require('gulp.spritesmith');
 const imagemin = require('gulp-imagemin');
+const ghPages = require('gh-pages');
+const path = require('path');
 
 const nth = {};
 nth.config = require('./config.js');
@@ -157,6 +159,11 @@ function spritePNG() {
   return merge(imgStream, cssStream);
 };
 exports.spritePNG = spritePNG;
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
+}
+exports.deploy = deploy;
 
 
 function serve() {

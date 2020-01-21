@@ -30,6 +30,7 @@
     "browser-sync": "^2.14.0",
     "del": "^4.0.0",
     "fancybox": "^3.0.1",
+    "gh-pages": "^2.2.0",
     "glob-exec": "^0.1.1",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
