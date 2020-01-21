@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("/fonts/roboto-regular.eot");
+  src: url("/fonts/roboto-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/roboto-regular.woff") format("woff"), url("/fonts/roboto-regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RobotoBold";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("/fonts/roboto-bold.eot");
+  src: url("/fonts/roboto-bold.eot?#iefix") format("embedded-opentype"), url("/fonts/roboto-bold.woff") format("woff"), url("/fonts/roboto-bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RobotoLight";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("/fonts/Roboto-Light.eot");
+  src: url("/fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-Light.woff") format("woff"), url("/fonts/Roboto-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../webfonts/fa-regular-400.eot");
+  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Font Awesome 5 Solid";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../webfonts/fa-solid-400.eot");
+  src: url("../webfonts/fa-solid-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-400.woff") format("woff"), url("../webfonts/fa-solid-400.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Font Awesome 5 Brand";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../webfonts/fa-brands-400.eot");
+  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Glyphicons Halflings";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"); }
+
+.study__title {
+  margin-top: 77px;
+  margin-bottom: 38px;
+  font-family: RobotoLight, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 2.25em;
+  color: #333;
+  text-align: center; }
+  .study__title--white {
+    color: #fff; }
+
+.study__text {
+  margin: 0 0 6px 0;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.75em;
+  color: #333;
+  text-align: center; }
+  .study__text--white {
+    color: #fff; }
+
+.study-service__wrap {
+  margin-top: 77px;
+  margin-bottom: 212px; }
+
+.study-service__center-pic-wrap {
+  height: 100%;
+  vertical-align: center; }
+  .study-service__center-pic-wrap img {
+    width: 100%;
+    height: auto; }
+
+.study-service__col--left {
+  text-align: right; }
+  @media (max-width: 768px) {
+    .study-service__col--left {
+      text-align: left; } }
+
+.study-service__col--right {
+  text-align: left; }
+
+.study-item {
+  margin: 0 -15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 20px; }
+  .study-item--highlight {
+    background-color: #a3d3e5; }
+  .study-item__title {
+    font-family: RobotoLight, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.5em; }
+  .study-item__text {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5em; }
+
+.study-access {
+  width: 100%;
+  margin-bottom: 140px;
+  padding-top: 110px;
+  padding-bottom: 142px;
+  background-image: url("../img/foto_demo.jpg");
+  background-position: center center;
+  background-size: cover; }
+  .study-access .study__title {
+    margin-bottom: 20px; }
+  .study-access__col-wrap {
+    margin-top: 120px; }
+  .study-access__form {
+    margin-top: 67px; }
+  .study-access__form-input {
+    width: 100%;
+    padding: 6px 20px;
+    margin-bottom: 15px;
+    text-align: center; }
+  .study-access__button-submit {
+    margin-top: 37px;
+    padding-left: 50px;
+    padding-right: 50px; }
+
+.study-process {
+  margin-bottom: 200px;
+  width: 100%; }
+  .study-process__col-wrap {
+    width: 100%;
+    background-image: url("../img/study3.png");
+    background-position: 45vw 0%;
+    background-size: contain;
+    background-repeat: no-repeat; }
+    @media (max-width: 992px) {
+      .study-process__col-wrap {
+        background-image: none; } }
+  .study-process .study__title {
+    margin-bottom: 20px; }
+
+.study-details {
+  margin-bottom: 160px;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  width: 100%;
+  background-image: url("../img/foto_statia.jpg");
+  background-position: center center;
+  background-size: cover; }
+  .study-details .study__title {
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3em;
+    line-height: 1.1em; }
+  .study-details .study__text {
+    margin-bottom: 60px;
+    color: #fff;
+    text-align: left;
+    font-size: 1.5em;
+    line-height: 1.5em; }
+  .study-details .btn {
+    padding-left: 100px;
+    padding-right: 100px; }
+
+/*# sourceMappingURL=study.css.map */

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="/css/vendor.css"><!-- фавиконки для различных устройств — https://realfavicongenerator.net-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff"><!-- base(href='https://new.razvitum.ru')-->
+  <link rel="stylesheet" href="css/front.css">
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  <title>АНО СПб ЦДПО - Всероссийский проект Развитум</title>
+</head>
+
+<body><noscript>У вас отключен JavaScript. Это пугает.</noscript>
+  <header>
+    <div class="s-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-8 col-xs-12 logo-wrap"><a class="logo" href="/"><img src="img/logo.svg" onerror="this.onerror=null; this.src='img/logo.png';" alt="Razvitum Logo"></a>
+            <p class="logo-title">Санкт-Петербургский центр<br>дополнительного профессионального образования<br><span>Образовательный проект Razvitum</span></p>
+          </div>
+          <div class="col-lg-2 hidden-md hidden-sm hidden-xs">
+            <div class="header-date">
+              <div class="header-date-label">Режим работы по МСК</div>
+              <div class="work-hours">с 10:00 до 17:00</div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-1 col-xs-5 text-center">
+            <div class="header-phone">
+              <div class="header-phone-label hidden-sm hidden-xs">Звонок по России бесплатный</div>
+              <div class="header-phone-number"><a class="number" href="tel:88005553069" title="с 8:00 до 18:00 МСК">8 (800) 555-30-69</a></div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-xs-6 text-center">
+            <div class="btn-wrap">
+              <div class="header-cart"><a class="min-app" href="#" data-toggle="modal" data-target="#cartAddModal"><i class="far fa-file-alt"></i> Заявка:<span class="hidden-xs hidden-sm" id="cart-items-count-word">3 позиции</span><span class="hidden-lg hidden-md" id="cart-items-count">3</span></a></div>
+              <div class="header-btn">
+                <div class="btn-group btn-block"><button class="btn btn-primary dropdown-toggle btn-block btn-user" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Личный кабинет"><i class="fas fa-user"></i><span class="hidden-xs hidden-sm user-text">Траторов Н. Ю.</span><span class="caret hidden-xs"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="https://new.razvitum.ru/lk/profile">Профиль</a></li>
+                    <li><a href="https://new.razvitum.ru/lk/orders">Заявки</a></li>
+                    <li><a href="https://new.razvitum.ru/lk/bonus-account">Бонусный счет</a></li>
+                    <li><a href="https://new.razvitum.ru/lk/study">Обучение<i class="fas fa-graduation-cap"></i></a></li>
+                    <li><a href="https://new.razvitum.ru/lk/statistics">Статистика</a></li>
+                    <li><a href="https://new.razvitum.ru/lk/minors">Каталог майноров</a></li>
+                    <li class="divider" role="separator"></li>
+                    <li><a href="https://new.razvitum.ru/auth/signout" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Выход</a></li>
+                  </ul>
+                </div>
+                <form class="hidden" id="logout-form" action="https://new.razvitum.ru/auth/signout" method="POST"><input type="hidden" name="_token" value="eX0oMHU1scg2XD3EwXbja9nWrM3UYd7K4vhlR4MD"></form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-wrap">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header"><button class="navbar-toggle" type="button" data-target="#main-menu" aria-expanded="false"><span class="sr-only">Главное меню</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
+          <div class="collapse navbar-collapse" id="main-menu">
+            <div class="top-menu">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-11">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="/">Главная</a></li>
+                      <li><a href="/about.html">О нас</a></li>
+                      <li><a href="/study.html">Об обучении</a></li>
+                      <li><a href="https://new.razvitum.ru/programs">Каталог программ</a></li>
+                      <li><a href="https://new.razvitum.ru/contacts">Контакты</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-1"><a class="rs-btn fa-2x hidden-xs" type="button"><span class="far fa-eye"></span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- заголовок (только на xs)-->
+    <p class="visible-xs text-center mv-2 head-logo"><a href="/"><img src="img/logo.svg" onerror="this.onerror=null; this.src='img/logo.png';" alt="Razvitum Logo"></a><span>Санкт-Петербургский центр<br>дополнительного профессионального образования<br><span>ОБРАЗОВАТЕЛЬНЫЙ ПРОЕКТ RAZVITUM</span></span></p><!-- main banner-->
+    <section class="main-banner">
+      <div class="jumbotron main-banner__first-row">
+        <div class="container">
+          <div class="row">
+            <h3 class="col-xs-12 col-lg-12 main-banner__title">Эксперт в образовании</h3>
+            <p class="col-lg-8 col-md-12 main-banner__text">Дистанционные курсы повышения квалификации и&#160;программы переподготовки для работников образования</p>
+          </div>
+          <div class="row main-banner__statistic hidden-xs">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="main-banner__stat-item main-banner__stat-item--people"><span>15 806</span> слушателей</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="main-banner__stat-item main-banner__stat-item--coin">Цена от <span>900</span> р.</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="main-banner__stat-item main-banner__stat-item--building">С <span>2013</span> года с вами</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="main-banner__stat-item main-banner__stat-item--percent">Программа лояльности</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-banner__info">
+        <div class="container">
+          <div class="row"><a class="col-md-4 col-sm-12 main-banner__info-item main-banner__info-item--licence" href="#">
+              <h4>Государственная лицензия</h4>
+              <p>на осуществление образовательной деятельности № 0681 от 25.09.-4013</p>
+            </a><a class="col-md-4 col-sm-12 main-banner__info-item main-banner__info-item--official" href="#">
+              <h4>Официальные сведения</h4>
+              <p>Сведения об образовательной организации. Результаты проверки Рособрнадзора</p>
+            </a><a class="col-md-4 col-sm-12 main-banner__info-item main-banner__info-item--free" href="#">
+              <h4>Бесплатное обучение</h4>
+              <p>Достойный выбор бесплатных курсов с выдачей сертификата участника</p>
+            </a></div>
+        </div>
+      </div>
+    </section><!-- Статьи. Верхний блок-->
+    <section class="article-prevs-block container">
+      <div class="row article-prevs-block__1st-line">
+        <article class="col-xs-12 col-sm-12 col-md-8 article-1st">
+          <div class="article-1st__wrap"><a class="article-1st__link" href="#">
+              <h3 class="article-1st__title">Яндекс.Учебники и РАО создадут хартию о цифровой образовательной среде</h3>
+            </a>
+            <p class="article-1st__text">Яндекс.Учебник и Российская академия образования совместно с учителями, родителями и экспертами разработают хартию о цифровой образовательной среде школы.</p>
+            <div class="stat article-1st__statistic">
+              <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+            </div>
+          </div>
+        </article><!-- Форма подписки-->
+        <div class="col-xs-12 col-sm-12 col-md-4">
+          <form class="subscribe" action="#" method="POST">
+            <fieldset class="form-group">
+              <legend class="subscribe__legend"><span>Мы Вам понравились?</span> Подпишитесь</legend><label class="sr-only" for="lastname">Фамилия</label><input class="form-control subscribe__input" type="text" id="lastname" placeholder="Фамилия"><label class="sr-only" for="firstname">Имя</label><input class="form-control subscribe__input" type="text" id="firstname" placeholder="Имя"><label class="sr-only" for="patronymic">Отчество</label><input class="form-control subscribe__input" type="text" id="patronymic" placeholder="Отчество"><label class="sr-only" for="firstname">e-mail</label><input class="form-control subscribe__input" type="email" id="email" placeholder="Ваш e-mail адрес">
+              <div class="subscribe__check"><input class="subscribe__checkbox subscribe__checkbox--fa" type="checkbox" id="freqcheck"><label class="subscribe__check-label" for="freqcheck">Не более 1 письма в неделю</label></div>
+            </fieldset><button class="btn btn-primary subscribe__btn" type="submit"><span class="fas fa-envelope fa-lg"></span> Подписаться</button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <article class="article-prev col-md-4"><a class="article-prev__img-wrap" href="#"><img class="img-responsiv" src="/img/prev_01.png" alt="" /></a><a class="article-prev__tag" href="#">Новости</a><a class="article-prev__link" href="#">
+            <h3 class="article-prev__title">Главные новости цифрового образования</h3>
+          </a>
+          <p class="article-prev__text">В еженедельном дайджесте мы рассказываем о самом важном, что случилось с цифровым образованием в России и в мире за последнюю неделю.</p>
+          <div class="stat">
+            <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+          </div>
+        </article>
+        <article class="article-prev col-md-4"><a class="article-prev__img-wrap" href="#"><img class="img-responsiv" src="/img/prev_02.png" alt="" /></a><a class="article-prev__tag" href="#">Образование</a><a class="article-prev__link" href="#">
+            <h3 class="article-prev__title">Образовательное пространство России&#160;— это 70 лет консерватизма</h3>
+          </a>
+          <p class="article-prev__text">Союз дизайнеров России, Московский Архитектурный институт и компания «Сетевые исследования» объявили конкурс проектов по дизайну образовательного пространства российских университетов.</p>
+          <div class="stat">
+            <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+          </div>
+        </article>
+        <article class="article-prev col-md-4"><a class="article-prev__img-wrap" href="#"><img class="img-responsiv" src="/img/prev_03.png" alt="" /></a><a class="article-prev__tag" href="#">Инновации</a><a class="article-prev__link" href="#">
+            <h3 class="article-prev__title">Открыт прием заявок на конкурс иноваций в образовании</h3>
+          </a>
+          <p class="article-prev__text">С 1 апреля по 19 мая EdTech-стартапы могут подать заявки на участие в Конкурсе инноваций в образовании (КИвО). Прошедших первичный отбор ждет летний акселератор и открытый финал в Москве.</p>
+          <div class="stat">
+            <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+          </div>
+        </article>
+      </div>
+    </section><!-- Анонс мероприятий-->
+    <section class="announcement">
+      <div class="container">
+        <div class="row">
+          <h2 class="col-md-12 announcement__title">Анонс мероприятий</h2>
+        </div>
+        <div class="row">
+          <div class="announcement__item col-md-4">
+            <div class="announcement__date">
+              <div class="announcement__day">25</div>
+              <div class="announcement__month">февраля</div>
+            </div><a class="announcement__text" href="#">Четвёртая встреча «Клуба руководителей»</a>
+          </div>
+          <div class="announcement__item col-md-4" href="#">
+            <div class="announcement__date">
+              <div class="announcement__day">01</div>
+              <div class="announcement__month">сентября</div>
+            </div><a class="announcement__text" href="#">Седьмой поток на бесплатных дистанционных курсах для работников образования</a>
+          </div>
+          <div class="announcement__item col-md-4" href="#">
+            <div class="announcement__date">
+              <div class="announcement__day">01</div>
+              <div class="announcement__month">июля</div>
+            </div><a class="announcement__text" href="#">Старт продаж программы «Государственный контроль в образовательном учреждении»</a>
+          </div>
+        </div>
+      </div>
+    </section><!-- Видео-интервью-->
+    <section class="article-prev article-prev--video-interview container">
+      <div class="row">
+        <div class="col-md-12 section-head">
+          <hr class="section-head__line"><a class="section-head__all-articles-link section-head__all-articles-link--title" href="#">
+            <h2 class="section-head__title">Видео-интервью</h2>
+          </a><a class="section-head__all-articles-link hidden-xs" href="#">Все статьи раздела >></a></div>
+      </div>
+      <div class="row">
+        <article class="article-prev col-md-4"><a class="article-prev__img-wrap" href="#"><img class="img-responsiv" src="/img/vid_01.png" alt="" /></a><a class="article-prev__tag" href="#">Видео-интервью</a><a class="article-prev__link" href="#">
+            <h3 class="article-prev__title">5 правил личностного роста</h3>
+          </a>
+          <div class="stat">
+            <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+          </div>
+        </article>
+        <article class="article-prev col-md-4"><a class="article-prev__img-wrap" href="#"><img class="img-responsiv" src="/img/vid_02.png" alt="" /></a><a class="article-prev__tag" href="#">Видео-интервью</a><a class="article-prev__link" href="#">
+            <h3 class="article-prev__title">Первый урок. Как подготовиться и не волноваться</h3>
+          </a>
+          <div class="stat">
+            <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+          </div>
+        </article>
+        <article class="article-prev col-md-4"><a class="article-prev__img-wrap" href="#"><img class="img-responsiv" src="/img/vid_03.png" alt="" /></a><a class="article-prev__tag" href="#">Видео-интервью</a><a class="article-prev__link" href="#">
+            <h3 class="article-prev__title">Мотивационные приема поддержки молодых специалистов в школе</h3>
+          </a>
+          <div class="stat">
+            <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+          </div>
+        </article>
+      </div>
+    </section><!-- Новости-->
+    <section class="article-prev article-prev--news container">
+      <div class="row">
+        <div class="col-md-12 section-head">
+          <hr class="section-head__line"><a class="section-head__all-articles-link section-head__all-articles-link--title" href="#">
+            <h2 class="section-head__title">Новости</h2>
+          </a><a class="section-head__all-articles-link hidden-xs" href="#">Все статьи раздела >></a></div>
+      </div>
+      <div class="row">
+        <article class="article-prev col-md-4"><a class="article-prev__img-wrap" href="#"><img class="img-responsiv" src="/img/news_01.png" alt="" /></a><a class="article-prev__tag" href="#">Новости</a><a class="article-prev__link" href="#">
+            <h3 class="article-prev__title">Яндекс.Учебники и РАО создадут хартию о цифровой образовательной среде</h3>
+          </a>
+          <p class="article-prev__text">Яндекс.Учебник и Российская академия образования совместно с учителями, родителями и экспертами разработают хартию о цифровой образовательной среде школы.</p>
+          <div class="stat">
+            <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+          </div>
+        </article>
+        <article class="article-prev col-md-4"><a class="article-prev__img-wrap" href="#"><img class="img-responsiv" src="/img/news_02.png" alt="" /></a><a class="article-prev__tag" href="#">Новости</a><a class="article-prev__link" href="#">
+            <h3 class="article-prev__title">Главные новости цифрового образовании</h3>
+          </a>
+          <p class="article-prev__text">В еженедельном дайджесте мы рассказываем о самом важном, что случилось с цифровым образованием в России и в мире за последнюю неделю.</p>
+          <div class="stat">
+            <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+          </div>
+        </article>
+        <article class="article-prev col-md-4"><a class="article-prev__img-wrap" href="#"><img class="img-responsiv" src="/img/news_03.png" alt="" /></a><a class="article-prev__tag" href="#">Новости</a><a class="article-prev__link" href="#">
+            <h3 class="article-prev__title">10 тезисов книги «Другая школа»</h3>
+          </a>
+          <p class="article-prev__text">Современная школа больше не работает — с этих слов начинается книга Александра Мурашева «Другая школа».</p>
+          <div class="stat">
+            <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+          </div>
+        </article>
+      </div>
+    </section><!-- Научные статьи-->
+    <section class="article-prev article-prev--science container">
+      <div class="row">
+        <div class="col-md-12 section-head">
+          <div class="section-head__line"></div><a class="section-head__all-articles-link section-head__all-articles-link--title" href="#">
+            <h2 class="section-head__title">Научные статьи</h2>
+          </a><a class="section-head__all-articles-link hidden-xs" href="#">Все статьи раздела >></a>
+        </div>
+      </div>
+      <div class="row">
+        <article class="article-prev col-md-4"><a class="article-prev__img-wrap" href="#"><img class="img-responsiv" src="/img/sci_01.png" alt="" /></a><a class="article-prev__tag" href="#">ИКТ</a><a class="article-prev__link" href="#">
+            <h3 class="article-prev__title">Киберленинка выложит в открытый доступ 40 тысяч статей из журналов РАН</h3>
+          </a>
+          <p class="article-prev__text">Онлайн-библиотека научной литературы КиберЛенинка заключила договор с Институтом научной информации по общественным наукам РАН. В течение двух месяцев ИНИОН разместит свои журналы в открытом доступе.</p>
+          <div class="stat">
+            <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+          </div>
+        </article>
+        <article class="article-prev col-md-4"><a class="article-prev__img-wrap" href="#"><img class="img-responsiv" src="/img/sci_02.png" alt="" /></a><a class="article-prev__tag" href="#">Педагогика</a><a class="article-prev__link" href="#">
+            <h3 class="article-prev__title">Минпросвещения утвердило новую концепцию преподавания технологии</h3>
+          </a>
+          <p class="article-prev__text">Если верить новой концепции преподавания уроков технологии, шитье фартуков и сборка табуретов останутся в прошлом.</p>
+          <div class="stat">
+            <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+          </div>
+        </article>
+        <article class="article-prev col-md-4"><a class="article-prev__img-wrap" href="#"><img class="img-responsiv" src="/img/sci_03.png" alt="" /></a><a class="article-prev__tag" href="#">Образование</a><a class="article-prev__link" href="#">
+            <h3 class="article-prev__title">Яндекс проведет конференцию о технологиях в математическом образовании</h3>
+          </a>
+          <p class="article-prev__text">Как повысить качество математического образования с помощью исследований? 18–21 марта 2019 года Яндекс и Международное общество исследователей в области психологии математического образования (PME) проведут масштабную конференцию «Психология и технологии в математическом образовании».</p>
+          <div class="stat">
+            <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+          </div>
+        </article>
+      </div>
+    </section><!-- FAQ-->
+    <section class="faq container">
+      <div class="row">
+        <div class="faq__section col-md-3 col-sm-6 col-xs-12"><a class="faq__tag" href="#">ИКТ<span>>></span></a>
+          <div class="faq__item"><a class="faq__quest">Вы предоставляете рассрочку?</a>
+            <div class="stat">
+              <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+            </div>
+          </div>
+          <div class="faq__item hidden-xs"><a class="faq__quest">Как оплачивать обучение?</a>
+            <div class="stat">
+              <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="faq__section col-md-3 col-sm-6 col-xs-12"><a class="faq__tag" href="#">Педагогика<span>>></span></a>
+          <div class="faq__item"><a class="faq__quest">Вы предоставляете рассрочку?</a>
+            <div class="stat">
+              <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+            </div>
+          </div>
+          <div class="faq__item hidden-xs"><a class="faq__quest">Как оплачивать обучение?</a>
+            <div class="stat">
+              <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="faq__section col-md-3 col-sm-6 col-xs-12"><a class="faq__tag" href="#">Выступления<span>>></span></a>
+          <div class="faq__item"><a class="faq__quest">Вы предоставляете рассрочку?</a>
+            <div class="stat">
+              <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+            </div>
+          </div>
+          <div class="faq__item hidden-xs"><a class="faq__quest">Как оплачивать обучение?</a>
+            <div class="stat">
+              <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="faq__section col-md-3 col-sm-6 col-xs-12"><a class="faq__tag" href="#">Сборник<span>>></span></a>
+          <div class="faq__item"><a class="faq__quest">Вы предоставляете рассрочку?</a>
+            <div class="stat">
+              <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+            </div>
+          </div>
+          <div class="faq__item hidden-xs"><a class="faq__quest">Как оплачивать обучение?</a>
+            <div class="stat">
+              <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="faq__section col-md-3 col-sm-6 col-xs-12"><a class="faq__tag" href="#">Технологии<span>>></span></a>
+          <div class="faq__item"><a class="faq__quest">Вы предоставляете рассрочку?</a>
+            <div class="stat">
+              <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+            </div>
+          </div>
+          <div class="faq__item hidden-xs"><a class="faq__quest">Как оплачивать обучение?</a>
+            <div class="stat">
+              <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="faq__section col-md-3 col-sm-6 col-xs-12"><a class="faq__tag" href="#">Мастер-класс<span>>></span></a>
+          <div class="faq__item"><a class="faq__quest">Вы предоставляете рассрочку?</a>
+            <div class="stat">
+              <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+            </div>
+          </div>
+          <div class="faq__item hidden-xs"><a class="faq__quest">Как оплачивать обучение?</a>
+            <div class="stat">
+              <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="faq__section col-md-3 col-sm-6 col-xs-12"><a class="faq__tag" href="#">Читаем<span>>></span></a>
+          <div class="faq__item"><a class="faq__quest">Вы предоставляете рассрочку?</a>
+            <div class="stat">
+              <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+            </div>
+          </div>
+          <div class="faq__item hidden-xs"><a class="faq__quest">Как оплачивать обучение?</a>
+            <div class="stat">
+              <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="faq__section col-md-3 col-sm-6 col-xs-12"><a class="faq__tag" href="#">Лайфхаки-учителя<span>>></span></a>
+          <div class="faq__item"><a class="faq__quest">Вы предоставляете рассрочку?</a>
+            <div class="stat">
+              <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+            </div>
+          </div>
+          <div class="faq__item hidden-xs"><a class="faq__quest">Как оплачивать обучение?</a>
+            <div class="stat">
+              <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- Инструкции-->
+    <section class="article-prev article-prev--science container">
+      <div class="row">
+        <div class="col-md-12 section-head">
+          <hr class="section-head__line"><a class="section-head__all-articles-link section-head__all-articles-link--title" href="#">
+            <h2 class="section-head__title">Инструкции</h2>
+          </a><a class="section-head__all-articles-link hidden-xs" href="#">Все статьи раздела >></a></div>
+      </div>
+      <div class="row">
+        <article class="article-prev col-md-4"><a class="article-prev__img-wrap" href="#"><img class="img-responsiv" src="/img/inst_01.png" alt="" /></a><a class="article-prev__tag" href="#">Инструкции</a><a class="article-prev__link" href="#">
+            <h3 class="article-prev__title">Запустилась бесплатная онлайн-платформа с курсами повышения квалификации для учителей</h3>
+          </a>
+          <p class="article-prev__text">Минпросвещения и Рособрсоюз запустили Национальную электронную платформу педагогического образования (НЭППО), на которой учителя смогут пройти курсы повышения квалификации и научиться разрабатывать свои онлайн-курсы.</p>
+          <div class="stat">
+            <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+          </div>
+        </article>
+        <article class="article-prev col-md-4"><a class="article-prev__img-wrap" href="#"><img class="img-responsiv" src="/img/inst_02.png" alt="" /></a><a class="article-prev__tag" href="#">Инструкции</a><a class="article-prev__link" href="#">
+            <h3 class="article-prev__title">Открыт прием заявок на конкурс практик внутриклассного оценивания</h3>
+          </a>
+          <p class="article-prev__text">До 15 апреля 2019 можно подать заявку на конкурс «Практики внутриклассного оценивания-2019». Победители получат денежные гранты и возможность выступить с докладом на международном симпозиуме в Болгарии.</p>
+          <div class="stat">
+            <div class="text-muted"><span class="stat__item"><span class="fas fa-clock"></span> 5 минут</span><span class="stat__item"><span class="fas fa-eye"></span> 35</span><span class="stat__item"><span class="fas fa-heart"></span> 14</span></div>
+          </div>
+        </article>
+      </div>
+    </section><!-- Список разделов-->
+    <section class="section-list container">
+      <div class="row">
+        <div class="col-md-12 section-list__group"><a class="section-list__item" href="#">Новости</a><a class="section-list__item" href="#">Научные статьи</a><a class="section-list__item" href="#">Инструкции</a><a class="section-list__item" href="#">Технология</a></div>
+        <div class="col-md-12 section-list__group"><a class="section-list__item section-list__item--2nd" href="#">Образование</a><a class="section-list__item section-list__item--2nd" href="#">ИКТ</a><a class="section-list__item section-list__item--2nd" href="#">Выступления</a><a class="section-list__item section-list__item--2nd" href="#">Сборник</a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="jumbobox">
+    <div class="container">
+      <div class="row footer_up">
+        <div class="col-sm-3 col-xs-12 pr-2">
+          <div class="footer-title">
+            <p><b>© 2013–2019 Автономная некоммерческая организация «Санкт-Петербургский Центр дополнительного профессионального образования» (АНО «СПб ЦДПО»)</b></p><br>
+            <p>При использовании материалов сайта активная ссылка обязательна</p>
+          </div>
+        </div>
+        <div class="col-sm-9 hidden-xs">
+          <div class="row footer_nav">
+            <div class="col-xs-11">
+              <nav class="row">
+                <div class="col-xs-3 pr-3">
+                  <div class="footer_nav-header">
+                    <p><b>Меню</b></p>
+                  </div>
+                  <ul>
+                    <li><a href="https://new.razvitum.ru">Главная</a></li>
+                    <li><a href="https://new.razvitum.ru/about/center">О нас</a></li>
+                    <li><a href="https://new.razvitum.ru/about/study">Об обучении</a></li>
+                    <li><a href="https://new.razvitum.ru/programs">Каталог программ</a></li>
+                    <li><a href="https://new.razvitum.ru/contacts">Контакты</a></li>
+                  </ul>
+                </div>
+                <div class="col-xs-5 pr-3">
+                  <div class="footer_nav-header">
+                    <p><b>Наши проекты</b></p>
+                  </div>
+                  <ul>
+                    <li><a href="https://platforma.razvitum.ru"><i class="fas fa-book-open"></i>Бесплатные дистанционные курсы</a></li>
+                    <li><a href="https://club.razvitum.ru">Клуб руководителей</a></li>
+                    <li><a href="https://zachet.razvitum.ru">Всероссийский зачет по юридической грамотности в сфере государственных закупок</a></li>
+                  </ul>
+                </div>
+                <div class="col-xs-4 pr-1">
+                  <div class="footer_nav-header">
+                    <p><b>Информация</b></p>
+                  </div>
+                  <ul>
+                    <li><a href="https://new.razvitum.ru/sveden">Сведения об образовательной организации</a></li>
+                    <li><a href="#"><i class="fas fa-users"></i> Профессиональная солидарность</a></li>
+                    <li><a href="#">HR-портал</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col-xs-1">
+              <div class="up-arrow"><a class="animated-scroll" href="#top" title="Наверх"><i class="fas fa-2 fa-chevron-circle-up fa-2x text-white"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <div class="footer-social-links">
+              <ul>
+                <li><span><a class="btn btn-lg btn-soc-enter vk" href="https://vk.com/obr_razvitum" target="_blank" title="Группа Развитум в Vk.ru"><i class="fab fa-vk"></i></a></span></li>
+                <li><span><a class="btn btn-lg btn-soc-enter ok" href="https://ok.ru/proektrazvitum" target="_blank" title="Группа Развитум в Ok.ru"><i class="fab fa-odnoklassniki"></i></a></span></li>
+                <li><span><a class="btn btn-lg btn-soc-enter mailru" href="https://my.mail.ru/community/razvitum/" target="_blank" title="Сообщество Развитум в Mail.ru"><i class="fas fa-at"></i></a></span></li>
+                <li><span><a class="btn btn-lg btn-soc-enter facebook" href="https://www.facebook.com/razvitum.ru" target="_blank" title="Проект Развитум в Facebook.com"><i class="fab fa-facebook-f"></i></a></span></li>
+                <li><span><a class="btn btn-lg btn-soc-enter viber" href="https://invite.viber.com/?g2=AQBud0Le5W62zUm4u4v%2FOmYFPqKOZRWaTnmVuC44jjmMwZHYHJRKn1e62hEO8s8m" target="_blank" title="Сообщество Развитум в Viber"><i class="fab fa-viber"></i></a></span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-12 col-lg-offset-3 col-lg-3 col-md-4 col-md-offset-2 col-sm-10">
+            <div class="phone"><a href="tel:88005553069">8 800 555-30-69</a></div>
+            <div class="call">
+              <p>Для звонков по России бесплатно</p><a href="#callOrderModal" data-toggle="modal">Заказать звонок</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-7 col-md-8 col-xs-12">
+            <div class="footer-links">
+              <ul>
+                <li><a href="https://new.razvitum.ru/terms">Пользовательское соглашение</a></li>
+                <li><a href="https://new.razvitum.ru/privacy">Политика конфиденциальности</a></li>
+                <li><a href="https://isga.obrnadzor.gov.ru/rlic/details/d034b749-cae8-0d5c-70cb-53426709b289/" target="_blank">Лицензия</a></li>
+              </ul>
+            </div>
+            <div class="usage"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/jquery-3.4.1.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/front.min.js"></script>
+  <script src="/js/script.min.js"></script>
+</body>
+
+</html>
