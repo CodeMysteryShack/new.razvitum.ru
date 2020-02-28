@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Roboto";
   font-weight: normal;
@@ -176,5 +177,145 @@
   .study-details .btn {
     padding-left: 100px;
     padding-right: 100px; }
+
+.study-cashback__group {
+  margin-top: 75px; }
+
+.study-cashback__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 50px; }
+
+.study-cashback__item-num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 18px;
+  border-radius: 32px;
+  background-color: #1422aa;
+  font-size: 2.25em;
+  font-weight: 600;
+  color: #fff; }
+
+.study-cashback__item-text {
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.2em;
+  color: #333; }
+
+.study-cashback__item-ellipse {
+  position: absolute;
+  width: 125px;
+  height: 40px;
+  top: 32px;
+  right: calc(-50% + 57px);
+  background-image: url(../img/ellipse.svg); }
+  .study-cashback__item-ellipse--rotated {
+    top: 0;
+    background-image: url(../img/ellipse_rotated.svg); }
+
+.study-cashback__subtitle {
+  margin-bottom: 50px;
+  font-family: RobotoLight, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 3em;
+  line-height: 1.4em;
+  color: #333; }
+  .study-cashback__subtitle span {
+    display: block;
+    font-family: RobotoBold, Arial, sans-serif;
+    font-weight: 700;
+    color: #1422aa; }
+    .study-cashback__subtitle span:after {
+      content: '₽';
+      display: inline-block;
+      margin-left: 0.25em;
+      font-size: 0.75em; }
+
+.study-cashback__details-wrap {
+  margin-top: 200px; }
+
+.study-cashback__details-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.study-cashback__detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  min-width: 33%;
+  padding-right: 20px;
+  margin-bottom: 40px;
+  min-height: 120px; }
+  .study-cashback__detail-sum {
+    font-size: 3em;
+    font-weight: 600;
+    color: #999999; }
+    .study-cashback__detail-sum span {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: baseline;
+          -ms-flex-align: baseline;
+              align-items: baseline;
+      font-family: serif;
+      font-size: 1.75em;
+      line-height: 16px; }
+    .study-cashback__detail-sum::before {
+      content: 'Кэшбек';
+      display: block;
+      font-size: 14px;
+      color: #a3d3e5; }
+    .study-cashback__detail-sum::after {
+      content: '₽';
+      display: inline-block;
+      margin-left: 0.25em;
+      font-size: 24px; }
+  .study-cashback__detail-text {
+    color: #333; }
+  .study-cashback__detail-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 160px;
+    width: 100%; }
+    .study-cashback__detail-img img {
+      height: 100%;
+      max-height: 160px;
+      width: auto; }
 
 /*# sourceMappingURL=study.css.map */

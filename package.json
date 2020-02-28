@@ -59,6 +59,7 @@
     "eonasdan-bootstrap-datetimepicker": "^4.17.47",
     "jquery": "^3.4.1",
     "merge-stream": "^2.0.0",
+    "path": "^0.12.7",
     "select2": "^4.0.12",
     "select2-bootstrap-theme": "0.1.0-beta.10",
     "suggestions-jquery": "^19.11.0",

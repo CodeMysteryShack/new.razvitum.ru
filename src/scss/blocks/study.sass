@@ -1,6 +1,7 @@
 @import '../fonts'
 @import '../vars'
 @import '../mixins/styles'
+@import '../mixins/calc'
 
 .study
   &__title
@@ -107,3 +108,98 @@
       padding-left: 100px
       padding-right: 100px
 
+  &-cashback
+    &__group
+      margin-top: 75px
+    &__item
+      display: flex
+      flex-direction: column
+      align-items: center
+      position: relative
+      margin-bottom: 50px
+    &__item-num
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 64px
+      height: 64px
+      margin-bottom: 18px
+      border-radius: 32px
+      background-color: $accent
+      font-size: 2.25em
+      font-weight: 600
+      color: #fff
+    &__item-text
+      text-align: center
+      font-size: 1em
+      line-height: 1.2em
+      color: $headgray
+    &__item-ellipse
+      position: absolute
+      width: 125px
+      height: 40px 
+      top: 32px;
+      right: calc(-50% + 57px);
+      background-image: url(../img/ellipse.svg)
+      &--rotated
+        top: 0
+        background-image: url(../img/ellipse_rotated.svg)
+    &__subtitle
+      margin-bottom: 50px
+      +ff-roboto-light
+      font-size: 3em
+      line-height: 1.4em
+      color: $headgray
+      & span
+        display: block
+        +ff-roboto-bold
+        color: $accent
+        &:after
+          +rubble()
+          font-size: 0.75em
+    &__details-wrap
+      margin-top: 200px
+    &__details-group
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      flex-wrap: wrap
+    &__detail
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      position: relative
+      min-width: 33%
+      padding-right: 20px
+      margin-bottom: 40px
+      min-height: 120px
+      &-sum
+        font-size: 3em
+        font-weight: 600
+        color: $gray
+        span
+          display: inline-flex
+          align-items: baseline
+          font-family: serif;
+          font-size: 1.75em
+          line-height: 16px
+        &::before
+          content: 'Кэшбек'
+          display: block
+          font-size: 14px
+          color: $active-color
+        &::after
+          +rubble()
+          font-size: 24px
+      &-text
+        color: $headgray
+      &-img
+        position: absolute
+        left: 0
+        bottom: 0
+        height: 160px
+        width: 100%
+        img
+          height: 100%
+          max-height: 160px
+          width: auto

@@ -35,6 +35,12 @@
   position: $pos;
 }
 
+@mixin rubble() {
+  content: '₽';
+  display: inline-block;
+  margin-left: 0.25em;
+}
+
 // миксин стилизации checkbox'а в форме с использованием символов @fontawesome
 @mixin chbx-fa($col, $indent, $font: 'Font Awesome 5 Free') {
   display: none;
