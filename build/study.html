@@ -289,6 +289,37 @@
             </div>
           </div>
         </div>
+        <section class="study-offer container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="study__title">Отдадим любой курс за справедливую цену</h2>
+              <p class="study__text">Учиться с коллегами всегда веселее: делитесь учебными материалами, помогайте друг другу, <br>и, конечно, получайте максимальные скидки для групповых заявок до 60%!</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="offset-lg-1 offset-md-1 col-xs-12 col-md-11 col-lg-11 study-offer__wrap">
+              <p class="study-offer__text">1. Скачайте форму заявки. Мы подготовили таблицу в формате excel для Вашего удобства.</p><button class="btn btn-primary study-offer__button" role="button">Скачать форму заявки</button>
+              <p class="study-offer__text">2. Загрузите заполненную заявку в поле ниже или отправьте на почту info@razvitum.ru.</p>
+              <form class="form-inline study-offer__form" method="POST" action="">
+                <div class="study-offer__form-wrap"><input class="study-offer__input-file" type="file" name="offer-file" id="offer-file" enctype="multipart/form-data" multiple accept="image/*,image/jpeg" placeholder="Файл не загружен" value="Отправить"><span class="fas fa-upload fa-lg fa-2x study-offer__input-ico"></span>
+                  <div class="study-offer__input-info" id="offer-file-info">Выберите файл</div><label class="study-offer__input-file-btn" for="offer-file" id="offer-file-btn">Загрузить</label></div><input class="btn btn-primary study-offer__form-button" type="submit" value="Отправить">
+              </form>
+            </div>
+          </div>
+        </section>
+        <script>
+          let myInput = document.querySelector('#offer-file');
+          let myLabel = document.querySelector('#offer-file-info');
+          if (myInput && myLabel) {
+            myInput.addEventListener('change', function(e) {
+              var fileName = '';
+              fileName = e.target.value.split('\\').pop();
+              if (fileName) {
+                myLabel.textContent = fileName;
+              }
+            });
+          };
+        </script>
   </main>
   <footer class="jumbobox">
     <div class="container">

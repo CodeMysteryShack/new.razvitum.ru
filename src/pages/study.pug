@@ -151,17 +151,33 @@ block content
           .study-cashback__detail-img
             img(src="/img/money.png", alt="")
 
-//- 1.  Регистрируетесь  на сайте razvitum.ru
-//- 2.  Совершаете своевременные действия
-//- 3.  Получаете кэшбэк автоматически на свой счет в личном кабинете
-//- 4.  Оплачивайте до 50% от стоимости программ
-//- Обучайтесь и возвращайте + 2 000 ₽
-//- Кэшбек + 300 ₽  Подача документов до 3-х дней Кэшбек + 500 ₽  Оплата обучения до 5-и дней Кэшбек + 500 ₽  Успешная аттестация
-//- Кэшбек + 500 ₽  С Днем Рождения!
-//- Кэшбек + ∞ ₽  Секретные акции
-
-//- Отдадим любой курс за справедливую цену Учиться с коллегами всегда веселее: делитесь учебными материалами, помогайте друг другу,  и, конечно, получайте максимальные скидки для групповых заявок до 60%!
-//- 1.  Скачайте форму заявки. Мы подготовили таблицу в формате excell для Вашего удобства.
-//- 2.  Загрузите заполненную заявку в поле ниже или отправьте на почту info@razvitum.ru.
-
-
+  section.study-offer.container
+    .row
+      .col-xs-12
+        h2.study__title Отдадим любой курс за справедливую цену
+        p.study__text Учиться с коллегами всегда веселее: делитесь учебными материалами, помогайте друг другу, #[br]и, конечно, получайте максимальные скидки для групповых заявок до 60%!
+    .row
+      .offset-lg-1.offset-md-1.col-xs-12.col-md-11.col-lg-11.study-offer__wrap
+        p.study-offer__text 1. Скачайте форму заявки. Мы подготовили таблицу в формате excel для Вашего удобства.
+        button.btn.btn-primary.study-offer__button(role="button") Скачать форму заявки
+        p.study-offer__text 2. Загрузите заполненную заявку в поле ниже или отправьте на почту info@razvitum.ru.
+        form.form-inline.study-offer__form(method="POST", action="")
+          .study-offer__form-wrap
+            input.study-offer__input-file(type="file", name="offer-file", id="offer-file", enctype="multipart/form-data", multiple accept="image/*,image/jpeg", placeholder="Файл не загружен", value="Отправить")
+            <span class="fas fa-upload fa-lg fa-2x study-offer__input-ico"></span>
+            .study-offer__input-info(id="offer-file-info") Выберите файл
+            label.study-offer__input-file-btn(for="offer-file", id="offer-file-btn") Загрузить
+          input.btn.btn-primary.study-offer__form-button(type="submit", value="Отправить")
+  
+  script.
+    let myInput = document.querySelector('#offer-file');
+    let myLabel = document.querySelector('#offer-file-info');
+    if (myInput && myLabel) {
+      myInput.addEventListener('change', function(e){
+        var fileName = '';
+        fileName = e.target.value.split( '\\' ).pop();
+        if (fileName) {
+          myLabel.textContent = fileName;
+        }
+      });
+    };
