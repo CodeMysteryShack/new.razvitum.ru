@@ -94,11 +94,19 @@ block content
     h2.about__title Наша история
     p.about__text В феврале 2011 года был основан всероссийский образовательный проект «Razvitum»#[br]и созданы предпосылки для организации Санкт-Петербургского центра#[br]дополнительного профессионального образования
   .row
-   .col-xs-12.about-dates-slider
-    .about-dates-slider__item
-     span.about-dates-slider__year 2011
-     h4.about-dates-slider__title Конкурсы для детей
-     p.about-dates-slider__text Организованы конкурсы «Ангел вдохновения», «Уши, ноги и хвосты», конкурс профессионального мастерства«Профи». За пять лет к конкурсной деятельности мы привлекли более 36 000 участников.
+   .col-xs-12
+    .about-dates-slider
+      .about-dates-slider__wrap
+        include ../pug/slider-dates.pug
+          -for(let i = 0; i < mySliderDates.length; i++)
+            .about-dates-slider__item(data-id=`${i}`, data-year=`${mySliderDates[i][0]}`)
+              .about-dates-slider__year= mySliderDates[i][0]
+              .about-dates-slider__text-wrap
+                h4.about-dates-slider__title= mySliderDates[i][1]
+                p.about-dates-slider__text= mySliderDates[i][2]
+        .about-dates-slider__dot-wrap
+          -for(let i = 2011; i <= 2020; i++) 
+            .about-dates-slider__dot= i
 
  section.about-greet
   .container

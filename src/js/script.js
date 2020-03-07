@@ -20,6 +20,20 @@ ready(function(){
     }
     else mainMenu.style.display = "none"
   }
+
+  // стилизация input'a загрузки файла на стр. study
+  let myInput = document.querySelector('#offer-file');
+  let myLabel = document.querySelector('#offer-file-info');
+  if (myInput && myLabel) {
+    myInput.addEventListener('change', function(e){
+      var fileName = '';
+      fileName = e.target.value.split( '\\' ).pop();
+      if (fileName) {
+        myLabel.textContent = fileName;
+      }
+    });
+  };
+
 });
 
 

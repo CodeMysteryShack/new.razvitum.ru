@@ -125,6 +125,75 @@
       img
         width: 100%
         height: auto
+  
+  &-dates-slider
+    width: 100%
+    margin-top: 60px
+    margin-bottom: 140px
+    display: flex
+    flex-direction: row
+    justify-content: center
+    &__wrap
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__item
+      display: flex
+      flex-direction: row
+      width: 750px
+      height: 325px
+      box-shadow: 0px 4px 36px 4px rgba(226, 226, 226, 1)
+    &__year
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 165px
+      height: 100%
+      background-color: $accent
+      text-align: center
+      font-size: 7.5em
+      color: #fff
+      writing-mode: vertical-rl
+      text-orientation: mixed
+      transform: rotate(180deg)
+    &__text-wrap
+      display: flex
+      flex-direction: column
+      height: 100%
+      padding: 30px 30px 30px 38px
+      overflow: hidden
+      white-space: no-wrap
+      text-overflow: ellipsis
+      background-image: url(../img/about-slide-bg.png)
+      background-repeat: no-repeat
+      background-position: left center
+    &__title
+      width: 100%
+      margin-bottom: 0.75em
+      text-align: left
+      font-size: 1.875em
+      +ff-arial()
+    &__text
+      +ff-arial()
+      font-size: 1em
+
+    &__dot-wrap
+      display: flex
+      flex-direction: row
+      justify-content: center
+      margin-top: 65px
+    &__dot
+      font-size: 1em
+      color: $accent
+      +ff-arial()
+      &::after
+        content: '•'
+        margin-left: 24px
+        margin-right: 24px
+      &:last-of-type
+        &::after
+          content: ''
+          margin: 0
 
   &-greet
     width: 100%
