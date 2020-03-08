@@ -97,6 +97,13 @@ block content
    .col-xs-12
     .about-dates-slider
       .about-dates-slider__wrap
+        // стрелки карусели
+        a.about-dates-slider__btn.about-dates-slider__btn-left(href="#carousel-about", role="button", data-slide="prev")
+          span.about-dates-slider__arrow--back(aria-hidden="true")
+          span.sr-only Previous
+        a.about-dates-slider__btn.about-dates-slider__btn--right(href="#carousel-about", role="button", data-slide="next")
+          span.about-dates-slider__arrow--fow(aria-hidden="true")
+          span.sr-only Next
         include ../pug/slider-dates.pug
           -for(let i = 0; i < mySliderDates.length; i++)
             .about-dates-slider__item(data-id=`${i}`, data-year=`${mySliderDates[i][0]}`)
@@ -104,7 +111,7 @@ block content
               .about-dates-slider__text-wrap
                 h4.about-dates-slider__title= mySliderDates[i][1]
                 p.about-dates-slider__text= mySliderDates[i][2]
-        .about-dates-slider__dot-wrap
+        .about-dates-slider__dot-wrap.hidden-xs
           -for(let i = 2011; i <= 2020; i++) 
             .about-dates-slider__dot= i
 

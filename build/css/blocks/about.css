@@ -237,8 +237,21 @@
             flex-direction: row;
     width: 750px;
     height: 325px;
+    background-color: #fff;
     -webkit-box-shadow: 0px 4px 36px 4px #e2e2e2;
             box-shadow: 0px 4px 36px 4px #e2e2e2; }
+    @media (max-width: 992px) {
+      .about-dates-slider__item {
+        width: 600px;
+        height: 300px; } }
+    @media (max-width: 768px) {
+      .about-dates-slider__item {
+        width: 500px;
+        height: 250px; } }
+    @media (max-width: 480px) {
+      .about-dates-slider__item {
+        width: 300px;
+        height: 250px; } }
   .about-dates-slider__year {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -262,6 +275,18 @@
             text-orientation: mixed;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
+    @media (max-width: 992px) {
+      .about-dates-slider__year {
+        width: 150px;
+        font-size: 6.5em; } }
+    @media (max-width: 768px) {
+      .about-dates-slider__year {
+        width: 105px;
+        font-size: 5em; } }
+    @media (max-width: 480px) {
+      .about-dates-slider__year {
+        width: 75px;
+        font-size: 3.5em; } }
   .about-dates-slider__text-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -278,6 +303,15 @@
     background-image: url(../img/about-slide-bg.png);
     background-repeat: no-repeat;
     background-position: left center; }
+    @media (max-width: 992px) {
+      .about-dates-slider__text-wrap {
+        padding: 25px 25px 25px 30px; } }
+    @media (max-width: 768px) {
+      .about-dates-slider__text-wrap {
+        padding: 20px 20px 20px 25px; } }
+    @media (max-width: 480px) {
+      .about-dates-slider__text-wrap {
+        padding: 15px 15px 15px 20px; } }
   .about-dates-slider__title {
     width: 100%;
     margin-bottom: 0.75em;
@@ -285,6 +319,18 @@
     font-size: 1.875em;
     font-family: Arial, sans-serif;
     font-weight: 400; }
+    @media (max-width: 992px) {
+      .about-dates-slider__title {
+        margin-bottom: 0.5em;
+        font-size: 1.5em; } }
+    @media (max-width: 768px) {
+      .about-dates-slider__title {
+        margin-bottom: 0.25em;
+        font-size: 1.25em; } }
+    @media (max-width: 480px) {
+      .about-dates-slider__title {
+        margin-bottom: 0;
+        font-size: 1.25em; } }
   .about-dates-slider__text {
     font-family: Arial, sans-serif;
     font-weight: 400;
@@ -300,19 +346,62 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-top: 65px; }
   .about-dates-slider__dot {
     font-size: 1em;
     color: #1422aa;
     font-family: Arial, sans-serif;
-    font-weight: 400; }
+    font-weight: 400;
+    cursor: pointer; }
+    .about-dates-slider__dot:hover {
+      color: #f9b233; }
     .about-dates-slider__dot::after {
       content: '•';
       margin-left: 24px;
-      margin-right: 24px; }
+      margin-right: 24px;
+      color: #1422aa; }
+      .about-dates-slider__dot::after:hover {
+        color: #1422aa; }
     .about-dates-slider__dot:last-of-type::after {
       content: '';
       margin: 0; }
+  .about-dates-slider__btn {
+    background: none !important;
+    background-image: none !important; }
+  .about-dates-slider__arrow--back {
+    width: 24px;
+    height: 27px; }
+    .about-dates-slider__arrow--back:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: calc(50% - 27px/2);
+      left: -71px;
+      background-image: url(../img/spritePNG.png);
+      background-position: -176px -25px;
+      width: 24px;
+      height: 27px; }
+      @media (max-width: 1330px) {
+        .about-dates-slider__arrow--back:before {
+          left: 10px; } }
+  .about-dates-slider__arrow--fow {
+    width: 24px;
+    height: 27px; }
+    .about-dates-slider__arrow--fow:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: calc(50% - 27px/2);
+      right: -71px;
+      background-image: url(../img/spritePNG.png);
+      background-position: -176px -56px;
+      width: 24px;
+      height: 27px; }
+      @media (max-width: 1330px) {
+        .about-dates-slider__arrow--fow:before {
+          right: 10px; } }
 
 .about-greet {
   width: 100%;

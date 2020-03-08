@@ -125,7 +125,8 @@
       img
         width: 100%
         height: auto
-  
+
+  // СЛАЙДЕР С ДАТАМИ
   &-dates-slider
     width: 100%
     margin-top: 60px
@@ -142,7 +143,20 @@
       flex-direction: row
       width: 750px
       height: 325px
+      background-color: #fff
       box-shadow: 0px 4px 36px 4px rgba(226, 226, 226, 1)
+      @media(max-width: 992px)
+        width: 600px
+        height: 300px
+      @media(max-width: 768px)
+        width: 500px
+        height: 250px
+      @media(max-width: 480px)
+        width: 300px
+        height: 250px
+      // @media(max-width: 992px)
+      // @media(max-width: 768px)
+      // @media(max-width: 480px)
     &__year
       display: flex
       justify-content: center
@@ -156,6 +170,15 @@
       writing-mode: vertical-rl
       text-orientation: mixed
       transform: rotate(180deg)
+      @media(max-width: 992px)
+        width: 150px
+        font-size: 6.5em
+      @media(max-width: 768px)
+        width: 105px
+        font-size: 5em
+      @media(max-width: 480px)
+        width: 75px
+        font-size: 3.5em
     &__text-wrap
       display: flex
       flex-direction: column
@@ -167,12 +190,27 @@
       background-image: url(../img/about-slide-bg.png)
       background-repeat: no-repeat
       background-position: left center
+      @media(max-width: 992px)
+        padding: 25px 25px 25px 30px
+      @media(max-width: 768px)
+        padding: 20px 20px 20px 25px
+      @media(max-width: 480px)
+        padding: 15px 15px 15px 20px
     &__title
       width: 100%
       margin-bottom: 0.75em
       text-align: left
       font-size: 1.875em
       +ff-arial()
+      @media(max-width: 992px)
+        margin-bottom: 0.5em
+        font-size: 1.5em
+      @media(max-width: 768px)
+        margin-bottom: 0.25em
+        font-size: 1.25em
+      @media(max-width: 480px)
+        margin-bottom: 0
+        font-size: 1.25em
     &__text
       +ff-arial()
       font-size: 1em
@@ -181,19 +219,53 @@
       display: flex
       flex-direction: row
       justify-content: center
+      flex-wrap: wrap
       margin-top: 65px
     &__dot
       font-size: 1em
       color: $accent
       +ff-arial()
+      cursor: pointer
+      &:hover
+        color: $highlight
       &::after
         content: '•'
         margin-left: 24px
         margin-right: 24px
+        color: $accent
+        &:hover
+          color: $accent
       &:last-of-type
         &::after
           content: ''
           margin: 0
+      
+    &__btn
+      background: none !important
+      background-image: none !important
+      &--left
+    &__arrow--back
+      width: $arrow-back-width
+      height: $arrow-back-height
+      // position: relative
+      &:before
+        +psblock(block, absolute)
+        top: calc(50% - #{$arrow-back-height}/2)
+        left: -71px
+        +sprite($arrow-back)
+        @media(max-width: 1330px)
+          left: 10px
+    &__arrow--fow
+      width: $arrow-fow-width
+      height: $arrow-fow-height
+      &:before
+        +psblock(block, absolute)
+        top: calc(50% - #{$arrow-fow-height}/2)
+        right: -71px
+        +sprite($arrow-fow)
+        @media(max-width: 1330px)
+          right: 10px
+
 
   &-greet
     width: 100%
